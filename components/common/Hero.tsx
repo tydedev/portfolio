@@ -33,18 +33,9 @@ const Hero = () => {
         </span>
         <span className="text-cyan-500">{displayed}</span>
       </h2>
-      <div className="py-6 text-foreground space-x-2 text-center">
-        <CustomBadge className="bg-linear-to-t from-blue-700/11 to-blue-from-blue-700/5">
-          UI/UX
-        </CustomBadge>
-        <CustomBadge className="bg-linear-to-t from-blue-700/11 to-blue-from-blue-700/5">
-          Web Development
-        </CustomBadge>
-        <CustomBadge className="bg-linear-to-t from-blue-700/11 to-blue-from-blue-700/5">
-          Brand Identity
-        </CustomBadge>
-      </div>
-      <p className="text-xl md:text-2xl px-10 text-center">{t("subtitle")}</p>
+      <p className="text-xl md:text-2xl px-10 text-center py-2">
+        {t("subtitle")}
+      </p>
 
       <p className="my-5">
         <Button asChild>

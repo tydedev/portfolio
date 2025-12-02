@@ -2,12 +2,17 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
 // Image metadata
 export const alt = "Tydedev";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default async function Image() {
+export default async function Image({ params }: Props) {
+  const { locale } = await params;
   const interBold = await readFile(
     join(process.cwd(), "assets/fonts/Inter-Bold.ttf")
   );
