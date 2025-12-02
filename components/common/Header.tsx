@@ -2,17 +2,12 @@
 
 import LangToggle from "../switchers/LangToggle";
 import Logo from "./Logo";
-import { useEffect, useState } from "react";
 import MobileNav from "./MobileNav";
 import Nav from "./Nav";
-import LoadingState from "../ui/LoadingState";
-import { Button } from "../ui/button";
-import { Skeleton } from "../ui/skeleton";
-import { Home, Mail, Shapes } from "lucide-react";
+import { Home, Mail } from "lucide-react";
 
 const links = [
   { name: "home", href: "/", icon: Home },
-  { name: "projects", href: "/projects", icon: Shapes },
   { name: "contacts", href: "/contacts", icon: Mail },
 ];
 

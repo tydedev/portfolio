@@ -5,7 +5,6 @@ import Hero from "@/components/common/Hero";
 import { Button } from "@/components/ui/button";
 import useScroll from "@/hooks/useScroll";
 import { ArrowUp } from "lucide-react";
-import Wordpress from "@/components/common/Wordpress";
 import Skills from "@/components/cards/Skills";
 
 export default function HomePage() {
