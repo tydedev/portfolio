@@ -34,7 +34,7 @@ export default async function Image() {
               "base64"
             )}`}
             alt="Tydedev"
-            width={150}
+            width={80}
             height={150}
             style={{ marginBottom: 32 }}
           />
@@ -53,7 +53,7 @@ export default async function Image() {
           }}
         >
           <span style={{ color: "#c026d3" }}>Design</span>
-          <span style={{ display: "flex", gap: "-0.15rem" }}>+ =</span>
+          <span style={{ display: "flex", gap: "-0.15rem" }}>&&</span>
           <span style={{ color: "#06b6d4" }}>Code</span>
         </h2>
         <div
