@@ -1,19 +1,12 @@
-import CustomBadge from "@/components/ui/customBadge";
-import { Equal, Plus } from "lucide-react";
 import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
 // Image metadata
 export const alt = "Tydedev";
-export const size = {
-  width: 1200,
-  height: 630,
-};
-
+export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-// Image generation
 export default async function Image() {
   const interBold = await readFile(
     join(process.cwd(), "assets/fonts/Inter-Bold.ttf")
@@ -25,8 +18,15 @@ export default async function Image() {
       <div
         style={{
           fontFamily: "Inter",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          width: "100%",
+          height: "100%",
+          backgroundColor: "#0f172a", // slate-950
+          color: "white",
         }}
-        tw="flex flex-col w-full h-full bg-slate-950"
       >
         <picture>
           <img
@@ -36,27 +36,64 @@ export default async function Image() {
             alt="Tydedev"
             width={150}
             height={150}
+            style={{ marginBottom: 32 }}
           />
         </picture>
-        <h1 style={{ fontSize: 64 }}>Tydedev</h1>
-        <h2 className="text-5xl md:text-7xl font-bold border-r-4 pr-1 animate-blink flex gap-x-3 items-baseline">
-          <span className="text-fuchsia-500">Design</span>
-          <span className="flex -space-x-1 mr-[0.15rem]">
-            <Plus className="shrink-0 md:w-8 md:h-8" strokeWidth={4} />
-            <Equal className="shrink-0 md:w-8 md:h-8" strokeWidth={4} />
-          </span>
-          <span className="text-cyan-500">Code</span>
+        <h1 style={{ fontSize: 64, margin: 0 }}>Tydedev</h1>
+        <h2
+          style={{
+            fontSize: 56,
+            fontWeight: 700,
+            display: "flex",
+            alignItems: "center",
+            gap: "0.5rem",
+            borderRight: "4px solid white",
+            paddingRight: "0.25rem",
+            margin: "16px 0",
+          }}
+        >
+          <span style={{ color: "#c026d3" }}>Design</span>
+          <span style={{ display: "flex", gap: "-0.15rem" }}>+ =</span>
+          <span style={{ color: "#06b6d4" }}>Code</span>
         </h2>
-        <div className="py-6 text-foreground space-x-2 text-center">
-          <CustomBadge className="bg-linear-to-t from-blue-700/11 to-blue-from-blue-700/5">
+        <div
+          style={{
+            display: "flex",
+            gap: "12px",
+            paddingTop: 24,
+            textAlign: "center",
+          }}
+        >
+          <div
+            style={{
+              background:
+                "linear-gradient(to top, rgba(59,130,246,0.11), rgba(59,130,246,0.05))",
+              padding: "4px 12px",
+              borderRadius: 6,
+            }}
+          >
             UI/UX
-          </CustomBadge>
-          <CustomBadge className="bg-linear-to-t from-blue-700/11 to-blue-from-blue-700/5">
+          </div>
+          <div
+            style={{
+              background:
+                "linear-gradient(to top, rgba(59,130,246,0.11), rgba(59,130,246,0.05))",
+              padding: "4px 12px",
+              borderRadius: 6,
+            }}
+          >
             Web Development
-          </CustomBadge>
-          <CustomBadge className="bg-linear-to-t from-blue-700/11 to-blue-from-blue-700/5">
+          </div>
+          <div
+            style={{
+              background:
+                "linear-gradient(to top, rgba(59,130,246,0.11), rgba(59,130,246,0.05))",
+              padding: "4px 12px",
+              borderRadius: 6,
+            }}
+          >
             Brand Identity
-          </CustomBadge>
+          </div>
         </div>
       </div>
     ),
