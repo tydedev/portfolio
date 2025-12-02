@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: t("title"),
     description: t("description"),
+    canonical: `https://tydedev.vercel.app/${locale}`,
   };
 }
 
