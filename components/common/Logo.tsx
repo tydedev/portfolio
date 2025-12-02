@@ -4,7 +4,7 @@ import Link from "next/link";
 
 interface Props {
   hasText?: boolean;
-  size?: "sm" | "md" | "lg";
+  size?: "sm" | "md" | "lg" | "xl";
   hasLink?: boolean;
 }
 
@@ -19,8 +19,8 @@ const Logo = ({ hasText, size = "md", hasLink }: Props) => {
       <Image
         src="/images/logo_icon.svg"
         className="shrink-0 self-center"
-        width={size === "sm" ? 6 : size === "md" ? 9 : 16}
-        height={size === "sm" ? 6 : size === "md" ? 9 : 16}
+        width={size === "sm" ? 6 : size === "md" ? 9 : size === "lg" ? 16 : 24}
+        height={size === "sm" ? 6 : size === "md" ? 9 : size === "lg" ? 16 : 24}
         alt="Tydedev Logo"
         priority
       />
