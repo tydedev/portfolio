@@ -7,13 +7,16 @@ export const alt = "Tydedev";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default async function Image() {
-  const interBold = await readFile(
-    join(process.cwd(), "assets/fonts/Inter-Bold.ttf")
-  );
-  const logoSvg = await readFile(join(process.cwd(), "assets/images/logo.svg"));
+const baseUrl = process.env.VERCEL_URL
+  ? `https://tydedev.vercel.app`
+  : "http://localhost:3000";
 
-  console.log(logoSvg);
+export default async function Image() {
+  const interBoldRes = await fetch(`${baseUrl}/fonts/Inter-Bold.ttf`);
+  const interBold = await interBoldRes.arrayBuffer();
+
+  const logoRes = await fetch(`${baseUrl}/images/logo.svg`);
+  const logoSvg = await logoRes.text();
 
   return new ImageResponse(
     (
