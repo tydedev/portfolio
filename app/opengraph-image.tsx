@@ -26,6 +26,7 @@ export default async function Image() {
         style={{
           fontFamily: "Inter",
         }}
+        tw="flex flex-col w-full h-full bg-slate-950"
       >
         <picture>
           <img
