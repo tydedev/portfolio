@@ -2,11 +2,13 @@ import ContactForm from "@/components/forms/ContactForm";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
-export async function generateMetadata() {
-  const t = await getTranslations({
-    locale: "it",
-    namespace: "contact.meta",
-  });
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const locale = params.locale;
+  const t = await getTranslations({ locale, namespace: "contact.meta" });
 
   return {
     title: t("title"),

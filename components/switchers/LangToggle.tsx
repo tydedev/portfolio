@@ -10,7 +10,8 @@ import {
 
 import { Locales } from "@/lib/locales";
 import { useLocale, useTranslations } from "next-intl";
-import { startTransition, useState } from "react";
+import { useRouter, usePathname } from "next/navigation";
+import { useState, startTransition } from "react";
 import LoadingState from "../ui/LoadingState";
 
 type LocaleCode = keyof typeof Locales;
@@ -20,17 +21,26 @@ interface Props {
 
 const LangToggle = ({ ghost }: Props) => {
   const l = useTranslations("locales");
-  const [isLoading, setIsLoading] = useState(false);
   const locale = useLocale();
 
+  const router = useRouter();
+  const pathname = usePathname();
+  const [isLoading, setIsLoading] = useState(false);
+
   function onSelectChange(nextLocale: LocaleCode) {
+    if (nextLocale === locale) return;
+
     setIsLoading(true);
 
     startTransition(() => {
-      document.cookie = `locale=${nextLocale}; path=/; max-age=31536000`;
-      window.location.reload();
+      // Rimpiazziamo il segment [locale] nella route corrente
+      const segments = pathname.split("/");
+      segments[1] = nextLocale; // perché "/it/about" → ["", "it", "about"]
+
+      router.push(segments.join("/"));
     });
   }
+
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
@@ -38,22 +48,17 @@ const LangToggle = ({ ghost }: Props) => {
           disabled={isLoading}
           variant={ghost ? "ghost" : "outline"}
           size="icon"
-          className="cursor-pointer"
         >
-          {isLoading ? (
-            <LoadingState size="sm" className="mr-0" />
-          ) : (
-            locale.toUpperCase()
-          )}
+          {isLoading ? <LoadingState size="sm" /> : locale.toUpperCase()}
           <span className="sr-only">{l("description")}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         {Object.entries(Locales).map(([code, { name }]) => (
           <DropdownMenuItem
-            className="cursor-pointer"
             key={code}
-            onClick={() => onSelectChange(code as keyof typeof Locales)}
+            onClick={() => onSelectChange(code as LocaleCode)}
+            className="cursor-pointer"
           >
             {name}
           </DropdownMenuItem>
