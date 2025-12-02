@@ -34,6 +34,17 @@ export async function generateMetadata({ params }: Props) {
     alternates: {
       canonical: `https://tydedev.vercel.app/${locale}`,
     },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      images: [
+        {
+          url: `/opengraph-image?locale=${locale}`,
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
   };
 }
 
