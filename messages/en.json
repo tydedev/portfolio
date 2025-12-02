@@ -15,6 +15,16 @@
     "meta": {
       "title": "Tydedev",
       "description": "Building seamless experiences and memorable brands"
+    },
+    "projects": {
+      "title": "Recent projects",
+      "description": "My web development and brand identity projects",
+      "button": "Check the website",
+      "performance": "Performance",
+      "accessibility": "Accessibility",
+      "usability": "Best Practices",
+      "seo": "SEO",
+      "score_title": "What you can expect from my projects"
     }
   },
   "contact": {

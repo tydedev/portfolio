@@ -6,9 +6,13 @@ import { Button } from "@/components/ui/button";
 import useScroll from "@/hooks/useScroll";
 import { ArrowUp } from "lucide-react";
 import Skills from "@/components/cards/Skills";
+import ProjectCard from "@/components/cards/ProjectCard";
+import { useTranslations } from "next-intl";
+import CircularProgressAutoAnimate from "@/components/animations/ProgressCircle";
 
 export default function HomePage() {
   const { isScrolling } = useScroll();
+  const t = useTranslations("home");
 
   return (
     <div data-scroll={isScrolling}>
@@ -26,6 +30,23 @@ export default function HomePage() {
             <ArrowUp strokeWidth={4} />
           </Button>
         )}
+      </div>
+      <div className="md:py-7 max-w-6xl w-full mx-auto p-6 space-y-10">
+        <h1 className="md:text-3xl font-semibold text-center text-xl">
+          {t("projects.title")}
+        </h1>
+        <ProjectCard
+          imageURL="/images/bascorp.png"
+          title="Bascorp"
+          description="www.bascorp.it"
+          link="https://bascorp.it/"
+        />
+      </div>
+      <div className="w-full md:py-7 mt-8">
+        <h1 className="md:text-3xl font-semibold text-center text-xl space-y-20">
+          {t("projects.score_title")}
+        </h1>
+        <CircularProgressAutoAnimate />
       </div>
     </div>
   );

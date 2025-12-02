@@ -15,6 +15,16 @@
     "meta": {
       "title": "Tydedev",
       "description": "Esperienze senza limiti e brand memorabili"
+    },
+    "projects": {
+      "title": "Progetti recenti",
+      "description": "I miei progetti di sviluppo web e design di brand",
+      "button": "Visita il sito",
+      "performance": "Prestazioni",
+      "accessibility": "Accessibilità",
+      "usability": "Usabilità",
+      "seo": "SEO",
+      "score_title": "Risultati che puoi aspettarti"
     }
   },
   "contact": {
