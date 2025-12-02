@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Tydedev Website",
+    "description": "Sito personale sviluppato con Next.js 14 e Tailwind CSS, completamente localizzato, con animazioni fluide, UI personalizzata e ottimizzazioni performance su misura. Include un sistema di gestione contenuti tramite JSON statici e componenti modulari.",
+    "tech": ["NextJS", "React", "Tailwind"],
+    "type": "Web Development"
+  },
+  {
+    "title": "Tydedev Branding",
+    "description": "Identità visiva completa progettata per il mio personal brand: logo, palette cromatica, tipografia, UI kit, linee guida e sistema di componenti visuali per web e social media.",
+    "tech": ["Illustrator", "Figma"],
+    "type": "Brand Identity"
+  },
+  {
+    "title": "Tydedev WordPress Theme",
+    "description": "Tema WordPress custom sviluppato con PHP e un design orientato alla UI/UX. Layout responsive, componenti Gutenberg personalizzati e pannello opzioni semplificato per clienti non tecnici.",
+    "tech": ["HTML", "CSS", "Javascript", "Wordpress"],
+    "type": "Web Development"
+  },
+  {
+    "title": "E-Commerce Fashion Store",
+    "description": "E-commerce verticale per fashion brand con dashboard admin, carrello persistente, pagamenti Stripe e design minimal orientato alla conversione.",
+    "tech": ["NextJS", "React", "Tailwind"],
+    "type": "Web Application"
+  },
+  {
+    "title": "SaaS Dashboard per Creator",
+    "description": "Dashboard analitica SaaS con statistiche, grafici interattivi, sistema di login JWT e UI moderna basata su shadcn/ui. Ottimizzato per Lighthouse 95+.",
+    "tech": ["NextJS", "React", "NodeJS"],
+    "type": "Web Application"
+  },
+  {
+    "title": "Brand Identity per Studio Creativo",
+    "description": "Sistema identitario completo per un piccolo studio creativo: logo, pattern, visual direction e componenti UI per il sito e i materiali social.",
+    "tech": ["Illustrator", "Photoshop", "Figma"],
+    "type": "Brand Identity"
+  },
+  {
+    "title": "Landing Page per Agency",
+    "description": "Landing page ad alta conversione con micro-interazioni, animazioni on scroll e copy ottimizzato. Perfomance elevate e struttura SEO-friendly.",
+    "tech": ["NextJS", "React", "Tailwind"],
+    "type": "Web Design"
+  },
+  {
+    "title": "Template WordPress Premium",
+    "description": "Set di template WordPress premium pronti all’uso, ottimizzati per freelancer e piccoli business: design UI/UX curato, backend semplificato e responsive design perfetto.",
+    "tech": ["Wordpress", "PHP", "CSS", "Javascript"],
+    "type": "Web Development"
+  },
+  {
+    "title": "Portfolio UI Kit",
+    "description": "UI Kit completo per portfolio digitali: layout modulari, componenti responsive, griglia 12 colonne, tipografia ottimizzata e sistema colore scalabile.",
+    "tech": ["Figma"],
+    "type": "UI/UX Design"
+  },
+  {
+    "title": "Blog in Headless CMS",
+    "description": "Blog personale sviluppato con Next.js come frontend e un CMS headless (Sanity) per la gestione dei contenuti, con routing dinamico e ottimizzazione SEO.",
+    "tech": ["NextJS", "Tailwind"],
+    "type": "Web Development"
+  }
+]

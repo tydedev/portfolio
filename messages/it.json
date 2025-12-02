@@ -1,0 +1,82 @@
+{
+  "common": {
+    "title": "Ciao mondo!",
+    "expertice": "Competenze"
+  },
+  "locales": {
+    "description": "Seleziona la lingua"
+  },
+  "notFound": {
+    "title": "Ops! Qualcosa è andato storto",
+    "description": "La pagina che stavi cercando non esiste",
+    "button": "Torna alla Home"
+  },
+  "home": {
+    "meta": {
+      "title": "Tydedev",
+      "description": "Esperienze senza limiti e brand memorabili"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contatti | Tydedev",
+      "description": "Contattami per collaborazioni e progetti"
+    },
+    "title": "Parliamone",
+    "description": "Se hai un progetto da sviluppare o cerchi una collaborazione creativa, raccontami la tua idea: troveremo insieme il modo migliore per concretizzarla"
+  },
+  "projects": {
+    "meta": {
+      "title": "Progetti | Tydedev",
+      "description": "I miei progetti di sviluppo web e design di brand"
+    }
+  },
+  "hero": {
+    "subtitle": "Esperienze senza limiti e brand memorabili"
+  },
+  "header": {
+    "nav": {
+      "home": "Home",
+      "projects": "Progetti",
+      "contacts": "Contatti",
+      "about": "Info"
+    }
+  },
+  "footer": {
+    "rights": "Tutti i diritti riservati"
+  },
+  "skills": {
+    "UX": {
+      "badge": "Web Design e UI/UX",
+      "title": "Workflow che unisce UI design e sviluppo front-end moderno",
+      "description": "Creo esperienze digitali <medium>intuitive</medium> e visivamente <medium>coinvolgenti</medium>, con interfacce pulite e interazioni <medium>fluide</medium>. Il mio approccio combina <medium>pensiero creativo</medium> e <medium>attenzione all’usabilità</medium>, progettando ogni elemento con <medium>l’utente finale al centro</medium>."
+    },
+    "WebDevelopment": {
+      "badge": "Web Development",
+      "title": "Costruzione di applicazioni web e siti moderni e performanti",
+      "description": "Sviluppo <medium>siti web</medium> e <medium>applicazioni</medium> con tecnologie moderne come <italic>React</italic>, <italic>Next.js</italic> e <italic>Node.js</italic>. Focalizzo l’attenzione su <medium>codice pulito</medium>, <medium>prestazioni ottimali</medium> e <medium>scalabilità</medium>, creando soluzioni che funzionano perfettamente su ogni dispositivo."
+    },
+    "BrandIdentity": {
+      "badge": "Brand Identity",
+      "title": "Progettazione di identità visive coerenti e memorabili",
+      "description": "Creo <medium>identità di brand complete</medium>, dalla strategia visiva al design dei materiali, assicurando <medium>coerenza</medium> tra <medium>logo</medium>, <medium>tipografia</medium>, <medium>colori</medium> e <italic>tone of voice</italic>. L’obiettivo è costruire <medium>brand riconoscibili</medium> e <medium>distintivi</medium> nel loro mercato."
+    }
+  },
+  "forms": {
+    "contacts": {
+      "name": "Nome e cognome",
+      "email": "Indirizzo email",
+      "subject": "Oggetto",
+      "message": "Messaggio...",
+      "sendMessage": "Invia messaggio",
+      "sendingMessage": "Invio messaggio...",
+      "messageSent": "Messaggio inviato",
+      "error": "Qualcosa è andato storto"
+    }
+  },
+  "wordpress": {
+    "title": "Vuoi <cyan>risparmiare tempo</cyan> e <fuchsia>partire subito</fuchsia> con qualcosa di professionale?",
+    "description": "I miei <medium>template WordPress</medium> ti offrono una <medium>base professionale</medium>, già pronta, curata nel <medium>design</medium> e nell’<medium>esperienza utente</medium>, facile da <medium>personalizzare</medium> secondo le tue esigenze.",
+    "button": "Scopri i template"
+  }
+}

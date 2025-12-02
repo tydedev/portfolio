@@ -1,0 +1,82 @@
+{
+  "common": {
+    "title": "Hello world!",
+    "expertice": "Competenze"
+  },
+  "locales": {
+    "description": "Select language"
+  },
+  "notFound": {
+    "title": "Oops! Something went wrong",
+    "description": "The page you were looking for does not exist",
+    "button": "Go to Homepage"
+  },
+  "home": {
+    "meta": {
+      "title": "Tydedev",
+      "description": "Building seamless experiences and memorable brands"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contacts | Tydedev",
+      "description": "Contact me for collaborations and projects"
+    },
+    "title": "Let's talk",
+    "description": "If you have a project to develop or are looking for a creative collaboration, tell me your idea: we'll find the best way to realize it"
+  },
+  "projects": {
+    "meta": {
+      "title": "Projects | Tydedev",
+      "description": "Check out my latest projects"
+    }
+  },
+  "hero": {
+    "subtitle": "Building seamless experiences and memorable brands"
+  },
+  "header": {
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "contacts": "Contacts",
+      "about": "About"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "skills": {
+    "UX": {
+      "badge": "Web Design & UI/UX",
+      "title": "Workflow combining UI design and modern front-end development",
+      "description": "I create intuitive and visually engaging digital experiences with clean interfaces and smooth interactions. My approach combines creative thinking and attention to usability, designing every element with the end-user in mind."
+    },
+    "WebDevelopment": {
+      "badge": "Web Development",
+      "title": "Building modern and high-performance web apps and websites",
+      "description": "I develop websites and applications using modern technologies like React, Next.js, and Node.js. I focus on clean code, optimal performance, and scalability, creating solutions that work seamlessly on every device."
+    },
+    "BrandIdentity": {
+      "badge": "Brand Identity",
+      "title": "Designing coherent and memorable visual identities",
+      "description": "I craft complete brand identities, from visual strategy to material design, ensuring consistency across logos, typography, colours, and tone of voice. The goal is to build brands that are recognisable and stand out in their market."
+    }
+  },
+  "forms": {
+    "contacts": {
+      "name": "Name and surname",
+      "email": "Email address",
+      "subject": "Subject",
+      "message": "Message...",
+      "sendMessage": "Send message",
+      "sendingMessage": "Sending message...",
+      "messageSent": "Message sent",
+      "error": "Something went wrong"
+    }
+  },
+  "wordpress": {
+    "title": "Do you want to <cyan>save time</cyan> and <fuchsia>get started immediately</fuchsia> with something professional?",
+    "description": "My <medium>WordPress templates</medium> provide a <medium>professional base</medium>, ready to use, carefully crafted in <medium>design</medium> and <medium>user experience</medium>, and easy to <medium>customize</medium> according to your needs.",
+    "button": "Discover my templates"
+  }
+}
