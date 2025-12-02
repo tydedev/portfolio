@@ -30,9 +30,9 @@ export async function generateMetadata({ params }: Props) {
 
   return {
     metadataBase: new URL(
-      process.env.VERCEL_PROJECT_PRODUCTION_URL
+      process.env.VERCEL_URL
         ? `https://tydedev.vercel.app`
-        : "http://192.168.8:3000"
+        : "http://localhost:3000"
     ),
     title: t("title"),
     description: t("description"),
