@@ -53,7 +53,7 @@ export default async function Image() {
           }}
         >
           <span style={{ color: "#c026d3" }}>Design</span>
-          <span style={{ display: "flex", gap: "-0.15rem" }}>&&</span>
+          <span style={{ display: "flex", gap: "-0.15rem" }}>+=</span>
           <span style={{ color: "#06b6d4" }}>Code</span>
         </h2>
         <div
