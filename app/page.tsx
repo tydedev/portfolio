@@ -23,7 +23,7 @@ export default function HomePage() {
         <Skills />
         {isScrolling && (
           <Button
-            className="rounded-full border-cyan-400 border-2 bg-cyan-500/20 drop-shadow-[0_0_8px_rgba(239,68,68,0.7)] fixed bottom-5 right-5 z-50"
+            className="rounded-full border-cyan-400 border-2 bg-cyan-500/20 drop-shadow-[0_0_8px_rgba(239,68,68,0.7)] fixed bottom-12 right-5 z-50"
             variant={"outline"}
             size={"icon"}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -32,7 +32,13 @@ export default function HomePage() {
           </Button>
         )}
       </div>
-      <div className="md:py-7 max-w-6xl w-full mx-auto p-6 space-y-10">
+      <div className="w-full md:py-7">
+        <h1 className="md:text-3xl font-semibold text-center text-xl space-y-20 px-10">
+          {t("projects.score_title")}
+        </h1>
+        <CircularProgressAutoAnimate />
+      </div>
+      <div className="md:py-10 max-w-6xl w-full mx-auto p-6 space-y-10">
         <h1 className="md:text-3xl font-semibold text-center text-xl">
           {t("projects.title")}
         </h1>
@@ -42,12 +48,6 @@ export default function HomePage() {
           description={p("bascorp.description")}
           link="https://bascorp.it/"
         />
-      </div>
-      <div className="w-full md:py-7 mt-8">
-        <h1 className="md:text-3xl font-semibold text-center text-xl space-y-20">
-          {t("projects.score_title")}
-        </h1>
-        <CircularProgressAutoAnimate />
       </div>
     </div>
   );

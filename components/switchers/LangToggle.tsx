@@ -32,7 +32,7 @@ const LangToggle = ({ ghost }: Props) => {
     });
   }
   return (
-    <DropdownMenu>
+    <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
         <Button
           disabled={isLoading}

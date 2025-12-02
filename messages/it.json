@@ -93,5 +93,17 @@
     "title": "Vuoi <cyan>risparmiare tempo</cyan> e <fuchsia>partire subito</fuchsia> con qualcosa di professionale?",
     "description": "I miei <medium>template WordPress</medium> ti offrono una <medium>base professionale</medium>, già pronta, curata nel <medium>design</medium> e nell’<medium>esperienza utente</medium>, facile da <medium>personalizzare</medium> secondo le tue esigenze.",
     "button": "Scopri i template"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy | Tydedev",
+      "description": "Informativa sulla privacy"
+    },
+    "data_title": "Raccolta dei dati",
+    "data_description": "Il sito non raccoglie né archivia dati personali degli utenti. I contatti tramite email o telefono sono volontari e considerati consenso esplicito per rispondere alle richieste.",
+    "cookie_title": "Cookie e strumenti locali",
+    "cookie_description": "Questo sito utilizza esclusivamente strumenti tecnici locali per memorizzare preferenze dell’utente, come il tema chiaro/scuro. Non vengono utilizzati cookie di profilazione o strumenti di tracciamento.",
+    "finality_title": "Finalità",
+    "finality_description": "I dati forniti volontariamente vengono utilizzati esclusivamente per rispondere alle richieste dell’utente e non vengono condivisi con terzi."
   }
 }

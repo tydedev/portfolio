@@ -26,7 +26,7 @@ const MobileNav = ({ links }: { links: LinkItem[] }) => {
 
   return (
     <div className="md:hidden">
-      <Sheet open={open} onOpenChange={setOpen}>
+      <Sheet open={open} onOpenChange={setOpen} modal={false}>
         <SheetTrigger asChild>
           <Button variant="outline" size="icon" onClick={() => setOpen(true)}>
             <Menu />
@@ -40,7 +40,7 @@ const MobileNav = ({ links }: { links: LinkItem[] }) => {
             </SheetHeader>
 
             <div className="p-6 flex flex-col gap-2">
-              {links.map((link) => {
+              {links.map(link => {
                 const Icon = link.icon;
                 return (
                   <Button

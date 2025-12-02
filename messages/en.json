@@ -46,7 +46,8 @@
     }
   },
   "hero": {
-    "subtitle": "Building seamless experiences and memorable brands"
+    "subtitle": "Building seamless experiences and memorable brands",
+    "email": "Cotact me"
   },
   "header": {
     "nav": {
@@ -92,5 +93,17 @@
     "title": "Do you want to <cyan>save time</cyan> and <fuchsia>get started immediately</fuchsia> with something professional?",
     "description": "My <medium>WordPress templates</medium> provide a <medium>professional base</medium>, ready to use, carefully crafted in <medium>design</medium> and <medium>user experience</medium>, and easy to <medium>customize</medium> according to your needs.",
     "button": "Discover my templates"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy | Tydedev",
+      "description": "Privacy policy information"
+    },
+    "data_title": "Data collection",
+    "data_description": "This website does not collect or archive personal data from users. Email or phone contacts are voluntary and considered an explicit consent to respond to requests.",
+    "cookie_title": "Cookies and local tools",
+    "cookie_description": "This website uses exclusively local technical tools for user preferences, such as light/dark theme. No profiling or tracking cookies are used.",
+    "finality_title": "Purposes",
+    "finality_description": "The data provided voluntarily is used exclusively for responding to user requests and is not shared with third parties."
   }
 }
