@@ -1,12 +1,17 @@
-/** @type {import('next-sitemap').IConfig} */
+const locales = ["it", "en"];
+
 module.exports = {
   siteUrl: "https://tydedev.vercel.app",
   generateRobotsTxt: true,
-  generateI18nRoutes: true,
   changefreq: "daily",
   priority: 0.7,
-  alternateRefs: [
-    { href: "https://tydedev.vercel.app/it", hreflang: "it" },
-    { href: "https://tydedev.vercel.app/en", hreflang: "en" },
-  ],
+  generateI18nRoutes: true,
+  additionalPaths: async (config) => {
+    const paths = [];
+    locales.forEach(locale => {
+      paths.push({ loc: `/${locale}` });
+      paths.push({ loc: `/${locale}/contacts` });
+    });
+    return paths;
+  },
 };
