@@ -39,10 +39,15 @@
     "meta": {
       "title": "Progetti | Tydedev",
       "description": "I miei progetti di sviluppo web e design di brand"
+    },
+    "bascorp": {
+      "title": "Bascorp",
+      "description": "Brand identity e sito web per un'azienda di costruzione e ristrutturazione."
     }
   },
   "hero": {
-    "subtitle": "Esperienze senza limiti e brand memorabili"
+    "subtitle": "Esperienze senza limiti e brand memorabili",
+    "email": "Scrivimi"
   },
   "header": {
     "nav": {

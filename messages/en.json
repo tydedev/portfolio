@@ -39,6 +39,10 @@
     "meta": {
       "title": "Projects | Tydedev",
       "description": "Check out my latest projects"
+    },
+    "bascorp": {
+      "title": "Bascorp",
+      "description": "Brand identity and website development for a construction company"
     }
   },
   "hero": {

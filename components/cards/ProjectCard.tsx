@@ -26,9 +26,7 @@ const ProjectCard = ({ imageURL, title, description, link }: Props) => {
         <Card className="w-full">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl">{title}</CardTitle>
-            <CardDescription className="text-base">
-              {description}
-            </CardDescription>
+            <CardDescription className="text-sm">{description}</CardDescription>
           </CardHeader>
           <CardContent>
             <Button

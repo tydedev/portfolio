@@ -1,9 +1,11 @@
 "use client";
 
-import { Equal, Plus } from "lucide-react";
+import { Equal, Plus, Mail } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import CustomBadge from "../ui/customBadge";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Hero = () => {
   const t = useTranslations("hero");
@@ -43,6 +45,18 @@ const Hero = () => {
         </CustomBadge>
       </div>
       <p className="text-xl md:text-2xl px-10 text-center">{t("subtitle")}</p>
+
+      <p className="my-5">
+        <Button asChild>
+          <Link
+            href="mailto:tydedev.socials@outlook.com"
+            className="flex items-center"
+          >
+            <Mail />
+            <span>{t("email")}</span>
+          </Link>
+        </Button>
+      </p>
 
       <div className="absolute rounded-full bg-fuchsia-400/20 blur-3xl w-100 h-100 -z-1" />
     </section>

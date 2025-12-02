@@ -13,6 +13,7 @@ import CircularProgressAutoAnimate from "@/components/animations/ProgressCircle"
 export default function HomePage() {
   const { isScrolling } = useScroll();
   const t = useTranslations("home");
+  const p = useTranslations("projects");
 
   return (
     <div data-scroll={isScrolling}>
@@ -37,8 +38,8 @@ export default function HomePage() {
         </h1>
         <ProjectCard
           imageURL="/images/bascorp.png"
-          title="Bascorp"
-          description="www.bascorp.it"
+          title={p("bascorp.title")}
+          description={p("bascorp.description")}
           link="https://bascorp.it/"
         />
       </div>
