@@ -29,6 +29,11 @@ export async function generateMetadata({ params }: Props) {
   const t = await getTranslations({ locale, namespace: "home.meta" });
 
   return {
+    metadataBase: new URL(
+      process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : "http://localhost:3000"
+    ),
     title: t("title"),
     description: t("description"),
     alternates: {

@@ -13,6 +13,8 @@ export default async function Image() {
   );
   const logoSvg = await readFile(join(process.cwd(), "assets/images/logo.svg"));
 
+  console.log(logoSvg);
+
   return new ImageResponse(
     (
       <div
