@@ -12,6 +12,6 @@ module.exports = {
       paths.push({ loc: `/${locale}` });
       paths.push({ loc: `/${locale}/contacts` });
     });
-    return paths;
+    return paths;  
   },
 };
