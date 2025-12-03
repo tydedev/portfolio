@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 
 // Load font via next/font/local
 const interBold = localFont({
-  src: "./public/assets/fonts/Inter-Bold.ttf",
+  src: "../../assets/fonts/Inter-Bold.ttf",
   weight: "700",
   style: "normal",
 });
