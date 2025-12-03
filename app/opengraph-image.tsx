@@ -1,24 +1,18 @@
 import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import path from "node:path";
+export const runtime = "nodejs";
 
 // Image metadata
 export const alt = "Tydedev";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-type Props = {
-  params: Promise<{ locale: string }>;
-};
-
-export default async function Image({ params }: Props) {
+export default async function Image() {
   const interBold = await readFile(
-    path.resolve(join(process.cwd(), "public", "assets/fonts/Inter-Bold.ttf"))
+    join(process.cwd(), "assets/fonts/Inter-Bold.ttf")
   );
-  const logoSvg = await readFile(
-    path.resolve(join(process.cwd(), "public", "assets/images/logo.svg"))
-  );
+  const logoSvg = await readFile(join(process.cwd(), "assets/images/logo.svg"));
 
   return new ImageResponse(
     (
