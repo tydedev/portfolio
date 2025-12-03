@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://tydedev.vercel.app
-
-# Sitemaps
-Sitemap: https://tydedev.vercel.app/sitemap.xml
