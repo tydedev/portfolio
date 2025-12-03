@@ -14,7 +14,8 @@
   "home": {
     "meta": {
       "title": "Tydedev",
-      "description": "Esperienze senza limiti e brand memorabili"
+      "description": "Esperienze senza limiti e brand memorabili",
+      "og_title": "Tydedev | Grafica e sviluppo web"
     },
     "projects": {
       "title": "Progetti recenti",

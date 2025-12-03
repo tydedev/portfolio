@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props) {
       canonical: `${baseUrl}/${locale}`,
     },
     openGraph: {
-      title: t("title"),
+      title: t("og_title"),
       description: t("description"),
       siteName: "Tydedev",
       url: `${baseUrl}/${locale}`,

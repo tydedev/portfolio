@@ -14,7 +14,8 @@
   "home": {
     "meta": {
       "title": "Tydedev",
-      "description": "Building seamless experiences and memorable brands"
+      "description": "Building seamless experiences and memorable brands",
+      "og_title": "Tydedev | Graphic and web development"
     },
     "projects": {
       "title": "Recent projects",
