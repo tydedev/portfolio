@@ -10,7 +10,7 @@ export const contentType = "image/png";
 
 export default async function Image() {
   const interBold = await readFile(
-    join(process.cwd(), "assets/fonts/Inter-Bold.ttf")
+    path.resolve(join(process.cwd(), "assets/fonts/Inter-Bold.ttf"))
   );
   const logoSvg = await readFile(
     path.resolve(join(process.cwd(), "assets/images/logo.svg"))
