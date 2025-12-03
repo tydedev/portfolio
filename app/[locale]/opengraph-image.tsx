@@ -1,37 +1,54 @@
-import localFont from "next/font/local";
 import { ImageResponse } from "next/og";
+export const runtime = "nodejs";
 
-// Load font via next/font/local
-const interBold = localFont({
-  src: "../../assets/fonts/Inter-Bold.ttf",
-  weight: "700",
-  style: "normal",
-});
+const baseUrl = process.env.VERCEL_URL
+  ? `https://tydedev.vercel.app`
+  : "http://localhost:3000";
 
-export const alt = "About Acme";
-export const size = { width: 1200, height: 630 };
-export const contentType = "image/png";
+export default async function OpenGraphImage() {
+  // Leggi il font come buffer
+  const interBold = await fetch(`${baseUrl}/fonts/Inter-Bold.ttf`).then((r) =>
+    r.arrayBuffer()
+  );
 
-export default async function Image() {
   return new ImageResponse(
     (
       <div
         style={{
-          fontSize: 128,
-          background: "white",
-          width: "100%",
-          height: "100%",
+          fontFamily: "Inter",
           display: "flex",
+          flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          fontFamily: interBold.style.fontFamily,
+          width: "100%",
+          height: "100%",
+          backgroundColor: "#0f172a",
+          color: "white",
         }}
       >
-        About Acme
+        <picture>
+          <img
+            src={`${baseUrl}/images/logo_icon.svg`}
+            alt="Logo"
+            width={100}
+            height={170}
+            style={{ marginBottom: 32 }}
+          />
+        </picture>
+        <h1 style={{ fontSize: 64, fontWeight: 700 }}>Tydedev</h1>
       </div>
     ),
     {
-      ...size,
+      width: 1200,
+      height: 630,
+      fonts: [
+        {
+          name: "Inter",
+          data: interBold,
+          weight: 700,
+          style: "normal",
+        },
+      ],
     }
   );
 }
