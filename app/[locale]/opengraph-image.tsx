@@ -1,26 +1,20 @@
+import localFont from "next/font/local";
 import { ImageResponse } from "next/og";
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
 
-// Image metadata
+// Load font via next/font/local
+const interBold = localFont({
+  src: "./public/assets/fonts/Inter-Bold.ttf",
+  weight: "700",
+  style: "normal",
+});
+
 export const alt = "About Acme";
-export const size = {
-  width: 1200,
-  height: 630,
-};
-
+export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-// Image generation
 export default async function Image() {
-  // Font loading, process.cwd() is Next.js project directory
-  const interSemiBold = await readFile(
-    join(process.cwd(), "public/assets/fonts/Inter-Bold.ttf")
-  );
-
   return new ImageResponse(
     (
-      // ImageResponse JSX element
       <div
         style={{
           fontSize: 128,
@@ -30,24 +24,14 @@ export default async function Image() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          fontFamily: interBold.style.fontFamily,
         }}
       >
         About Acme
       </div>
     ),
-    // ImageResponse options
     {
-      // For convenience, we can re-use the exported opengraph-image
-      // size config to also set the ImageResponse's width and height.
       ...size,
-      fonts: [
-        {
-          name: "Inter",
-          data: interSemiBold,
-          style: "normal",
-          weight: 400,
-        },
-      ],
     }
   );
 }
