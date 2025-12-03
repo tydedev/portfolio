@@ -27,13 +27,11 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "home.meta" });
+  const baseUrl = process.env.VERCEL_URL
+    ? `https://tydedev.vercel.app`
+    : "http://localhost:3000";
 
   return {
-    metadataBase: new URL(
-      process.env.VERCEL_URL
-        ? `https://tydedev.vercel.app`
-        : "http://localhost:3000"
-    ),
     title: t("title"),
     description: t("description"),
     alternates: {
@@ -44,7 +42,7 @@ export async function generateMetadata({ params }: Props) {
       description: t("description"),
       images: [
         {
-          url: `/opengraph-image`,
+          url: `${baseUrl}/opengraph-image`,
           width: 1200,
           height: 630,
         },
