@@ -1,12 +1,9 @@
+// app/opengraph-image.tsx
 import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-export const runtime = "nodejs";
 
-// Image metadata
-export const alt = "Tydedev";
-export const size = { width: 1200, height: 630 };
-export const contentType = "image/png";
+export const runtime = "nodejs";
 
 export default async function Image() {
   const interBold = await readFile(
@@ -20,13 +17,13 @@ export default async function Image() {
         style={{
           fontFamily: "Inter",
           display: "flex",
-          flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
           width: "100%",
           height: "100%",
-          backgroundColor: "#0f172a", // slate-950
+          backgroundColor: "#0f172a",
           color: "white",
+          flexDirection: "column",
         }}
       >
         <picture>
@@ -34,72 +31,17 @@ export default async function Image() {
             src={`data:image/svg+xml;base64,${Buffer.from(logoSvg).toString(
               "base64"
             )}`}
-            alt="Tydedev"
+            alt="Logo"
             width={80}
             height={150}
-            style={{ marginBottom: 32 }}
           />
         </picture>
-        <h1 style={{ fontSize: 64, margin: 0 }}>Tydedev</h1>
-        <h2
-          style={{
-            fontSize: 56,
-            fontWeight: 700,
-            display: "flex",
-            alignItems: "center",
-            gap: "0.5rem",
-            borderRight: "4px solid white",
-            paddingRight: "0.25rem",
-            margin: "16px 0",
-          }}
-        >
-          <span style={{ color: "#c026d3" }}>Design</span>
-          <span style={{ display: "flex", gap: "-0.15rem" }}>+=</span>
-          <span style={{ color: "#06b6d4" }}>Code</span>
-        </h2>
-        <div
-          style={{
-            display: "flex",
-            gap: "12px",
-            paddingTop: 24,
-            textAlign: "center",
-          }}
-        >
-          <div
-            style={{
-              background:
-                "linear-gradient(to top, rgba(59,130,246,0.11), rgba(59,130,246,0.05))",
-              padding: "4px 12px",
-              borderRadius: 6,
-            }}
-          >
-            UI/UX
-          </div>
-          <div
-            style={{
-              background:
-                "linear-gradient(to top, rgba(59,130,246,0.11), rgba(59,130,246,0.05))",
-              padding: "4px 12px",
-              borderRadius: 6,
-            }}
-          >
-            Web Development
-          </div>
-          <div
-            style={{
-              background:
-                "linear-gradient(to top, rgba(59,130,246,0.11), rgba(59,130,246,0.05))",
-              padding: "4px 12px",
-              borderRadius: 6,
-            }}
-          >
-            Brand Identity
-          </div>
-        </div>
+        <h1 style={{ fontSize: 64, marginTop: 32 }}>Tydedev</h1>
       </div>
     ),
     {
-      ...size,
+      width: 1200,
+      height: 630,
       fonts: [
         {
           name: "Inter",

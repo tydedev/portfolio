@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props) {
       description: t("description"),
       images: [
         {
-          url: `/opengraph-image?locale=${locale}`,
+          url: `/opengraph-image`,
           width: 1200,
           height: 630,
         },
