@@ -14,10 +14,10 @@ type Props = {
 
 export default async function Image({ params }: Props) {
   const interBold = await readFile(
-    path.resolve(join(process.cwd(), "assets/fonts/Inter-Bold.ttf"))
+    path.resolve(join(process.cwd(), "/assets/fonts/Inter-Bold.ttf"))
   );
   const logoSvg = await readFile(
-    path.resolve(join(process.cwd(), "assets/images/logo.svg"))
+    path.resolve(join(process.cwd(), "/assets/images/logo.svg"))
   );
 
   return new ImageResponse(
