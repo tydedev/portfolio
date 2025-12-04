@@ -4,10 +4,8 @@ import { routing } from "./i18n/routing";
 export default createMiddleware(routing);
 
 export const config = {
-  matcher: [
-    // esclude tutto ciò che inizia con api, _next, _vercel
-    // e tutto ciò che contiene un punto (favicon, png, svg, xml, ecc.)
-    // + i nostri file specifici
-    "/((?!api|_next|_vercel|.*\\..*|sitemap\\.xml|sitemap-0\\.xml|robots\\.txt|opengraph-image).*)",
-  ],
+  // Match all pathnames except for
+  // - … if they start with `/api`, `/trpc`, `/_next` or `/_vercel`
+  // - … the ones containing a dot (e.g. `favicon.ico`)
+  matcher: "/((?!api|_next|_vercel|.*/opengraph-image|.*\\..*).*)",
 };
