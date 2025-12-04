@@ -2,18 +2,25 @@
 module.exports = {
   siteUrl: process.env.SITE_URL || 'https://tydedev.it',
   generateRobotsTxt: true,
-  changefreq: "daily",
-  priority: 0.7,
-  transform: async (config, path) => {
-    return {
+  additionalPaths: async (config) => {
+    const routes = [
+      "/",
+      "/en",
+      "/contacts",
+      "/en/contacts",
+      "/privacy",
+      "/en/privacy",
+    ];
+
+    return routes.map((path) => ({
       loc: path,
-      changefreq: config.changefreq,
-      priority: config.priority,
-      lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
+      changefreq: 'daily',
+      priority: 0.7,
+      lastmod: new Date().toISOString(),
       alternateRefs: [
         { href: `https://tydedev.it${path}`, hreflang: 'it' },
         { href: `https://tydedev.it/en${path}`, hreflang: 'en' },
       ],
-    }
+    }));
   },
-}
+};
