@@ -9,6 +9,7 @@ import Skills from "@/components/cards/Skills";
 import ProjectCard from "@/components/cards/ProjectCard";
 import { useTranslations } from "next-intl";
 import CircularProgressAutoAnimate from "@/components/animations/ProgressCircle";
+import WordpressSection from "@/components/cards/WordpressSection";
 
 export default function HomePage() {
   const { isScrolling } = useScroll();
@@ -33,21 +34,24 @@ export default function HomePage() {
         )}
       </div>
       <div className="w-full md:py-7">
-        <h1 className="md:text-3xl font-semibold text-center text-xl space-y-20 px-10">
+        <h2 className="md:text-3xl font-semibold text-center text-xl space-y-20 px-10">
           {t("projects.score_title")}
-        </h1>
+        </h2>
         <CircularProgressAutoAnimate />
       </div>
       <div className="md:py-10 max-w-6xl w-full mx-auto p-6 space-y-10">
-        <h1 className="md:text-3xl font-semibold text-center text-xl">
+        <h2 className="md:text-3xl font-semibold text-center text-xl">
           {t("projects.title")}
-        </h1>
+        </h2>
         <ProjectCard
           imageURL="/images/bascorp.png"
           title={p("bascorp.title")}
           description={p("bascorp.description")}
           link="https://bascorp.it/"
         />
+      </div>
+      <div className="md:py-10 max-w-6xl w-full mx-auto p-6 space-y-10">
+        <WordpressSection />
       </div>
     </div>
   );
