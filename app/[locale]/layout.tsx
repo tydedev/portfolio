@@ -34,6 +34,10 @@ export async function generateMetadata({ params }: Props) {
     metadataBase: "https://tydedev.it",
     alternates: {
       canonical: `https://tydedev.it/${locale}`,
+      languages: {
+        it: "https://tydedev.it/it",
+        en: "https://tydedev.it/en",
+      },
     },
     openGraph: {
       title: t("og_title"),
