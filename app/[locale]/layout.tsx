@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props) {
   const t = await getTranslations({ locale, namespace: "home.meta" });
 
   return {
-    title: t("title"),
+    title: t("og_title"),
     description: t("description"),
     metadataBase: "https://tydedev.it",
     alternates: {
