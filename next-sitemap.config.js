@@ -1,3 +1,4 @@
+// next-sitemap.config.js
 const siteUrl = "https://tydedev.it";
 const locales = ["it", "en"];
 
@@ -6,11 +7,10 @@ module.exports = {
   generateRobotsTxt: true,
   changefreq: "daily",
   priority: 0.7,
-  // genera gli alternateRefs automaticamente per tutte le pagine
   transform: async (config, path) => {
-    const locale = path.split("/")[1]; // 'it' o 'en'
-    const alternateRefs = locales.map(l => ({
-      href: `${siteUrl}/${l}${path.replace(`/${locale}`, "")}`,
+    const pathLocale = path.split("/")[1]; // 'it' o 'en'
+    const alternateRefs = locales.map((l) => ({
+      href: `${siteUrl}/${l}${path.replace(`/${pathLocale}`, "")}`,
       hreflang: l,
     }));
     return {
@@ -21,11 +21,14 @@ module.exports = {
     };
   },
   additionalPaths: async () => {
-    return [
-      "/it",
-      "/en",
-      "/it/contacts",
-      "/en/contacts",
-    ];
+    // Lista tutte le pagine statiche che non vengono trovate automaticamente
+    const paths = [];
+    locales.forEach((locale) => {
+      paths.push(`/${locale}`);
+      paths.push(`/${locale}/contacts`);
+      paths.push(`/${locale}/privacy`);
+      // aggiungi altre pagine statiche se vuoi
+    });
+    return paths;
   },
 };
