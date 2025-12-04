@@ -13,22 +13,24 @@
   },
   "services": {
     "title": "What I can do",
+
     "graphic": {
-      "title": "Branding and graphic design",
+      "title": "Branding & graphic design",
       "list": {
-        "one": "Logo and identity design",
-        "two": "Brand guidelines",
-        "three": "Graphic design for print and digital media",
-        "four": "UI/UX design"
+        "one": "Logo and visual identity design",
+        "two": "Brand guidelines and visual systems",
+        "three": "Design for print and digital communication",
+        "four": "UI/UX design for web and mobile"
       }
     },
+
     "webdev": {
       "title": "Web development",
       "list": {
-        "one": "Website development",
-        "two": "Custom WordPress templates",
-        "three": "Web application development",
-        "four": "Electron application development"
+        "one": "Modern, high-performance website development",
+        "two": "Custom WordPress themes and templates",
+        "three": "Bespoke web application development",
+        "four": "Electron desktop application development"
       }
     }
   },

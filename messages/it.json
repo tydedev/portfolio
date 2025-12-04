@@ -32,6 +32,30 @@
       "description": "Se hai bisogno di un CMS completo, i miei template Wordpress ti offrono una base professionale, pronta, curata nel design e nell’esperienza utente, facile da personalizzare secondo le tue esigenze."
     }
   },
+  "services": {
+    "title": "Cosa posso fare per te",
+
+    "graphic": {
+      "title": "Branding e design",
+      "list": {
+        "one": "Progettazione del logo e identità visiva",
+        "two": "Linee guida del brand e sistemi visivi",
+        "three": "Design per stampa e contenuti digitali",
+        "four": "Design dell’interfaccia e dell’esperienza utente (UI/UX)"
+      }
+    },
+
+    "webdev": {
+      "title": "Sviluppo web",
+      "list": {
+        "one": "Realizzazione siti web moderni e performanti",
+        "two": "Sviluppo temi e template WordPress personalizzati",
+        "three": "Sviluppo di applicazioni web su misura",
+        "four": "Sviluppo di applicazioni desktop con Electron"
+      }
+    }
+  },
+
   "contact": {
     "meta": {
       "title": "Contatti | Tydedev",
