@@ -1,24 +1,19 @@
-import { NextResponse } from "next/server";
+import { MetadataRoute } from "next";
+import { getPathname } from "@/i18n/navigation";
 
-const siteUrl = "https://tydedev.it";
+const host = "https://tydedev.it";
 
-export async function GET() {
-  const body = `<?xml version="1.0" encoding="UTF-8"?>
-  <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <sitemap>
-      <loc>${siteUrl}/sitemap-it</loc>
-      <lastmod>${new Date().toISOString()}</lastmod>
-    </sitemap>
-    <sitemap>
-      <loc>${siteUrl}/sitemap-en</loc>
-      <lastmod>${new Date().toISOString()}</lastmod>
-    </sitemap>
-  </sitemapindex>`;
-
-  return new NextResponse(body, {
-    status: 200,
-    headers: {
-      "Content-Type": "application/xml",
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  return [
+    {
+      url: host,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          es: host + (await getPathname({ locale: "it", href: "/" })),
+          de: host + (await getPathname({ locale: "en", href: "/" })),
+        },
+      },
     },
-  });
+  ];
 }
