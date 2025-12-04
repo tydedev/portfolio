@@ -4,10 +4,11 @@ import LangToggle from "../switchers/LangToggle";
 import Logo from "./Logo";
 import MobileNav from "./MobileNav";
 import Nav from "./Nav";
-import { Home, Mail } from "lucide-react";
+import { Home, Mail, Shapes } from "lucide-react";
 
 const links = [
   { name: "home", href: "/", icon: Home },
+  { name: "services", href: "#services", icon: Shapes },
   { name: "contacts", href: "/contacts", icon: Mail },
 ];
 

@@ -3,6 +3,7 @@ import { FaWordpress } from "react-icons/fa";
 
 const WordpressSection = () => {
   const t = useTranslations("home.wordpress");
+
   return (
     <div className="flex items-center justify-center flex-col md:flex-row gap-7">
       <FaWordpress className="md:w-100 md:h-100 h-40 w-40" />

@@ -11,6 +11,27 @@
     "description": "The page you were looking for does not exist",
     "button": "Go to Homepage"
   },
+  "services": {
+    "title": "What I can do",
+    "graphic": {
+      "title": "Branding and graphic design",
+      "list": {
+        "one": "Logo and identity design",
+        "two": "Brand guidelines",
+        "three": "Graphic design for print and digital media",
+        "four": "UI/UX design"
+      }
+    },
+    "webdev": {
+      "title": "Web development",
+      "list": {
+        "one": "Website development",
+        "two": "Custom WordPress templates",
+        "three": "Web application development",
+        "four": "Electron application development"
+      }
+    }
+  },
   "home": {
     "meta": {
       "title": "Tydedev",
@@ -58,6 +79,7 @@
     "nav": {
       "home": "Home",
       "projects": "Projects",
+      "services": "Services",
       "contacts": "Contacts",
       "about": "About"
     }
@@ -93,11 +115,6 @@
       "messageSent": "Message sent",
       "error": "Something went wrong"
     }
-  },
-  "wordpress": {
-    "title": "Do you want to <cyan>save time</cyan> and <fuchsia>get started immediately</fuchsia> with something professional?",
-    "description": "My <medium>WordPress templates</medium> provide a <medium>professional base</medium>, ready to use, carefully crafted in <medium>design</medium> and <medium>user experience</medium>, and easy to <medium>customize</medium> according to your needs.",
-    "button": "Discover my templates"
   },
   "privacy": {
     "meta": {

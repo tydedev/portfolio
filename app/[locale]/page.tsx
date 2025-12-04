@@ -10,11 +10,13 @@ import ProjectCard from "@/components/cards/ProjectCard";
 import { useTranslations } from "next-intl";
 import CircularProgressAutoAnimate from "@/components/animations/ProgressCircle";
 import WordpressSection from "@/components/cards/WordpressSection";
+import ServiceCard from "@/components/cards/ServiceCard";
 
 export default function HomePage() {
   const { isScrolling } = useScroll();
   const t = useTranslations("home");
   const p = useTranslations("projects");
+  const s = useTranslations("services");
 
   return (
     <div data-scroll={isScrolling}>
@@ -49,6 +51,13 @@ export default function HomePage() {
           description={p("bascorp.description")}
           link="https://bascorp.it/"
         />
+      </div>
+
+      <div className=" max-w-6xl w-full mx-auto p-6 space-y-10" id="services">
+        <h2 className="md:text-3xl font-semibold text-center text-xl">
+          {s("title")}
+        </h2>
+        <ServiceCard />
       </div>
       <div className="md:py-10 max-w-6xl w-full mx-auto p-6 space-y-10">
         <WordpressSection />
