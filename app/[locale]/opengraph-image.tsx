@@ -1,9 +1,7 @@
 import { ImageResponse } from "next/og";
 export const runtime = "nodejs";
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://tydedev.vercel.app`
-  : "http://localhost:3000";
+const baseUrl = "https://tydedev.it";
 
 export default async function OpenGraphImage() {
   // Leggi il font come buffer
