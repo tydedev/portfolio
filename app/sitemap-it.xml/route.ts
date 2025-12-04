@@ -1,10 +1,10 @@
 // app/sitemap-it.xml/route.ts
 import type { MetadataRoute } from "next";
 
-export default function sitemapIt(): MetadataRoute.Sitemap {
+export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    { url: "https://tydedev.it/en", lastModified: new Date() },
-    { url: "https://tydedev.it/en/contacts", lastModified: new Date() },
-    { url: "https://tydedev.it/en/privacy", lastModified: new Date() },
+    { url: "https://tydedev.it/it", lastModified: new Date() },
+    { url: "https://tydedev.it/it/contacts", lastModified: new Date() },
+    { url: "https://tydedev.it/it/privacy", lastModified: new Date() },
   ];
 }
