@@ -10,8 +10,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       alternates: {
         languages: {
-          es: host + (await getPathname({ locale: "it", href: "/" })),
-          de: host + (await getPathname({ locale: "en", href: "/" })),
+          it: host + (await getPathname({ locale: "it", href: "/" })),
+          en: host + (await getPathname({ locale: "en", href: "/" })),
         },
       },
     },
