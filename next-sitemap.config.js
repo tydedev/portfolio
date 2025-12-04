@@ -1,57 +1,31 @@
 const siteUrl = "https://tydedev.it";
+const locales = ["it", "en"];
 
 module.exports = {
   siteUrl,
   generateRobotsTxt: true,
   changefreq: "daily",
   priority: 0.7,
-
-  // Le lingue del sito
-  alternateRefs: [
-    { href: `${siteUrl}/it`, hreflang: "it" },
-    { href: `${siteUrl}/en`, hreflang: "en" },
-    { href: `${siteUrl}/it`, hreflang: "x-default" }, // fallback
-  ],
-
-  // Pagine extra da includere
-  additionalPaths: async (config) => {
+  // genera gli alternateRefs automaticamente per tutte le pagine
+  transform: async (config, path) => {
+    const locale = path.split("/")[1]; // 'it' o 'en'
+    const alternateRefs = locales.map(l => ({
+      href: `${siteUrl}/${l}${path.replace(`/${locale}`, "")}`,
+      hreflang: l,
+    }));
+    return {
+      loc: `${siteUrl}${path}`,
+      changefreq: "daily",
+      priority: 0.7,
+      alternateRefs,
+    };
+  },
+  additionalPaths: async () => {
     return [
-      {
-        loc: "/it",
-        changefreq: "daily",
-        priority: 0.7,
-        alternateRefs: [
-          { href: `${siteUrl}/it`, hreflang: "it" },
-          { href: `${siteUrl}/en`, hreflang: "en" },
-        ],
-      },
-      {
-        loc: "/en",
-        changefreq: "daily",
-        priority: 0.7,
-        alternateRefs: [
-          { href: `${siteUrl}/it`, hreflang: "it" },
-          { href: `${siteUrl}/en`, hreflang: "en" },
-        ],
-      },
-      {
-        loc: "/it/contacts",
-        changefreq: "daily",
-        priority: 0.7,
-        alternateRefs: [
-          { href: `${siteUrl}/it/contacts`, hreflang: "it" },
-          { href: `${siteUrl}/en/contacts`, hreflang: "en" },
-        ],
-      },
-      {
-        loc: "/en/contacts",
-        changefreq: "daily",
-        priority: 0.7,
-        alternateRefs: [
-          { href: `${siteUrl}/it/contacts`, hreflang: "it" },
-          { href: `${siteUrl}/en/contacts`, hreflang: "en" },
-        ],
-      },
+      "/it",
+      "/en",
+      "/it/contacts",
+      "/en/contacts",
     ];
   },
 };
