@@ -27,25 +27,22 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "home.meta" });
-  const baseUrl = process.env.VERCEL_URL
-    ? `https://tydedev.vercel.app`
-    : "http://localhost:3000";
 
   return {
     title: t("title"),
     description: t("description"),
-    metadataBase: new URL(baseUrl),
+    metadataBase: "https://tydedev.it",
     alternates: {
-      canonical: `${baseUrl}/${locale}`,
+      canonical: `https://tydedev.it/${locale}`,
     },
     openGraph: {
       title: t("og_title"),
       description: t("description"),
       siteName: "Tydedev",
-      url: `${baseUrl}/${locale}`,
+      url: `https://tydedev.it/${locale}`,
       images: [
         {
-          url: `${baseUrl}/${locale}/opengraph-image`,
+          url: `https://tydedev.it/${locale}/opengraph-image`,
           width: 1200,
           height: 630,
         },
