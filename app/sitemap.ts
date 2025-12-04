@@ -1,17 +1,34 @@
-import { MetadataRoute } from "next";
-import { getPathname } from "@/i18n/navigation";
+import type { MetadataRoute } from "next";
 
-const host = "https://tydedev.it";
-
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: host,
+      url: "https://tydedev.it",
       lastModified: new Date(),
       alternates: {
         languages: {
-          it: host + (await getPathname({ locale: "it", href: "/" })),
-          en: host + (await getPathname({ locale: "en", href: "/" })),
+          es: "https://tydedev.it/it",
+          de: "https://tydedev.it/en",
+        },
+      },
+    },
+    {
+      url: "https://tydedev.it/contacts",
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          es: "https://tydedev.it/it/contacts",
+          de: "https://tydedev.it/en/contacts",
+        },
+      },
+    },
+    {
+      url: "https://tydedev.it/privacy",
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          es: "https://tydedev.it/it/privacy",
+          de: "https://tydedev.it/en/privacy",
         },
       },
     },
