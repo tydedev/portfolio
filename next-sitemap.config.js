@@ -1,48 +1,53 @@
+// next-sitemap.config.js
+
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://tydedev.it', // Replace with your production site URL
-  generateRobotsTxt: true, // Optional: generates a robots.txt file
-  
-  // Define your locales and routes structure
-  locales: ['en', 'it'],
-  routes: ['/', '/contacts', '/privacy'],
-  
-  // Custom transformation function to add alternate language links
+  siteUrl: 'https://tydedev.it',
+  generateRobotsTxt: true,
+  // Add any other configuration options here
+
+  // Use the transform function primarily to add the alternateRefs based on detected paths
   transform: async (config, path) => {
-    // Default URL properties
-    const defaultUrl = {
-      loc: path,
-      changefreq: config.changefreq,
-      priority: config.priority,
-      lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
-      alternateRefs: [], // Initialize the alternateRefs array
-    };
+    // This is the list of all available locales you support
+    const locales = ['en', 'it'];
+    const siteUrl = config.siteUrl;
+    
+    // Create an object to hold the base path and locale of the current URL
+    let currentLocale = 'en'; // Assume 'en' is default if no prefix
+    let basePath = path;
 
-    // Determine the base path without locale prefix for comparison (e.g., '/contacts' instead of '/en/contacts')
-    const basePath = config.locales.reduce((acc, locale) => {
-      // Check if the current path starts with a locale prefix
+    // Detect the locale prefix in the path
+    for (const locale of locales) {
       if (path.startsWith(`/${locale}/`)) {
-        return path.replace(`/${locale}`, '');
+        currentLocale = locale;
+        basePath = path.replace(`/${locale}`, ''); // Get the path without the locale prefix
+        break;
       }
-      return acc;
-    }, path); // Default to the path itself if no locale prefix is found (assuming default locale doesn't have a prefix)
-
-    // Only add alternate links for the specific routes that are localized
-    if (config.routes.includes(basePath)) {
-      config.locales.forEach(locale => {
-        // Construct the localized URL
-        const localizedPath = locale === 'en' ? `${basePath}` : `/${locale}${basePath}`; // Assuming 'en' is the default and has no prefix, 'it' has '/it' prefix
-
-        defaultUrl.alternateRefs.push({
-          href: `${config.siteUrl}${localizedPath}`,
-          hreflang: locale,
-        });
-      });
     }
+    
+    // If the path is the root path (/)
+    if (path === '/' || path === '/it') {
+        basePath = '/';
+    }
+    
+    const alternateRefs = locales.map(locale => {
+      // Determine the correct localized URL structure (assuming 'en' is prefix-less)
+      const href = locale === 'en' 
+        ? `${siteUrl}${basePath}` 
+        : `${siteUrl}/${locale}${basePath}`;
+        
+      return { href, hreflang: locale };
+    });
 
-    return defaultUrl;
+    return {
+      loc: path,
+      lastmod: new Date().toISOString(),
+      changefreq: 'weekly',
+      priority: 0.7,
+      alternateRefs: alternateRefs,
+    };
   },
   
-  // Ensure we do not exclude locale paths if using a standard i18n setup that puts them in the build
-  // exclude: ['/it/*', '/en/*'], // Only use this if you want to exclude and use another method
+  // You must ensure Next.js outputs these paths during the build step.
+  // The generator finds paths within your .next directory.
 };
