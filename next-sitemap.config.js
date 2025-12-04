@@ -1,7 +1,7 @@
 const locales = ["it", "en"];
 
 module.exports = {
-  siteUrl: "https://tydedev.vercel.app",
+  siteUrl: "https://tydedev.it",
   generateRobotsTxt: true,
   changefreq: "daily",
   priority: 0.7,
