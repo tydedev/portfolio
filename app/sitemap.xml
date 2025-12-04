@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>https://tydedev.it</loc>
+<xhtml:link rel="alternate" hreflang="it" href="https://tydedev.it/it" />
+<xhtml:link rel="alternate" hreflang="en" href="https://tydedev.it/en" />
+<lastmod>2025-12-04T11:26:02.976Z</lastmod>
+</url>
+<url>
+<loc>https://tydedev.it/contacts</loc>
+<xhtml:link rel="alternate" hreflang="it" href="https://tydedev.it/it/contacts" />
+<xhtml:link rel="alternate" hreflang="en" href="https://tydedev.it/en/contacts" />
+<lastmod>2025-12-04T11:26:02.976Z</lastmod>
+</url>
+<url>
+<loc>https://tydedev.it/privacy</loc>
+<xhtml:link rel="alternate" hreflang="it" href="https://tydedev.it/it/privacy" />
+<xhtml:link rel="alternate" hreflang="en" href="https://tydedev.it/en/privacy" />
+<lastmod>2025-12-04T11:26:02.976Z</lastmod>
+</url>
+</urlset>
