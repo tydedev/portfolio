@@ -2,6 +2,8 @@
 module.exports = {
   siteUrl: process.env.SITE_URL || 'https://tydedev.it',
   generateRobotsTxt: true,
+  changefreq: "daily",
+  priority: 0.7,
   transform: async (config, path) => {
     return {
       loc: path,
