@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       alternates: {
         languages: {
-          en: `${BASE_URL}${route}`,
+          en: `${BASE_URL}/en${route}`,
           it: `${BASE_URL}/it${route}`,
         },
       },
