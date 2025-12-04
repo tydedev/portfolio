@@ -7,8 +7,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       alternates: {
         languages: {
-          es: "https://tydedev.it/it",
-          de: "https://tydedev.it/en",
+          it: "https://tydedev.it/it",
+          en: "https://tydedev.it/en",
         },
       },
     },
@@ -17,8 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       alternates: {
         languages: {
-          es: "https://tydedev.it/it/contacts",
-          de: "https://tydedev.it/en/contacts",
+          it: "https://tydedev.it/it/contacts",
+          en: "https://tydedev.it/en/contacts",
         },
       },
     },
@@ -27,8 +27,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       alternates: {
         languages: {
-          es: "https://tydedev.it/it/privacy",
-          de: "https://tydedev.it/en/privacy",
+          it: "https://tydedev.it/it/privacy",
+          en: "https://tydedev.it/en/privacy",
         },
       },
     },
