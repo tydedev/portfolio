@@ -17,7 +17,7 @@ const ServiceCard = () => {
               "group relative rounded-xl p-6 md:p-8 flex flex-col gap-4",
               "bg-background/60 backdrop-blur-sm border border-white/10 shadow-sm",
               "transition-all duration-500 ease-out",
-              "hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:-translate-y-1 hover:bg-background/70"
+              "hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:-translate-y-1 hover:bg-background/70 cursor-pointer"
             )}
           >
             {/* Soft glow accent */}
@@ -29,7 +29,7 @@ const ServiceCard = () => {
                 {t(service.title)}
               </h3>
 
-              {/* <ArrowRight className="size-5 mt-1 opacity-20 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-1" /> */}
+              <ArrowRight className="w-5 h-5 mt-1 opacity-20 transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:scale-110" />
             </div>
 
             {/* List */}

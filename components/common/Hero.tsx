@@ -39,10 +39,7 @@ const Hero = () => {
 
       <p className="my-5">
         <Button asChild>
-          <Link
-            href="mailto:tydedev.socials@outlook.com"
-            className="flex items-center"
-          >
+          <Link href="mailto:info@tydedev.it" className="flex items-center">
             <Mail />
             <span>{t("email")}</span>
           </Link>

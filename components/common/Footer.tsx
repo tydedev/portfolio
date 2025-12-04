@@ -14,6 +14,9 @@ const Footer = () => {
           <p className="text-center text-muted-foreground text-sm">
             Torre Del Greco, 80059 Napoli
           </p>
+          <p className="text-center text-muted-foreground text-sm">
+            <Link href="mailto:info@tydedev.it">info@tydedev.it</Link>
+          </p>
         </div>
         <small className="p-4 select-none text-muted-foreground/70 text-center">
           Tydedev &copy; {year} - {t("rights")} |{" "}
