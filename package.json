@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev --webpack",
-    "build": "next build --webpack",
+    "build": "next build --webpack && next-sitemap",
     "start": "next start",
-    "lint": "eslint",
-    "postbuild": "next-sitemap"
+    "lint": "eslint"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
