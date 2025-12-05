@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props) {
     description: t("description"),
     metadataBase: new URL("https://tydedev.it"),
     alternates: {
-      canonical: `https://tydedev.it`,
+      canonical: `https://tydedev.it/${locale}`,
       languages: {
         it: "https://tydedev.it/it",
         en: "https://tydedev.it/en",
