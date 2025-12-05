@@ -16,7 +16,7 @@ import type { LucideIcon } from "lucide-react";
 
 type LinkItem = {
   name: string;
-  href: string;
+  href?: string;
   icon?: LucideIcon;
 };
 
@@ -40,7 +40,7 @@ const MobileNav = ({ links }: { links: LinkItem[] }) => {
             </SheetHeader>
 
             <div className="p-6 flex flex-col gap-2">
-              {links.map(link => {
+              {links.map((link) => {
                 const Icon = link.icon;
                 return (
                   <Button
@@ -50,7 +50,10 @@ const MobileNav = ({ links }: { links: LinkItem[] }) => {
                     className="text-base justify-start font-semibold leading-6 text-muted-foreground hover:text-foreground"
                     asChild
                   >
-                    <Link href={link.href} onClick={() => setOpen(false)}>
+                    <Link
+                      href={link.href || "/"}
+                      onClick={() => setOpen(false)}
+                    >
                       {Icon && <Icon className="mr-2 h-4 w-4" />}
                       {t(link.name)}
                     </Link>

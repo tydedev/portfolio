@@ -3,7 +3,6 @@
 import { Equal, Plus, Mail } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
-import CustomBadge from "../ui/customBadge";
 import { Button } from "../ui/button";
 import Link from "next/link";
 

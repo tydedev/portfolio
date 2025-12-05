@@ -1,11 +1,14 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Card, CardContent } from "../ui/card";
 import { services } from "@/lib/constants";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 const ServiceCard = () => {
   const t = useTranslations("services");
+  const locale = useLocale();
+  const router = useRouter();
 
   return (
     <Card className="w-full border-none bg-linear-to-br from-background to-muted/40 shadow-xl rounded-2xl overflow-hidden">
@@ -13,6 +16,7 @@ const ServiceCard = () => {
         {services.map((service) => (
           <div
             key={service.title}
+            onClick={() => router.push(`/${locale}/${service.href}`)}
             className={cn(
               "group relative rounded-xl p-6 md:p-8 flex flex-col gap-4",
               "bg-background/60 backdrop-blur-sm border border-white/10 shadow-sm",

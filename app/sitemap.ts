@@ -5,7 +5,7 @@ const BASE_URL = "https://tydedev.it";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapEntries: MetadataRoute.Sitemap = [];
-  const localizedRoutes = ["/", "/contacts", "/privacy"];
+  const localizedRoutes = ["/", "/contacts", "/privacy", "/graphic-design"];
 
   localizedRoutes.forEach((route) => {
     // Aggiunge la versione in inglese (default)

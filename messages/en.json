@@ -15,22 +15,67 @@
     "title": "What I can do",
 
     "graphic": {
-      "title": "Branding & graphic design",
+      "goodLogo": "Un buon logo è semplice, leggibile, versatile e riconoscibile.",
+      "goodBrand": "Un buon brand è tutto ciò che lo circonda.",
+      "meta": {
+        "title": "Branding & Design",
+        "description": "Creation of coherent and memorable visual identities, brand guidelines and visual systems, print and digital design, UI and UX design."
+      },
+      "title": "Branding & Design",
       "list": {
         "one": "Logo and visual identity design",
         "two": "Brand guidelines and visual systems",
         "three": "Design for print and digital communication",
         "four": "UI/UX design for web and mobile"
+      },
+
+      "brandLogoQuestion": "Are <fuchsia>branding</fuchsia> and <cyan>logo design</cyan> the same thing?",
+
+      "brandTitle": "Branding",
+      "brandAnswer": "<p>Branding – or visual identity – is the strategy behind building a coherent and memorable brand that represents a person or a business and makes it recognisable in the market.</p> <p><b>A good strategy</b> defines what the brand is, but also what it is not.</p>",
+
+      "brandList": {
+        "one_title": "Essence",
+        "one_description": "Purpose, mission, vision and values",
+
+        "two_title": "Positioning",
+        "two_description": "Market, audience, characteristics and segment",
+
+        "three_title": "Promise",
+        "three_description": "Products, services and solutions",
+
+        "four_title": "Visual identity",
+        "four_description": "Logo, typography, colour palette and tone of voice",
+
+        "five_title": "Communication",
+        "five_description": "Messages, imagery and content"
+      },
+
+      "logoTitle": "Logo",
+
+      "description": "<p>A <b>logo</b> is a symbol: it represents the brand, but it is not the brand.</p> <p>A logo works only when it sits within a coherent visual identity, with deliberate choices around colour, typography, tone and applications.</p>",
+
+      "logoList": {
+        "symbol": "The symbol",
+        "symbolDesc": "The core shape of the logo: iconic, distinctive and functional.",
+
+        "typography": "Typography",
+        "typographyDesc": "Type choices crafted to express character and personality.",
+
+        "colour": "Colour palette",
+        "colourDesc": "Coherent colours that ensure recognition and readability everywhere.",
+
+        "usage": "Applications",
+        "usageDesc": "Usage rules that keep the logo strong across digital and print."
       }
     },
-
     "webdev": {
       "title": "Web development",
       "list": {
-        "one": "Modern, high-performance website development",
-        "two": "Custom WordPress themes and templates",
+        "one": "Creation of modern, high-performance websites",
+        "two": "Development of custom WordPress themes and templates",
         "three": "Bespoke web application development",
-        "four": "Electron desktop application development"
+        "four": "Desktop application development with Electron"
       }
     }
   },

@@ -1,6 +1,7 @@
 export const services = [
   {
     title: "graphic.title",
+    href: "/graphic-design",
     list: [
       "graphic.list.one",
       "graphic.list.two",
@@ -11,6 +12,7 @@ export const services = [
   },
   {
     title: "webdev.title",
+    href: "/web-development",
     list: [
       "webdev.list.one",
       "webdev.list.two",

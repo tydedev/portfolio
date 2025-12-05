@@ -36,12 +36,49 @@
     "title": "Cosa posso fare per te",
 
     "graphic": {
+      "goodLogo": "Un buon logo è semplice, leggibile, versatile e riconoscibile.",
+      "goodBrand": "Un buon brand è tutto ciò che lo circonda.",
+      "meta": {
+        "title": "Branding e design",
+        "description": "Progettazione di identità visive coerenti e memorabili, linee guida del brand e sistemi visivi, design per stampa e contenuti digitali, design dell’interfaccia e dell’esperienza utente (UI/UX)"
+      },
       "title": "Branding e design",
       "list": {
-        "one": "Progettazione del logo e identità visiva",
-        "two": "Linee guida del brand e sistemi visivi",
-        "three": "Design per stampa e contenuti digitali",
-        "four": "Design dell’interfaccia e dell’esperienza utente (UI/UX)"
+        "one": "Progettazione del logo e dell’identità visiva",
+        "two": "Linee guida di brand e sistemi visivi",
+        "three": "Design per la comunicazione stampata e digitale",
+        "four": "UI/UX design per web e mobile"
+      },
+      "brandLogoQuestion": "<fuchsia>Branding</fuchsia> e <cyan>logo design</cyan> sono la stessa cosa?",
+      "brandTitle": "Branding",
+      "brandAnswer": "<p>Il branding, o identità visiva, è la strategia che consente di costruire un brand coerente e memorabile, che rappresenti la persona o l'azienda stessa e che siano riconoscibili nel mercato.</p> <p><b>Una buona strategia</b> chiarisce cosa è e cosa non è il brand che si sta costruendo.</p>",
+      "brandList": {
+        "one_title": "Essenza",
+        "one_description": "Purpose, missione, visione e valori",
+        "two_title": "Posizionamento",
+        "two_description": "Mercato, obiettivo, caratteristiche e segmento",
+        "three_title": "Promessa",
+        "three_description": "Prodotti, servizi e soluzioni",
+        "four_title": "Identità visiva",
+        "four_description": "Logo, tipografia, colori e tone of voice",
+        "five_title": "Comunicazione e presentazione",
+        "five_description": "Messaggi, immagini e contenuti"
+      },
+      "logoTitle": "Logo",
+      "description": "<p>Un <b>logo</b> è un simbolo: rappresenta il brand, ma non è il brand.</p> <p>Il logo funziona davvero solo quando fa parte di un’identità visiva coerente, con scelte deliberate su colori, tipografia, tono e applicazioni.</p>",
+
+      "logoList": {
+        "symbol": "Il simbolo",
+        "symbolDesc": "La forma base del logo: iconica, distintiva, funzionale.",
+
+        "typography": "Tipografia",
+        "typographyDesc": "Scelte tipografiche studiate per comunicare carattere e personalità.",
+
+        "colour": "Palette colori",
+        "colourDesc": "Colori coerenti che mantengono riconoscibilità e leggibilità ovunque.",
+
+        "usage": "Applicazioni",
+        "usageDesc": "Regole di utilizzo che rendono il logo solido su digitale e stampa."
       }
     },
 
