@@ -1,16 +1,10 @@
 "use client";
 
+import { links } from "@/lib/constants";
 import LangToggle from "../switchers/LangToggle";
 import Logo from "./Logo";
 import MobileNav from "./MobileNav";
 import Nav from "./Nav";
-import { Home, Mail, Shapes } from "lucide-react";
-
-const links = [
-  { name: "home", href: "/", icon: Home },
-  { name: "services", icon: Shapes },
-  { name: "contacts", href: "/contacts", icon: Mail },
-];
 
 const Header = () => {
   return (

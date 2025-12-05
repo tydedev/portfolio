@@ -1,3 +1,5 @@
+import { Home, Mail, Shapes } from "lucide-react";
+
 export const services = [
   {
     title: "graphic.title",
@@ -20,4 +22,20 @@ export const services = [
       "webdev.list.four",
     ],
   },
+];
+
+export const links = [
+  { name: "home", href: "/", icon: Home },
+  {
+    name: "services",
+    icon: Shapes,
+    isDropDown: true,
+    dropDown: [
+      {
+        name: "graphic.button_title",
+        href: `graphic-design`,
+      },
+    ],
+  },
+  { name: "contacts", href: "/contacts", icon: Mail },
 ];
