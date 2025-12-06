@@ -8,13 +8,21 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "privacy.meta" });
+  const url = `https://tydedev.it/${locale}/privacy`;
 
   return {
     title: t("title"),
     description: t("description"),
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url,
+    },
   };
 }
-
 const paragraphs = [
   {
     title: "data_title",
@@ -38,7 +46,7 @@ const PrivacyPolicy = () => {
         Privacy Policy
       </h1>
       <div className="max-w-4xl mx-auto px-4 sm:px-0 py-15 w-full flex flex-col h-full">
-        {paragraphs.map(p => (
+        {paragraphs.map((p) => (
           <div key={t(p.title)}>
             <h2 className="text-lg md:text-xl font-semibold py-2">
               {t(p.title)}

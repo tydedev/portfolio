@@ -27,13 +27,15 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "home.meta" });
+  const isDefaultLocale = locale === "en";
 
   return {
     title: t("og_title"),
     description: t("description"),
-    metadataBase: new URL("https://tydedev.it"),
     alternates: {
-      canonical: `https://tydedev.it/${locale}`,
+      canonical: isDefaultLocale
+        ? "https://tydedev.it/"
+        : `https://tydedev.it/${locale}`,
       languages: {
         it: "https://tydedev.it/it",
         en: "https://tydedev.it/en",
@@ -43,10 +45,14 @@ export async function generateMetadata({ params }: Props) {
       title: t("og_title"),
       description: t("description"),
       siteName: "Tydedev",
-      url: `https://tydedev.it/${locale}`,
+      url: isDefaultLocale
+        ? "https://tydedev.it/"
+        : `https://tydedev.it/${locale}`,
       images: [
         {
-          url: `https://tydedev.it/${locale}/opengraph-image`,
+          url: isDefaultLocale
+            ? "https://tydedev.it/opengraph-image"
+            : `https://tydedev.it/${locale}/opengraph-image`,
           width: 1200,
           height: 630,
         },

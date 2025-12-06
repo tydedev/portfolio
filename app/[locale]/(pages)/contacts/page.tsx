@@ -10,12 +10,21 @@ export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "contact.meta" });
 
+  const url = `https://tydedev.it/${locale}/contacts`;
+
   return {
     title: t("title"),
     description: t("description"),
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url,
+    },
   };
 }
-
 const ContactPage = () => {
   const t = useTranslations("contact");
   return (

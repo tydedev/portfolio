@@ -14,12 +14,21 @@ export async function generateMetadata({ params }: Props) {
     namespace: "services.graphic.meta",
   });
 
+  const url = `https://tydedev.it/${locale}/graphic-design`;
+
   return {
     title: t("title"),
     description: t("description"),
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url,
+    },
   };
 }
-
 const GraphicDesignPage = () => {
   const t = useTranslations("services.graphic");
   return (
