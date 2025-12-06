@@ -4,13 +4,11 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://tydedev.it";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const sitemapEntries: MetadataRoute.Sitemap = [];
   const localizedRoutes = ["/", "/contacts", "/privacy", "/graphic-design"];
 
-  localizedRoutes.forEach((route) => {
-    // Aggiunge la versione in inglese (default)
-    sitemapEntries.push({
-      url: `${BASE_URL}${route}`,
+  return localizedRoutes.flatMap((route) => [
+    {
+      url: `${BASE_URL}/it${route}`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -18,14 +16,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
           it: `${BASE_URL}/it${route}`,
         },
       },
-    });
-
-    // Aggiunge la versione in italiano come URL di primo livello
-    sitemapEntries.push({
-      url: `${BASE_URL}/it${route}`,
+    },
+    {
+      url: `${BASE_URL}/en${route}`,
       lastModified: new Date(),
-    });
-  });
-
-  return sitemapEntries;
+      alternates: {
+        languages: {
+          en: `${BASE_URL}/en${route}`,
+          it: `${BASE_URL}/it${route}`,
+        },
+      },
+    },
+  ]);
 }
