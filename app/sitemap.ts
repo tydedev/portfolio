@@ -4,7 +4,13 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://tydedev.it";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const localizedRoutes = ["/", "/contacts", "/privacy", "/graphic-design"];
+  const localizedRoutes = [
+    "/",
+    "/contacts",
+    "/privacy",
+    "/graphic-design",
+    "/web-development",
+  ];
 
   return localizedRoutes.flatMap((route) => [
     {
