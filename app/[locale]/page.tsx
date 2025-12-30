@@ -10,6 +10,9 @@ import ProjectCard from "@/components/cards/ProjectCard";
 import { useTranslations } from "next-intl";
 import CircularProgressAutoAnimate from "@/components/animations/ProgressCircle";
 import ServiceCard from "@/components/cards/ServiceCard";
+import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiAdobeillustrator, SiTailwindcss } from "react-icons/si";
 
 export default function HomePage() {
   const { isScrolling } = useScroll();
@@ -50,12 +53,21 @@ export default function HomePage() {
         <h2 className="md:text-3xl font-semibold text-center text-xl">
           {t("projects.title")}
         </h2>
-        <ProjectCard
-          imageURL="/images/bascorp.png"
-          title={p("bascorp.title")}
-          description={p("bascorp.description")}
-          link="https://bascorp.it/"
-        />
+        <div className="flex items-center justify-center">
+          <ProjectCard
+            imageURL="/images/projects/bascorp/project_bascorp_preview.png"
+            title={p("bascorp.title")}
+            description={p("bascorp.description")}
+            route="/projects/bascorp"
+            link="https://bascorp.it/"
+            skills={[
+              { icon: FaReact },
+              { icon: RiNextjsFill },
+              { icon: SiTailwindcss },
+              { icon: SiAdobeillustrator },
+            ]}
+          />
+        </div>
       </div>
     </div>
   );

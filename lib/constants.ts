@@ -35,6 +35,10 @@ export const links = [
         name: "graphic.button_title",
         href: `graphic-design`,
       },
+      {
+        name: "webdev.button_title",
+        href: `web-development`,
+      },
     ],
   },
   { name: "contacts", href: "/contacts", icon: Mail },

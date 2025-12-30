@@ -20,6 +20,7 @@
     "projects": {
       "title": "Progetti recenti",
       "description": "I miei progetti di sviluppo web e design di brand",
+      "details": "Dettagli",
       "button": "Visita il sito",
       "performance": "Prestazioni",
       "accessibility": "Accessibilità",
@@ -90,6 +91,26 @@
         "two": "Sviluppo temi e template WordPress personalizzati",
         "three": "Sviluppo di applicazioni web su misura",
         "four": "Sviluppo di applicazioni desktop con Electron"
+      },
+      "description": "Creazione di siti web e applicazioni moderne, performanti e responsive, con tecnologie attuali e attenzione all'usabilità e all'esperienza utente.",
+      "button_title": "Web Development",
+      "meta": {
+        "title": "Sviluppo web professionale",
+        "description": "Realizzazione di siti web, applicazioni web personalizzate e sistemi digitali su misura, con tecnologie moderne e attenzione a performance e UX."
+      },
+      "webQuestion": "<fuchsia>Siti web</fuchsia> e <cyan>applicazioni web</cyan>: cosa posso fare per te?",
+      "webTitle": "Sviluppo web",
+      "webAnswer": "<p>Lo sviluppo web comprende tutto ciò che serve per costruire siti e applicazioni moderne e performanti.</p>",
+      "webGood": "<b>Un buon sviluppo web</b> garantisce funzionalità, velocità, accessibilità e un’esperienza utente ottimale.",
+      "webList": {
+        "one_title": "Siti web moderni",
+        "one_description": "Design responsive, performante e ottimizzato per tutti i dispositivi",
+        "two_title": "Temi e template personalizzati",
+        "two_description": "Creazione di soluzioni su misura per WordPress e altre piattaforme",
+        "three_title": "Applicazioni web",
+        "three_description": "Sistemi web su misura, interattivi e scalabili",
+        "four_title": "Applicazioni desktop",
+        "four_description": "Software con Electron o tecnologie simili per desktop"
       }
     }
   },
@@ -107,9 +128,21 @@
       "title": "Progetti | Tydedev",
       "description": "I miei progetti di sviluppo web e design di brand"
     },
+    "details": {
+      "view_live": "Visita il sito"
+    },
     "bascorp": {
+      "meta": {
+        "title": "Bascorp | Tydedev's projects",
+        "description": "Progetto di identità visiva e sito web per una nuova azienda di costruzioni e ristrutturazioni"
+      },
       "title": "Bascorp",
-      "description": "Brand identity e sito web per un'azienda di costruzione e ristrutturazione."
+      "description": "Brand identity e sito web per una nuova azienda di costruzioni e ristrutturazioni.",
+      "overview": "Bascorp è una nuova azienda nel settore delle costruzioni e ristrutturazioni. Il progetto ha l’obiettivo di creare un’identità visiva da zero, comunicando professionalità, affidabilità e modernità, applicata coerentemente al sito web.",
+      "problem": "Essendo una startup, l’azienda non aveva brand identity né presenza online. Era necessario sviluppare elementi visivi distintivi e un linguaggio chiaro per trasmettere solidità e competenza fin dal primo contatto.",
+      "solution": "Ho progettato il logo, la palette colori e l’identità visiva completa, applicandoli poi al sito web. Il design punta a trasmettere fiducia e struttura, con layout chiari, call to action efficaci e comunicazione orientata all’utente.",
+      "brandingDescription": "Il logo Bascorp unisce la lettera “B” con la silhouette di un edificio, richiamando stabilità e precisione. L’approccio minimale garantisce leggibilità e versatilità su tutti i supporti, essenziale per una nuova azienda che deve costruire credibilità da zero.",
+      "result": "Il progetto ha permesso a Bascorp di avere una brand identity completa e coerente, applicata efficacemente al sito web. La nuova presenza digitale comunica professionalità e affidabilità, aiutando l’azienda a presentarsi con forza sul mercato fin dal lancio."
     }
   },
   "hero": {

@@ -13,7 +13,6 @@
   },
   "services": {
     "title": "What I can do",
-
     "graphic": {
       "goodLogo": "Un buon logo è semplice, leggibile, versatile e riconoscibile.",
       "goodBrand": "Un buon brand è tutto ciò che lo circonda.",
@@ -71,12 +70,32 @@
       }
     },
     "webdev": {
-      "title": "Web development",
+      "title": "Web Development",
       "list": {
         "one": "Creation of modern, high-performance websites",
         "two": "Development of custom WordPress themes and templates",
         "three": "Bespoke web application development",
         "four": "Desktop application development with Electron"
+      },
+      "description": "Creation of modern, high-performance, and responsive websites and applications, using up-to-date technologies with a focus on usability and user experience.",
+      "button_title": "Web Development",
+      "meta": {
+        "title": "Professional Web Development",
+        "description": "Building custom websites, web applications, and digital systems tailored to your needs, with modern technologies and attention to performance and UX."
+      },
+      "webQuestion": "<fuchsia>Websites</fuchsia> and <cyan>web applications</cyan>: what can I do for you?",
+      "webTitle": "Web Development",
+      "webAnswer": "<p>Web development includes everything necessary to build modern, high-performing websites and applications.</p>",
+      "webGood": "<b>Good web development</b> ensures functionality, speed, accessibility, and an optimal user experience.",
+      "webList": {
+        "one_title": "Modern websites",
+        "one_description": "Responsive design, high-performance, optimised for all devices",
+        "two_title": "Custom themes and templates",
+        "two_description": "Tailored solutions for WordPress and other platforms",
+        "three_title": "Web applications",
+        "three_description": "Custom, interactive and scalable web systems",
+        "four_title": "Desktop applications",
+        "four_description": "Software built with Electron or similar technologies for desktop"
       }
     }
   },
@@ -89,6 +108,7 @@
     "projects": {
       "title": "Recent projects",
       "description": "My web development and brand identity projects",
+      "details": "Details",
       "button": "Check the website",
       "performance": "Performance",
       "accessibility": "Accessibility",
@@ -114,9 +134,21 @@
       "title": "Projects | Tydedev",
       "description": "Check out my latest projects"
     },
+    "details": {
+      "view_live": "Visit website"
+    },
     "bascorp": {
+      "meta": {
+        "title": "Bascorp | Tydedev's projects",
+        "description": "Brand identity and website for a new construction and renovation company"
+      },
       "title": "Bascorp",
-      "description": "Brand identity and website development for a construction company"
+      "description": "Brand identity and website for a new construction and renovation company.",
+      "overview": "Bascorp is a new company in the construction and renovation sector. The project aimed to create a visual identity from scratch, conveying professionalism, reliability, and modernity, applied consistently across the website.",
+      "problem": "As a startup, the company had no brand identity or online presence. It was necessary to develop distinctive visual elements and a clear language to communicate solidity and competence from the very first contact.",
+      "solution": "I designed the logo, color palette, and complete visual identity, then applied them to the website. The design aims to convey trust and structure, with clear layouts, effective calls to action, and user-focused communication.",
+      "brandingDescription": "The Bascorp logo combines the letter 'B' with the silhouette of a building, evoking stability and precision. The minimalist approach ensures legibility and versatility across all media, essential for a new company building credibility from scratch.",
+      "result": "The project enabled Bascorp to have a complete and coherent brand identity, effectively applied to the website. The new digital presence communicates professionalism and reliability, helping the company present itself strongly on the market from launch."
     }
   },
   "hero": {
