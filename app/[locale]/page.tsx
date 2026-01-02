@@ -45,7 +45,10 @@ export default function HomePage() {
         </h2>
         <CircularProgressAutoAnimate />
       </div>
-      <div className=" max-w-6xl w-full mx-auto p-6 space-y-10" id="services">
+      <div
+        className=" max-w-6xl w-full mx-auto md:p-6 space-y-10"
+        id="services"
+      >
         <h2 className="md:text-3xl font-semibold text-center text-xl">
           {s("title")}
         </h2>

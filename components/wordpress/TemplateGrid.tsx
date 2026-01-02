@@ -8,6 +8,8 @@ import { Checkbox } from "../ui/checkbox";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { Filter, Search } from "lucide-react";
+import { Button } from "../ui/button";
+import MobileFilters from "./MobileFilters";
 
 const TemplateGrid = () => {
   const t = useTranslations("home.wordpress");
@@ -107,7 +109,7 @@ const TemplateGrid = () => {
 
           <h3 className="font-semibold mb-4 mt-8">{t("colorsLabel")}</h3>
 
-          <div className="flex flex-wrap gap-3 px-3 pr-8">
+          <div className="flex flex-wrap gap-3 max-w-[200px]">
             {colors.map((color) => {
               const isChecked = selectedColors.includes(color);
 
@@ -142,6 +144,16 @@ const TemplateGrid = () => {
 
         {/* Grid */}
         <div className="flex-1 h-full">
+          <div className="flex gap-x-1 items-center justify-end mb-8 md:hidden">
+            <MobileFilters
+              categories={categories}
+              colors={colors}
+              selectedCategories={selectedCategories}
+              selectedColors={selectedColors}
+              toggleCategory={toggleCategory}
+              toggleColor={toggleColor}
+            />
+          </div>
           {orderedTemplates.length === 0 ? (
             <div className="w-full h-full flex items-center justify-center border rounded-md">
               <p className="text-gray-500 text-center">{t("noResults")}.</p>
