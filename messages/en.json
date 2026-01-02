@@ -117,8 +117,118 @@
       "score_title": "What you can expect from your websites"
     },
     "wordpress": {
-      "title": "Custom <cyan>wordpress</cyan> templates",
-      "description": "If you're looking for complete CMS solutions, my templates offer you a professional base, ready to use, carefully crafted in design and user experience, and easy to customize according to your needs."
+      "meta": {
+        "title": "WordPress templates | Tydedev",
+        "description": "Custom WordPress themes and templates for your needs"
+      },
+      "title": "Custom <cyan>WordPress</cyan> templates",
+      "description": "If you need a complete CMS, my WordPress templates provide a professional, ready-to-use foundation, carefully designed with a strong focus on usability and user experience, and easy to customize to fit your needs.",
+      "buy": "Buy now",
+      "free": "Download for free",
+      "seeMore": "See all templates",
+      "searchPlaceholder": "Search for keywords...",
+      "noResults": "No results found",
+      "filtersLabel": "Filters",
+      "colorsLabel": "Colors",
+      "categoriesLabel": "Categories",
+      "templates": {
+        "terms": {
+          "meta": {
+            "title": "Terms of Use",
+            "lastUpdated": "Last updated: {{date}}"
+          },
+          "intro": "By purchasing or downloading this product, you agree to the following <strong>Terms of Use</strong>.",
+          "sections": {
+            "product": {
+              "title": "1. Product",
+              "text": "The product is a downloadable <strong>WordPress theme</strong> provided in digital format."
+            },
+            "license": {
+              "title": "2. Licence",
+              "text": "Upon purchase, you are granted a <strong>non-exclusive, non-transferable licence</strong> to use the Theme on <strong>one (1) website</strong>.",
+              "allowedTitle": "You may:",
+              "allowed": [
+                "Use the Theme for personal or commercial projects",
+                "Use the Theme for a client’s website"
+              ],
+              "notAllowedTitle": "You may not:",
+              "notAllowed": [
+                "Resell, sublicense, redistribute or share the Theme",
+                "Make the Theme available for download, free or paid",
+                "Claim authorship of the Theme"
+              ]
+            },
+            "ownership": {
+              "title": "3. Ownership",
+              "text": "The Theme remains the <strong>intellectual property</strong> of the author. Purchasing the Theme does <strong>not</strong> transfer ownership."
+            },
+            "updatesSupport": {
+              "title": "4. Updates and Support",
+              "includedTitle": "The purchase includes:",
+              "included": [
+                "Theme updates for bug fixes and improvements",
+                "Limited support related to Theme functionality"
+              ],
+              "excludedTitle": "Support does not include:",
+              "excluded": [
+                "Customisations or design changes",
+                "Issues caused by third-party plugins",
+                "Hosting, server or WordPress configuration issues"
+              ]
+            },
+            "refunds": {
+              "title": "5. Refund Policy",
+              "text": "Due to the digital nature of the product, <strong>all sales are final</strong>. No refunds are provided once the Theme has been downloaded.",
+              "extra": "By purchasing, you expressly waive your right of withdrawal in accordance with EU consumer law for digital content."
+            },
+            "disclaimer": {
+              "title": "6. Disclaimer",
+              "text": "The Theme is provided <strong>“as is”</strong>, without warranties of any kind.",
+              "list": [
+                "Compatibility with all plugins or future WordPress versions is not guaranteed",
+                "The Theme may not meet all specific requirements"
+              ]
+            },
+            "liability": {
+              "title": "7. Limitation of Liability",
+              "text": "In no event shall the author be liable for:",
+              "list": [
+                "Loss of data",
+                "Loss of profits or revenue",
+                "Website downtime or damages resulting from the use of the Theme"
+              ]
+            },
+            "termination": {
+              "title": "8. Termination",
+              "text": "The licence is automatically terminated if these Terms are violated. Upon termination, you must stop using and delete the Theme."
+            },
+            "law": {
+              "title": "9. Governing Law",
+              "text": "These Terms are governed by the laws of <strong>Italy</strong>."
+            }
+          }
+        },
+        "busybiz": {
+          "title": "BusyBiz",
+          "subtitle": "The ideal WordPress template to launch and grow your SaaS",
+          "description": "It comes with custom blocks, pre-built patterns, and preconfigured templates to quickly create landing pages, marketing sections, and product pages in a clean and structured way. It is already e-commerce ready, so you can sell services, subscriptions, and digital products from day one.",
+          "colorsTitle": "Customizable colors",
+          "colorsDescription": "Choose from multiple color palettes to adapt the template to your brand identity, without touching a single line of code.",
+
+          "variantsTitle": "Ready-to-use variants",
+          "variantsDescription": "Preconfigured buttons and text styles, also available in outline versions. Icons are already integrated via Font Awesome, ensuring a consistent and immediately usable interface.",
+
+          "patternsTitle": "Pre-built patterns",
+          "patternsDescription": "Ready-to-use patterns designed to speed up the creation of your website’s landing pages, with variants tailored to create multiple user experiences."
+        }
+      }
+    }
+  },
+  "CTA": {
+    "contact": {
+      "title": "Have an idea in mind?",
+      "description": "Share it with me and let's realize it together!",
+      "button": "Contact me"
     }
   },
   "contact": {
@@ -160,6 +270,7 @@
       "home": "Home",
       "projects": "Projects",
       "services": "Services",
+      "templates": "Templates",
       "contacts": "Contacts",
       "about": "About"
     }

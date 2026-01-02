@@ -27,7 +27,7 @@ const ProjectCard = ({
   const router = useRouter();
 
   return (
-    <Card className="group relative overflow-hidden max-w-md w-full pt-0">
+    <Card className="group relative overflow-hidden max-w-sm w-full pt-0">
       {/* IMAGE */}
       <div className="relative aspect-video overflow-hidden p-10">
         <Image

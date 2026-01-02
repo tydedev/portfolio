@@ -7,18 +7,20 @@ import useScroll from "@/hooks/useScroll";
 import { ArrowUp } from "lucide-react";
 import Skills from "@/components/cards/Skills";
 import ProjectCard from "@/components/cards/ProjectCard";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import CircularProgressAutoAnimate from "@/components/animations/ProgressCircle";
 import ServiceCard from "@/components/cards/ServiceCard";
-import { FaReact } from "react-icons/fa";
-import { RiNextjsFill } from "react-icons/ri";
-import { SiAdobeillustrator, SiTailwindcss } from "react-icons/si";
+import WordpressCard from "@/components/wordpress/WordpressCard";
+import { projects, templates } from "@/lib/constants";
+import Link from "next/link";
+import ContactCTA from "@/components/forms/ContactCTA";
 
 export default function HomePage() {
   const { isScrolling } = useScroll();
   const t = useTranslations("home");
-  const p = useTranslations("projects");
   const s = useTranslations("services");
+  const p = useTranslations("projects");
+  const w = useTranslations("home.wordpress.templates");
 
   return (
     <div data-scroll={isScrolling}>
@@ -53,22 +55,52 @@ export default function HomePage() {
         <h2 className="md:text-3xl font-semibold text-center text-xl">
           {t("projects.title")}
         </h2>
-        <div className="flex items-center justify-center">
-          <ProjectCard
-            imageURL="/images/projects/bascorp/project_bascorp_preview.png"
-            title={p("bascorp.title")}
-            description={p("bascorp.description")}
-            route="/projects/bascorp"
-            link="https://bascorp.it/"
-            skills={[
-              { icon: FaReact },
-              { icon: RiNextjsFill },
-              { icon: SiTailwindcss },
-              { icon: SiAdobeillustrator },
-            ]}
-          />
+        <div className="flex items-center justify-center gap-4">
+          {projects
+            .map((project, i) => (
+              <ProjectCard
+                key={i}
+                imageURL={project.image}
+                title={p(project.name)}
+                description={p(project.description)}
+                route={project.href}
+                link={project.liveUrl}
+                skills={project.skills}
+              />
+            ))
+            .slice(0, 6)}
         </div>
       </div>
+      <div className="md:py-10 max-w-6xl w-full mx-auto p-6 space-y-10 flex flex-col items-center">
+        <h2 className="md:text-3xl font-semibold text-center text-xl">
+          {t.rich("wordpress.title", {
+            cyan: (text: React.ReactNode) => (
+              <span className="text-cyan-500">{text}</span>
+            ),
+          })}
+        </h2>
+        <p className="max-w-xl text-center mx-auto">
+          {t("wordpress.description")}
+        </p>
+        <Button asChild variant={"default"} className="self-center">
+          <Link href="/templates/wordpress">{t("wordpress.seeMore")}</Link>
+        </Button>
+        <div className="flex items-center justify-center gap-4">
+          {templates
+            .map((template, i) => (
+              <WordpressCard
+                key={i}
+                title={w(template.name)}
+                description={w(template.description)}
+                price={template.price}
+                href={template.href}
+                image={template.image}
+              />
+            ))
+            .slice(0, 3)}
+        </div>
+      </div>
+      <ContactCTA />
     </div>
   );
 }

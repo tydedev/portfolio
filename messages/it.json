@@ -29,8 +29,118 @@
       "score_title": "Risultati che puoi aspettarti per i tuoi siti web"
     },
     "wordpress": {
+      "meta": {
+        "title": "Template Wordpress | Tydedev",
+        "description": "I miei template Wordpress ti offrono una base professionale, pronta, curata nel design e nell’esperienza utente, facile da personalizzare secondo le tue esigenze."
+      },
       "title": "Template <cyan>Wordpress</cyan> personalizzati",
-      "description": "Se hai bisogno di un CMS completo, i miei template Wordpress ti offrono una base professionale, pronta, curata nel design e nell’esperienza utente, facile da personalizzare secondo le tue esigenze."
+      "description": "Se hai bisogno di un CMS completo, i miei template Wordpress ti offrono una base professionale, pronta, curata nel design e nell’esperienza utente, facile da personalizzare secondo le tue esigenze.",
+      "buy": "Acquista ora",
+      "free": "Scarica gratis",
+      "seeMore": "Scopri tutti i template",
+      "searchPlaceholder": "Cerca parole chiave...",
+      "noResults": "Nessun risultato",
+      "filtersLabel": "Filtri",
+      "categoriesLabel": "Categorie",
+      "colorsLabel": "Colori",
+      "templates": {
+        "terms": {
+          "meta": {
+            "title": "Termini di utilizzo",
+            "lastUpdated": "Ultimo aggiornamento: {{date}}"
+          },
+          "intro": "Acquistando o scaricando questo prodotto, accetti i seguenti <strong>Termini di utilizzo</strong>.",
+          "sections": {
+            "product": {
+              "title": "1. Prodotto",
+              "text": "Il prodotto è un <strong>tema WordPress</strong> scaricabile, fornito in formato digitale."
+            },
+            "license": {
+              "title": "2. Licenza",
+              "text": "Con l’acquisto viene concessa una <strong>licenza non esclusiva e non trasferibile</strong> per l’utilizzo del Tema su <strong>un (1) solo sito web</strong>.",
+              "allowedTitle": "È consentito:",
+              "allowed": [
+                "Utilizzare il Tema per progetti personali o commerciali",
+                "Utilizzare il Tema per il sito di un cliente"
+              ],
+              "notAllowedTitle": "Non è consentito:",
+              "notAllowed": [
+                "Rivendere, sublicenziare, ridistribuire o condividere il Tema",
+                "Rendere il Tema disponibile per il download, gratuito o a pagamento",
+                "Rivendicare la paternità del Tema"
+              ]
+            },
+            "ownership": {
+              "title": "3. Proprietà",
+              "text": "Il Tema rimane di <strong>proprietà intellettuale</strong> dell’autore. L’acquisto <strong>non</strong> comporta il trasferimento della proprietà."
+            },
+            "updatesSupport": {
+              "title": "4. Aggiornamenti e Supporto",
+              "includedTitle": "L’acquisto include:",
+              "included": [
+                "Aggiornamenti del Tema per correzioni di bug e miglioramenti",
+                "Supporto limitato relativo al funzionamento del Tema"
+              ],
+              "excludedTitle": "Il supporto non include:",
+              "excluded": [
+                "Personalizzazioni o modifiche grafiche",
+                "Problemi causati da plugin di terze parti",
+                "Hosting, server o configurazioni WordPress"
+              ]
+            },
+            "refunds": {
+              "title": "5. Politica di Rimborso",
+              "text": "Data la natura digitale del prodotto, <strong>tutte le vendite sono definitive</strong>. Non sono previsti rimborsi dopo il download del Tema.",
+              "extra": "Con l’acquisto, l’utente accetta espressamente la rinuncia al diritto di recesso ai sensi della normativa europea sui contenuti digitali."
+            },
+            "disclaimer": {
+              "title": "6. Dichiarazione di esclusione di responsabilità",
+              "text": "Il Tema è fornito <strong>“così com’è”</strong>, senza garanzie di alcun tipo.",
+              "list": [
+                "Non è garantita la compatibilità con tutti i plugin o versioni future di WordPress",
+                "Il Tema potrebbe non soddisfare esigenze specifiche"
+              ]
+            },
+            "liability": {
+              "title": "7. Limitazione di responsabilità",
+              "text": "L’autore non è responsabile per:",
+              "list": [
+                "Perdita di dati",
+                "Perdita di profitti o ricavi",
+                "Malfunzionamenti o danni derivanti dall’uso del Tema"
+              ]
+            },
+            "termination": {
+              "title": "8. Risoluzione",
+              "text": "La licenza viene automaticamente revocata in caso di violazione dei presenti Termini. In tal caso, l’utente deve cessare l’uso ed eliminare il Tema."
+            },
+            "law": {
+              "title": "9. Legge applicabile",
+              "text": "I presenti Termini sono regolati dalla legge <strong>italiana</strong>."
+            }
+          }
+        },
+        "busybiz": {
+          "title": "BusyBiz",
+          "subtitle": "Il template WordPress ideale per lanciare e far crescere la tua SaaS",
+          "description": "Viene fornito con blocchi personalizzati, pattern e template preconfigurati per creare landing page sezioni marketing e pagine prodotto in modo veloce e ordinato. È già predisposto per l’e-commerce, così puoi vendere servizi, abbonamenti e prodotti digitali fin dal day one.",
+          "colorsTitle": "Colori personalizzabili",
+          "colorsDescription": "Possibilità di scegliere tra diverse palette colore per adattare il template alla tua brand identity, senza toccare una riga di codice.",
+
+          "variantsTitle": "Varianti pronte all’uso",
+          "variantsDescription": "Pulsanti e paragrafi preconfigurati, disponibili anche in versione outline. Le icone sono già integrate tramite Font Awesome, per un’interfaccia coerente e immediatamente utilizzabile.",
+
+          "patternsTitle": "Pattern preconfigurati",
+          "patternsDescription": "Pattern pronti all’uso per velocizzare la costruzione delle landing page del tuo sito web, con varianti mirate a creare molteplici esperienze utente."
+        }
+      }
+    }
+  },
+  "CTA": {
+    "contact": {
+      "title": "Hai in mente un progetto?",
+      "description": "Condividi la tua idea e realizziamola insieme!",
+      "button": "Contattami"
     }
   },
   "services": {
@@ -154,6 +264,7 @@
       "home": "Home",
       "projects": "Progetti",
       "services": "Servizi",
+      "templates": "Template",
       "contacts": "Contatti",
       "about": "Info"
     }
