@@ -129,6 +129,7 @@
       "searchPlaceholder": "Search for keywords...",
       "noResults": "No results found",
       "filtersLabel": "Filters",
+      "closeFilters": "Close",
       "filtersMobileDescription": "Filter templates by category and color",
       "colorsLabel": "Colors",
       "categoriesLabel": "Categories",

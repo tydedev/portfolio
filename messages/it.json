@@ -41,6 +41,7 @@
       "searchPlaceholder": "Cerca parole chiave...",
       "noResults": "Nessun risultato",
       "filtersLabel": "Filtri",
+      "closeFilters": "Chiudi",
       "filtersMobileDescription": "Filtra i template per categoria e colore",
       "categoriesLabel": "Categorie",
       "colorsLabel": "Colori",

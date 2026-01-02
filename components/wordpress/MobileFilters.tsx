@@ -103,7 +103,7 @@ const MobileFilters = ({
         </aside>
         <DrawerFooter>
           <DrawerClose asChild>
-            <Button variant="outline">Chiudi</Button>
+            <Button variant="outline">{t("closeFilters")}</Button>
           </DrawerClose>
         </DrawerFooter>
       </DrawerContent>
