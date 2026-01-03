@@ -45,6 +45,7 @@ const BusyBizTemplate = () => {
         templateInfo={template?.info}
         price={45}
         href="https://tydedev.gumroad.com/l/busybiz-template"
+        previewHref="https://dev-busy-biz.pantheonsite.io/"
       />
       <section className="max-w-6xl mx-auto px-6 space-y-5">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 mb-12">

@@ -14,6 +14,7 @@ interface Props {
   description?: string;
   price?: number;
   href?: string;
+  previewHref?: string;
 }
 
 const Template = ({
@@ -22,6 +23,7 @@ const Template = ({
   templateInfo,
   subtitle,
   description,
+  previewHref,
   price,
   href,
 }: Props) => {
@@ -63,17 +65,30 @@ const Template = ({
             )}
 
             <div className="flex flex-col gap-y-2">
-              {href && (
-                <Button
-                  variant="secondary"
-                  className="w-full md:w-auto text-lg md:text-xl font-semibold py-5"
-                  asChild
-                >
-                  <Link href={href} target="_blank">
-                    {price ? t("buy") : t("free")}
-                  </Link>
-                </Button>
-              )}
+              <div className="gap-2 flex items-center">
+                {previewHref && (
+                  <Button
+                    variant="default"
+                    className="md:w-auto font-semibold"
+                    asChild
+                  >
+                    <Link href={previewHref} target="_blank">
+                      Live Preview
+                    </Link>
+                  </Button>
+                )}
+                {href && (
+                  <Button
+                    variant="default"
+                    className="md:w-auto font-semibold"
+                    asChild
+                  >
+                    <Link href={href} target="_blank">
+                      {price ? t("buy") : t("free")}
+                    </Link>
+                  </Button>
+                )}
+              </div>
               <button
                 onClick={() => {
                   document.getElementById("terms")?.scrollIntoView({
