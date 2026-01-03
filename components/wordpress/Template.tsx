@@ -68,7 +68,7 @@ const Template = ({
               <div className="gap-2 flex items-center">
                 {previewHref && (
                   <Button
-                    variant="default"
+                    variant="secondary"
                     className="md:w-auto font-semibold"
                     asChild
                   >
