@@ -1,7 +1,7 @@
 import { Grid, Home, Mail, Shapes } from "lucide-react";
 import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiAdobeillustrator, SiTailwindcss } from "react-icons/si";
+import { SiAdobeillustrator, SiElectron, SiTailwindcss } from "react-icons/si";
 
 export const services = [
   {
@@ -81,6 +81,14 @@ export const templates = [
 ];
 
 export const projects = [
+  {
+    id: 2,
+    name: "invoice-app.title",
+    description: "invoice-app.description",
+    href: "/projects/invoice-app",
+    image: "/images/projects/bascorp/bascorp_invoicer_app.png",
+    skills: [{ icon: FaReact }, { icon: SiElectron }, { icon: SiTailwindcss }],
+  },
   {
     id: 1,
     name: "bascorp.title",

@@ -261,6 +261,18 @@
       "solution": "I designed the logo, color palette, and complete visual identity, then applied them to the website. The design aims to convey trust and structure, with clear layouts, effective calls to action, and user-focused communication.",
       "brandingDescription": "The Bascorp logo combines the letter 'B' with the silhouette of a building, evoking stability and precision. The minimalist approach ensures legibility and versatility across all media, essential for a new company building credibility from scratch.",
       "result": "The project enabled Bascorp to have a complete and coherent brand identity, effectively applied to the website. The new digital presence communicates professionalism and reliability, helping the company present itself strongly on the market from launch."
+    },
+    "invoice-app": {
+      "meta": {
+        "title": "Invoice & Quote App | Tydedev's projects",
+        "description": "Desktop app built with Electron for creating and managing invoices and quotes, with live preview and ready-to-use PDF export."
+      },
+      "title": "Invoice & Quote App",
+      "description": "Desktop application developed with Electron to manage invoices and quotes, custom-built to fit the client’s operational needs.",
+      "overview": "The client needed a simple and reliable tool to manage invoices and quotes without relying on complex and error-prone Excel spreadsheets. The goal was to digitize the process while maintaining speed, control, and clarity.",
+      "problem": "Using Excel resulted in disorganized files, fragile formulas, and no accurate preview of the final document. In addition, generating PDFs required manual steps and did not ensure visual consistency.",
+      "solution": "I developed a custom desktop application that allows users to create, edit, and manage invoices and quotes in a structured way. The app includes real-time preview and PDF generation with a predefined layout and branded header, significantly reducing errors and working time.",
+      "result": "The app completely replaced Excel in the client’s workflow, improving efficiency, organization, and document consistency. The invoicing process is now faster, more reliable, and more professional."
     }
   },
   "hero": {

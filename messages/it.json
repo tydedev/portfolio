@@ -255,6 +255,18 @@
       "solution": "Ho progettato il logo, la palette colori e l’identità visiva completa, applicandoli poi al sito web. Il design punta a trasmettere fiducia e struttura, con layout chiari, call to action efficaci e comunicazione orientata all’utente.",
       "brandingDescription": "Il logo Bascorp unisce la lettera “B” con la silhouette di un edificio, richiamando stabilità e precisione. L’approccio minimale garantisce leggibilità e versatilità su tutti i supporti, essenziale per una nuova azienda che deve costruire credibilità da zero.",
       "result": "Il progetto ha permesso a Bascorp di avere una brand identity completa e coerente, applicata efficacemente al sito web. La nuova presenza digitale comunica professionalità e affidabilità, aiutando l’azienda a presentarsi con forza sul mercato fin dal lancio."
+    },
+    "invoice-app": {
+      "meta": {
+        "title": "App per fatture e preventivi | Tydedev's projects",
+        "description": "App desktop sviluppata con Electron per la creazione e gestione di fatture e preventivi, con anteprima e PDF pronti all’uso."
+      },
+      "title": "App per fatture e preventivi",
+      "description": "App desktop sviluppata con Electron per la gestione di fatture e preventivi, progettata su misura per le esigenze operative del cliente.",
+      "overview": "Il cliente necessitava di uno strumento semplice e affidabile per gestire fatture e preventivi senza dover ricorrere a fogli Excel complessi e soggetti a errori. L’obiettivo era digitalizzare il processo mantenendo velocità, controllo e chiarezza.",
+      "problem": "L’utilizzo di Excel comportava file disordinati, formule fragili e nessuna anteprima reale del documento finale. Inoltre, la creazione dei PDF richiedeva passaggi manuali e non garantiva coerenza grafica.",
+      "solution": "Ho sviluppato un’app desktop personalizzata che consente di creare, modificare e gestire fatture e preventivi in modo strutturato. L’app include un sistema di anteprima in tempo reale e la generazione di PDF con layout e intestazione già pronti, riducendo errori e tempi di lavoro.",
+      "result": "L’app ha sostituito completamente l’uso di Excel nel flusso di lavoro del cliente, migliorando efficienza, ordine e coerenza dei documenti. Il processo di creazione delle fatture è ora più rapido, affidabile e professionale."
     }
   },
   "hero": {

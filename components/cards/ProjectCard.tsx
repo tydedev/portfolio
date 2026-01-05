@@ -11,7 +11,7 @@ interface Props {
   title: string;
   description?: string;
   route: string;
-  link: string;
+  link?: string;
   skills?: { icon: IconType }[];
 }
 
@@ -56,11 +56,13 @@ const ProjectCard = ({
             {t("details")}
           </Button>
 
-          <Button asChild size="sm" variant="ghost">
-            <Link href={link} target="_blank">
-              {t("button")}
-            </Link>
-          </Button>
+          {link && (
+            <Button asChild size="sm" variant="ghost">
+              <Link href={link} target="_blank">
+                {t("button")}
+              </Link>
+            </Button>
+          )}
         </div>
 
         {/* SKILLS FOOTER */}
