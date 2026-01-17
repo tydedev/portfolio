@@ -128,10 +128,8 @@
           "description": "Viene fornito con blocchi personalizzati, pattern e template preconfigurati per creare landing page sezioni marketing e pagine prodotto in modo veloce e ordinato. È già predisposto per l’e-commerce, così puoi vendere servizi, abbonamenti e prodotti digitali fin dal day one.",
           "colorsTitle": "Colori personalizzabili",
           "colorsDescription": "Possibilità di scegliere tra diverse palette colore per adattare il template alla tua brand identity, senza toccare una riga di codice.",
-
           "variantsTitle": "Varianti pronte all’uso",
           "variantsDescription": "Pulsanti e paragrafi preconfigurati, disponibili anche in versione outline. Le icone sono già integrate tramite Font Awesome, per un’interfaccia coerente e immediatamente utilizzabile.",
-
           "patternsTitle": "Pattern preconfigurati",
           "patternsDescription": "Pattern pronti all’uso per velocizzare la costruzione delle landing page del tuo sito web, con varianti mirate a creare molteplici esperienze utente."
         }
@@ -147,7 +145,6 @@
   },
   "services": {
     "title": "Cosa posso fare per te",
-
     "graphic": {
       "goodLogo": "Un buon logo è semplice, leggibile, versatile e riconoscibile.",
       "goodBrand": "Un buon brand è tutto ciò che lo circonda.",
@@ -180,22 +177,17 @@
       },
       "logoTitle": "Logo",
       "description": "<p>Un <b>logo</b> è un simbolo: rappresenta il brand, ma non è il brand.</p> <p>Il logo funziona davvero solo quando fa parte di un’identità visiva coerente, con scelte deliberate su colori, tipografia, tono e applicazioni.</p>",
-
       "logoList": {
         "symbol": "Il simbolo",
         "symbolDesc": "La forma base del logo: iconica, distintiva, funzionale.",
-
         "typography": "Tipografia",
         "typographyDesc": "Scelte tipografiche studiate per comunicare carattere e personalità.",
-
         "colour": "Palette colori",
         "colourDesc": "Colori coerenti che mantengono riconoscibilità e leggibilità ovunque.",
-
         "usage": "Applicazioni",
         "usageDesc": "Regole di utilizzo che rendono il logo solido su digitale e stampa."
       }
     },
-
     "webdev": {
       "title": "Sviluppo web",
       "list": {
@@ -224,9 +216,40 @@
         "four_title": "Applicazioni desktop",
         "four_description": "Software con Electron o tecnologie simili per desktop"
       }
+    },
+    "socialMedia": {
+      "title": "Gestione social media",
+      "description": "Aiuto professionisti e aziende a costruire una presenza efficace sui social media.",
+      "button_title": "Gestione Social Media",
+      "month": "mese",
+      "socialTitle": "Pacchetto Social",
+      "socialDescription": "Gestione completa del profilo e contenuti",
+      "advTitle": "Pacchetto ADV",
+      "advDescription": "Campagne pubblicitarie mirate",
+      "listSocial": [
+        "Gestione completa del profilo social",
+        "12 post al mese (3 a settimana)",
+        "Contenuti visivi personalizzati",
+        "Copywriting professionale",
+        "Piano editoriale mensile"
+      ],
+      "listAdv": [
+        "Gestione campagne pubblicitarie",
+        "Targeting del pubblico personalizzato",
+        "Monitoraggio delle performance",
+        "Report mensile dettagliato"
+      ],
+      "note": "* I prezzi non includono il budget pubblicitario.",
+      "allIncluded": "Tutto incluso",
+      "forYou": "Su misura per te",
+      "customPlan": "Piano personalizzato",
+      "customDescription": "Soluzioni personalizzate in base alle tue esigenze specifiche.",
+      "meta": {
+        "title": "Gestione Social Media | Tydedev",
+        "description": "Servizi di gestione social media per professionisti e aziende, con creazione di contenuti, interazione con la community e monitoraggio delle performance."
+      }
     }
   },
-
   "contact": {
     "meta": {
       "title": "Contatti | Tydedev",

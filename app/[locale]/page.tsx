@@ -7,13 +7,14 @@ import useScroll from "@/hooks/useScroll";
 import { ArrowUp } from "lucide-react";
 import Skills from "@/components/cards/Skills";
 import ProjectCard from "@/components/cards/ProjectCard";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import CircularProgressAutoAnimate from "@/components/animations/ProgressCircle";
 import ServiceCard from "@/components/cards/ServiceCard";
 import WordpressCard from "@/components/wordpress/WordpressCard";
 import { projects, templates } from "@/lib/constants";
 import Link from "next/link";
 import ContactCTA from "@/components/forms/ContactCTA";
+import { SocialMediaPrices } from "@/components/cards/SocialMediaPrices";
 
 export default function HomePage() {
   const { isScrolling } = useScroll();
@@ -53,6 +54,13 @@ export default function HomePage() {
           {s("title")}
         </h2>
         <ServiceCard />
+      </div>
+      <div className="md:py-10 max-w-6xl w-full mx-auto p-6 space-y-10 flex flex-col items-center">
+        <h2 className="md:text-3xl font-semibold text-center text-xl">
+          {s("socialMedia.title")}
+        </h2>
+        <p className="text-center mx-auto">{s("socialMedia.description")}</p>
+        <SocialMediaPrices />
       </div>
       <div className="md:py-10 max-w-6xl w-full mx-auto p-6 space-y-10">
         <h2 className="md:text-3xl font-semibold text-center text-xl">
@@ -103,6 +111,7 @@ export default function HomePage() {
             .slice(0, 3)}
         </div>
       </div>
+
       <ContactCTA />
     </div>
   );

@@ -28,43 +28,30 @@
         "three": "Design for print and digital communication",
         "four": "UI/UX design for web and mobile"
       },
-
       "brandLogoQuestion": "Are <fuchsia>branding</fuchsia> and <cyan>logo design</cyan> the same thing?",
-
       "brandTitle": "Branding",
       "brandAnswer": "<p>Branding – or visual identity – is the strategy behind building a coherent and memorable brand that represents a person or a business and makes it recognisable in the market.</p> <p><b>A good strategy</b> defines what the brand is, but also what it is not.</p>",
-
       "brandList": {
         "one_title": "Essence",
         "one_description": "Purpose, mission, vision and values",
-
         "two_title": "Positioning",
         "two_description": "Market, audience, characteristics and segment",
-
         "three_title": "Promise",
         "three_description": "Products, services and solutions",
-
         "four_title": "Visual identity",
         "four_description": "Logo, typography, colour palette and tone of voice",
-
         "five_title": "Communication",
         "five_description": "Messages, imagery and content"
       },
-
       "logoTitle": "Logo",
-
       "description": "<p>A <b>logo</b> is a symbol: it represents the brand, but it is not the brand.</p> <p>A logo works only when it sits within a coherent visual identity, with deliberate choices around colour, typography, tone and applications.</p>",
-
       "logoList": {
         "symbol": "The symbol",
         "symbolDesc": "The core shape of the logo: iconic, distinctive and functional.",
-
         "typography": "Typography",
         "typographyDesc": "Type choices crafted to express character and personality.",
-
         "colour": "Colour palette",
         "colourDesc": "Coherent colours that ensure recognition and readability everywhere.",
-
         "usage": "Applications",
         "usageDesc": "Usage rules that keep the logo strong across digital and print."
       }
@@ -96,6 +83,38 @@
         "three_description": "Custom, interactive and scalable web systems",
         "four_title": "Desktop applications",
         "four_description": "Software built with Electron or similar technologies for desktop"
+      }
+    },
+    "socialMedia": {
+      "title": "Social Media Management",
+      "description": "I help professionals and businesses build an effective presence on social media.",
+      "button_title": "Social Media Management",
+      "month": "month",
+      "socialTitle": "Social Package",
+      "socialDescription": "Full profile management and content creation",
+      "advTitle": "Advertising Package",
+      "advDescription": "Targeted advertising campaigns",
+      "listSocial": [
+        "Full social profile management",
+        "12 posts per month (3 per week)",
+        "Custom visual content",
+        "Professional copywriting",
+        "Monthly editorial plan"
+      ],
+      "listAdv": [
+        "Advertising campaign management",
+        "Custom audience targeting",
+        "Performance monitoring",
+        "Detailed monthly report"
+      ],
+      "note": "* Prices do not include the advertising budget.",
+      "allIncluded": "All inclusive",
+      "forYou": "Tailored for you",
+      "customPlan": "Custom plan",
+      "customDescription": "Tailored solutions based on your specific needs.",
+      "meta": {
+        "title": "Social Media Management | Tydedev",
+        "description": "Social media management services for professionals and businesses, including content creation, community engagement, and performance tracking."
       }
     }
   },
@@ -216,10 +235,8 @@
           "description": "It comes with custom blocks, pre-built patterns, and preconfigured templates to quickly create landing pages, marketing sections, and product pages in a clean and structured way. It is already e-commerce ready, so you can sell services, subscriptions, and digital products from day one.",
           "colorsTitle": "Customizable colors",
           "colorsDescription": "Choose from multiple color palettes to adapt the template to your brand identity, without touching a single line of code.",
-
           "variantsTitle": "Ready-to-use variants",
           "variantsDescription": "Preconfigured buttons and text styles, also available in outline versions. Icons are already integrated via Font Awesome, ensuring a consistent and immediately usable interface.",
-
           "patternsTitle": "Pre-built patterns",
           "patternsDescription": "Ready-to-use patterns designed to speed up the creation of your website’s landing pages, with variants tailored to create multiple user experiences."
         }
