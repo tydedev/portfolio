@@ -39,19 +39,19 @@
         "three_title": "Promise",
         "three_description": "Products, services and solutions",
         "four_title": "Visual identity",
-        "four_description": "Logo, typography, colour palette and tone of voice",
+        "four_description": "Logo, typography, color palette and tone of voice",
         "five_title": "Communication",
         "five_description": "Messages, imagery and content"
       },
       "logoTitle": "Logo",
-      "description": "<p>A <b>logo</b> is a symbol: it represents the brand, but it is not the brand.</p> <p>A logo works only when it sits within a coherent visual identity, with deliberate choices around colour, typography, tone and applications.</p>",
+      "description": "<p>A <b>logo</b> is a symbol: it represents the brand, but it is not the brand.</p> <p>A logo works only when it sits within a coherent visual identity, with deliberate choices around color, typography, tone and applications.</p>",
       "logoList": {
         "symbol": "The symbol",
         "symbolDesc": "The core shape of the logo: iconic, distinctive and functional.",
         "typography": "Typography",
         "typographyDesc": "Type choices crafted to express character and personality.",
-        "colour": "Colour palette",
-        "colourDesc": "Coherent colours that ensure recognition and readability everywhere.",
+        "colour": "Color palette",
+        "colourDesc": "Coherent color that ensure recognition and readability everywhere.",
         "usage": "Applications",
         "usageDesc": "Usage rules that keep the logo strong across digital and print."
       }
@@ -323,7 +323,7 @@
     "BrandIdentity": {
       "badge": "Brand Identity",
       "title": "Designing coherent and memorable visual identities",
-      "description": "I craft complete brand identities, from visual strategy to material design, ensuring consistency across logos, typography, colours, and tone of voice. The goal is to build brands that are recognisable and stand out in their market."
+      "description": "I craft complete brand identities, from visual strategy to material design, ensuring consistency across logos, typography, color, and tone of voice. The goal is to build brands that are recognisable and stand out in their market."
     }
   },
   "forms": {
