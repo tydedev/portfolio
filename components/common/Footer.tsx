@@ -12,6 +12,12 @@ const Footer = () => {
           <Logo size="xl" />
           <p className="font-semibold text-center text-lg">Tydedev</p>
           <p className="text-center text-muted-foreground text-sm">
+            Maria Basso
+          </p>
+          <p className="text-center text-muted-foreground text-sm">
+            {t("vatNumber")}
+          </p>
+          <p className="text-center text-muted-foreground text-sm">
             Torre Del Greco, 80059 Napoli
           </p>
           <p className="text-center text-muted-foreground text-sm">

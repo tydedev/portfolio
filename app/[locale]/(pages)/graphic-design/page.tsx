@@ -50,8 +50,16 @@ const GraphicDesignPage = () => {
         <LogoCard />
       </div>
       <div className="flex flex-col items-center justify-center py-10 text-2xl text-center">
-        <p>{t("goodLogo")}</p>
-        <p>{t("goodBrand")}</p>
+        <p>
+          {t.rich("goodLogo", {
+            b: text => <span className="font-semibold">{text}</span>,
+          })}
+        </p>
+        <p>
+          {t.rich("goodBrand", {
+            b: text => <span className="font-semibold">{text}</span>,
+          })}
+        </p>
       </div>
     </div>
   );

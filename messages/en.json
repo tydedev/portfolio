@@ -14,8 +14,8 @@
   "services": {
     "title": "What I can do",
     "graphic": {
-      "goodLogo": "A good logo is simple, legible, versatile and recognizable.",
-      "goodBrand": "A good brand is everything that surrounds it.",
+      "goodLogo": "A <b>good logo</b> is simple, legible, versatile and recognizable.",
+      "goodBrand": "A <b>good brand</b> is everything that surrounds it.",
       "meta": {
         "title": "Branding & Design",
         "description": "Creation of coherent and memorable visual identities, brand guidelines and visual systems, print and digital design, UI and UX design."
@@ -307,7 +307,8 @@
     }
   },
   "footer": {
-    "rights": "All rights reserved"
+    "rights": "All rights reserved",
+    "vatNumber": "VAT Number 10986031218"
   },
   "skills": {
     "UX": {

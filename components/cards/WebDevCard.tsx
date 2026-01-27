@@ -18,9 +18,9 @@ export const WebDevCard = () => {
         <div className="space-y-6 md:px-6">
           <div className="space-y-3 text-sm leading-relaxed">
             {t.rich("webAnswer", {
-              cyan: (text) => <span className="text-cyan-500">{text}</span>,
-              b: (text) => <span className="font-semibold">{text}</span>,
-              p: (text) => <p>{text}</p>,
+              cyan: text => <span className="text-cyan-500">{text}</span>,
+              b: text => <span className="font-semibold">{text}</span>,
+              p: text => <p>{text}</p>,
             })}
           </div>
         </div>

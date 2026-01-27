@@ -146,8 +146,8 @@
   "services": {
     "title": "Cosa posso fare per te",
     "graphic": {
-      "goodLogo": "Un buon logo è semplice, leggibile, versatile e riconoscibile.",
-      "goodBrand": "Un buon brand è tutto ciò che lo circonda.",
+      "goodLogo": "Un <b>buon logo</b> è semplice, leggibile, versatile e riconoscibile.",
+      "goodBrand": "Un <b>buon brand</b> è tutto ciò che lo circonda.",
       "meta": {
         "title": "Branding e design",
         "description": "Progettazione di identità visive coerenti e memorabili, linee guida del brand e sistemi visivi, design per stampa e contenuti digitali, design dell’interfaccia e dell’esperienza utente (UI/UX)"
@@ -307,7 +307,8 @@
     }
   },
   "footer": {
-    "rights": "Tutti i diritti riservati"
+    "rights": "Tutti i diritti riservati",
+    "vatNumber": "P.IVA 10986031218"
   },
   "skills": {
     "UX": {
