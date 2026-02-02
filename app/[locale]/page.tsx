@@ -55,13 +55,13 @@ export default function HomePage() {
         </h2>
         <ServiceCard />
       </div>
-      <div className="md:py-10 max-w-6xl w-full mx-auto p-6 space-y-10 flex flex-col items-center">
+      {/* <div className="md:py-10 max-w-6xl w-full mx-auto p-6 space-y-10 flex flex-col items-center">
         <h2 className="md:text-3xl font-semibold text-center text-xl">
           {s("socialMedia.title")}
         </h2>
         <p className="text-center mx-auto">{s("socialMedia.description")}</p>
         <SocialMediaPrices />
-      </div>
+      </div> */}
       <div className="md:py-10 max-w-6xl w-full mx-auto p-6 space-y-10">
         <h2 className="md:text-3xl font-semibold text-center text-xl">
           {t("projects.title")}
