@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="sticky  top-0 z-50 border-b h-13 flex items-center justify-between px-4 select-none bg-slate-950/75 backdrop-blur-lg">
       <MobileNav links={links} />
-      <Logo hasText size="lg" hasLink />
+      <Logo hasText size="xl" hasLink />
       <Nav links={links} />
       <LangToggle />
     </header>

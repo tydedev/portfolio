@@ -13,7 +13,7 @@ const Logo = ({ hasText, size = "md", hasLink }: Props) => {
     <span
       className={cn(
         "flex items-center justify-center gap-x-2 font-semibold select-none",
-        size === "sm" ? "text-sm" : size === "md" ? "text-md" : "text-lg"
+        size === "sm" ? "text-sm" : size === "md" ? "text-md" : "text-lg",
       )}
     >
       <Image
@@ -24,7 +24,7 @@ const Logo = ({ hasText, size = "md", hasLink }: Props) => {
         alt="Tydedev Logo"
         priority
       />
-      {hasText && "Tydedev"}
+      {hasText && <span className="uppercase tracking-widest">Tydedev</span>}
     </span>
   );
 

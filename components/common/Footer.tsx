@@ -10,7 +10,9 @@ const Footer = () => {
       <footer className="flex flex-col border-t bg-linear-to-t from-blue-700/11 to-blue-from-blue-700/5 mt-10 md:mt-25">
         <div className="flex-1 min-h-[100px] flex flex-col justify-center p-4 space-y-3">
           <Logo size="xl" />
-          <p className="font-semibold text-center text-lg">Tydedev</p>
+          <p className="font-semibold text-center text-lg uppercase tracking-widest">
+            Tydedev
+          </p>
           <p className="text-center text-muted-foreground text-sm">
             Maria Basso
           </p>
