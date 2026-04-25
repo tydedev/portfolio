@@ -1,0 +1,61 @@
+{
+  "Global": {
+    "title": "Maria Basso — Graphic designer e web developer",
+    "description": "Portfolio di Maria Basso"
+  },
+  "Header": {
+    "work": "Progetti",
+    "profile": "Profilo",
+    "country": "Italia"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, it {Italiano} en {Inglese} altro {Unknown}}"
+  },
+  "Locales": {
+    "description": "Seleziona la lingua"
+  },
+  "VAT": {
+    "label": "P.IVA",
+    "value": "10986031218"
+  },
+  "NotFound": {
+    "title": "Pagina non trovata",
+    "description": "Sembra che tu stia cercando qualcosa che non esiste.",
+    "link": "Torna alla home"
+  },
+  "Home": {
+    "about": "<p>Creazione di identità aziendali da zero con un approccio orientato al dettaglio, assicurando coerenza, usabilità e allineamento in tutti i canali digitali, traducendo la visione del cliente in materiali visivi e assicurando che ogni richiesta sia soddisfatta.</p>",
+    "CTA": "Se hai un progetto in mente o vuoi semplicemente dire ciao, non esitare a contattarmi!"
+  },
+  "Profile": {
+    "intro": "Graphic Designer e Web Developer nata a Torre del Greco (NA) nel 1991. Con un approccio orientato al dettaglio, costruisco identità aziendali da zero, traducendo la visione del cliente in materiali visivi.",
+    "contacts": "Contatti",
+    "skills": "Skills",
+    "education": "Educazione",
+    "certifications": "Certificazioni",
+    "activities": "Attività",
+    "academy": "Centro Studi Ilas",
+    "school": "Liceo Artistico di Napoli",
+    "academy_text": "Graphic Design",
+    "school_text": "Linguaggi Visivi e Design",
+    "availability": "Disponibile per lavori freelance da remoto, con possibilità di trasferimento.",
+    "activity_1": "Gestione di un account Instagram personale condividendo illustrazioni e animazioni 3D che hanno raggiunto oltre le 11 mila visualizzazioni.",
+    "activity_2": "Progettazione di loghi come volontaria per una compagnia teatrale e un podcast per amanti dello sport",
+    "activity_3": "Scrittura creativa per una Rivista Culturale no-profit, scrivendo storie incentrate sulla Storia dell’Arte, artisti e movimenti artistici.",
+    "activity_4": "Fotografia e Graphic Design per eventi culturali a Milano."
+  },
+  "GraphicDesign": {
+    "title": "Graphic Design — Maria Basso",
+    "description": "Materiali visivi realizzati per clienti, compresi loghi, identità aziendali, siti web e grafica social."
+  },
+  "Works": {
+    "title": "Progetti — Maria Basso",
+    "description": "Una selezione di progetti che mostrano le mie competenze in graphic design e web development.",
+    "intro": "I progetti includono loghi, identità aziendali, immagine coordinata, siti web e asset digitali e per la stampa.",
+    "Bascorp": {
+      "subtitle": "Logo, identità visiva, sito web",
+      "description": " Identità visiva e sito web per Bascorp, una nuova azienda di costruzione che si distingue per un approccio innovativo e sostenibile. Il progetto ha incluso la creazione di un logo moderno e versatile, e un sito web responsive che mette in evidenza i servizi offerti con un design pulito e funzionale."
+    }
+  }
+}

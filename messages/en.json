@@ -1,0 +1,61 @@
+{
+  "Global": {
+    "title": "Maria Basso — Graphic designer and web developer",
+    "description": "Maria Basso's portfolio"
+  },
+  "Header": {
+    "work": "Work",
+    "profile": "Profile",
+    "country": "Italy"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, it {Italian} en {English} other {Unknown}}"
+  },
+  "Locales": {
+    "description": "Select language"
+  },
+  "VAT": {
+    "label": "VAT",
+    "value": "IT10986031218"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "It seems you're looking for something that doesn't exist.",
+    "link": "Return to the homepage"
+  },
+  "Home": {
+    "about": "<p>Creating brand identities from the ground up with a detail-oriented approach, ensuring consistency, usability, and alignment across all digital touchpoints, translating the client’s vision into visual materials and ensuring all requirements are fully met.</p>",
+    "CTA": "If you have a project in mind or just want to say hi, feel free to reach out!"
+  },
+  "Profile": {
+    "intro": "Graphic Designer and Web Developer born in Torre del Greco (Italy) in 1991. With a detail-oriented approach, I create brand identities from scratch, translating the client’s vision into visual materials.",
+    "contacts": "Contacts",
+    "skills": "Skills",
+    "education": "Education",
+    "certifications": "Certifications",
+    "activities": "Activities",
+    "academy": "Ilas Academy of Naples",
+    "school": "Art School of Naples",
+    "academy_text": "Graphic Design",
+    "school_text": "Visual Languages and Design",
+    "availability": "Available for freelance and remote work.",
+    "activity_1": "Managed a personal Instagram account showcasing 3D illustrations and 3D animations, achieving over 11k views.",
+    "activity_2": "Volunteered as a Logo Designer for a non-profit stage theater company and sports podcast.",
+    "activity_3": "Creative Writing for a non-profit Cultural Magazine, producing short stories focused on Art History, artists, and artistic movements.",
+    "activity_4": "Photographer and Graphic Designer for Cultural Events in Milan."
+  },
+  "GraphicDesign": {
+    "title": "Graphic Design Portfolio",
+    "description": "Visual materials created for clients, including logos, brochures, websites, and social media graphics."
+  },
+  "Works": {
+    "title": "Works — Maria Basso",
+    "description": "A selection of projects showcasing my skills in graphic design and web development.",
+    "intro": "Projects include logos, brand identities, stationery, websites, and digital and print assets.",
+    "Bascorp": {
+      "subtitle": "Logo, visual identity, website",
+      "description": "Visual identity and website for Bascorp, a new construction company that stands out for an innovative and sustainable approach. The project included the creation of a modern and versatile logo, and a responsive website that highlights the services offered with a clean and functional design."
+    }
+  }
+}
