@@ -3,25 +3,26 @@ import { routing } from "@/i18n/routing";
 
 const host = process.env.NEXT_PUBLIC_HOST || "https://tydedev.it";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
-    { path: "", priority: 1.0 },
-    { path: "/work", priority: 0.8 },
-    { path: "/profile", priority: 0.8 },
-  ];
+const pages = [
+  { path: "", priority: 1.0 },
+  { path: "/work", priority: 0.8 },
+  { path: "/profile", priority: 0.8 },
+];
 
-  return routes.flatMap((route) =>
-    routing.locales.map((locale) => ({
-      url: `${host}/${locale}${route.path === "" ? "" : route.path}`,
-      priority: route.priority,
+export default function sitemap(): MetadataRoute.Sitemap {
+  return pages.map((page) => {
+    const url = `${host}/en${page.path}`;
+
+    return {
+      url,
+      priority: page.priority,
       alternates: {
-        languages: Object.fromEntries(
-          routing.locales.map((altLocale) => [
-            altLocale,
-            `${host}/${altLocale}${route.path === "" ? "" : route.path}`,
-          ]),
-        ),
+        languages: {
+          en: `${host}/en${page.path}`,
+          it: `${host}/it${page.path}`,
+          "x-default": `${host}/en${page.path}`,
+        },
       },
-    })),
-  );
+    };
+  });
 }
