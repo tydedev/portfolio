@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 
-const host = process.env.NEXT_PUBLIC_HOST || "http://tydedev.it";
+const host = process.env.NEXT_PUBLIC_HOST || "https://tydedev.it";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
