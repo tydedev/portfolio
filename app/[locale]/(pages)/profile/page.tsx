@@ -125,6 +125,7 @@ export async function generateMetadata(
   return {
     title: t("title"),
     description: t("description"),
+    canonical: `https://tydedev.it/${locale}/profile`,
     keywords: [
       "graphic design",
       "web development",
