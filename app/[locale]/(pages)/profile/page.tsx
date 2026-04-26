@@ -1,4 +1,5 @@
-import { useTranslations } from "next-intl";
+import { Locale, useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 export default function ProfilePage() {
@@ -109,4 +110,32 @@ export default function ProfilePage() {
       </div>
     </section>
   );
+}
+
+export async function generateMetadata(
+  props: Omit<LayoutProps<"/[locale]">, "children">,
+) {
+  const { locale } = await props.params;
+
+  const t = await getTranslations({
+    locale: locale as Locale,
+    namespace: "Profile",
+  });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: [
+      "graphic design",
+      "web development",
+      "siti web torre del greco",
+      "design torre del greco",
+      "logo torre del greco",
+      "portfolio",
+      "brand identity",
+      "logo design",
+      "responsive web design",
+      "torre del greco",
+    ],
+  };
 }
