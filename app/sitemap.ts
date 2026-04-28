@@ -1,5 +1,4 @@
 import { MetadataRoute } from "next";
-import { routing } from "@/i18n/routing";
 
 const host = process.env.NEXT_PUBLIC_HOST || "https://tydedev.it";
 
@@ -9,20 +8,19 @@ const pages = [
   { path: "/profile", priority: 0.8 },
 ];
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  return pages.map((page) => {
-    const url = `${host}/en${page.path}`;
+const locales = ["en", "it"] as const;
 
-    return {
-      url,
+export default function sitemap(): MetadataRoute.Sitemap {
+  return pages.flatMap((page) =>
+    locales.map((locale) => ({
+      url: `${host}/${locale}${page.path}`,
+      lastModified: new Date(),
       priority: page.priority,
       alternates: {
-        languages: {
-          en: `${host}/en${page.path}`,
-          it: `${host}/it${page.path}`,
-          "x-default": `${host}/en${page.path}`,
-        },
+        languages: Object.fromEntries(
+          locales.map((l) => [l, `${host}/${l}${page.path}`]),
+        ),
       },
-    };
-  });
+    })),
+  );
 }
