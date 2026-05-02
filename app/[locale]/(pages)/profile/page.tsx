@@ -77,6 +77,7 @@ export default function ProfilePage() {
 
         <div className="md:col-span-2 md:col-start-4">
           <p className="font-semibold">{t("certifications")}</p>
+          <p>InDesign (Adobe Professional Certificate)</p>
           <p>React.js</p>
           <p>Color Design</p>
         </div>
