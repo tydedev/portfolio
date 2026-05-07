@@ -1,11 +1,13 @@
 {
   "Global": {
     "title": "Tydedev | Graphic designer and web developer",
-    "description": "Maria Basso's portfolio: graphic design, brand identity and web development focused on structured layouts, clean design and UX."
+    "description": "Maria Basso's portfolio: graphic design, brand identity, book and ebook design, and web development focused on structured layouts, clean design and UX."
   },
   "Header": {
     "work": "Work",
     "profile": "Profile",
+    "services": "Services",
+    "eBook": "eBook",
     "country": "Italy"
   },
   "LocaleSwitcher": {
@@ -25,7 +27,7 @@
     "link": "Return to the homepage"
   },
   "Home": {
-    "about": "<p>Creating brand identities from the ground up with a detail-oriented approach, ensuring consistency, usability, and alignment across all digital touchpoints, translating the client’s vision into visual materials and ensuring all requirements are fully met.</p>",
+    "about": "<p>Visual identities for companies and professionals, with cohesive graphic systems for both digital and print use.</p><p>EPUB ebook conversion and formatting for publishing houses and independent authors, optimizing files for distribution on Kindle, Kobo, and other digital platforms.</p><p>Web design and development combined into a single service to transform ideas into clear, functional, and communication-driven visual solutions.</p>",
     "CTA": "If you have a project in mind or just want to say hi, feel free to reach out!"
   },
   "Profile": {
@@ -58,6 +60,17 @@
     "Bascorp": {
       "subtitle": "Logo, visual identity, website",
       "description": "Visual identity and website for Bascorp, a new construction company that stands out for an innovative and sustainable approach. The project included the creation of a modern and versatile logo, and a responsive website that highlights the services offered with a clean and functional design."
+    }
+  },
+  "Services": {
+    "EpubConversion": {
+      "title": "Ebook Conversion and Digital Publishing for Publishers and Authors",
+      "description": "Creation and conversion of editorial content into EPUB format, ensuring compatibility with all eReader devices: Kindle, Kobo, and Apple Books. Ideal service for publishers, independent authors, and anyone looking to digitize their content for distribution on digital platforms. Contact me to discuss your project and a personalized quote.",
+      "intro": "Ebook Conversion and Digital Publishing for Publishers and Authors",
+      "info1": "Creation and conversion of editorial content into EPUB format, ensuring compatibility with all eReader devices: Kindle, Kobo, and Apple Books.",
+      "info2": "EBOOKS developed according to international standards defined by the World Wide Web Consortium (W3C), to ensure compatibility, accessibility, and optimal performance across all digital platforms.",
+      "ideal_for": "Ideal service for publishers, independent authors, and anyone looking to digitize their content for distribution on digital platforms.",
+      "contact": "Contact me to discuss your project and a personalized quote."
     }
   }
 }

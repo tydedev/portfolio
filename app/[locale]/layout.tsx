@@ -63,10 +63,10 @@ export default async function LocaleLayout({
       className={`${workSans.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col px-4">
+      <body className="min-h-auto flex flex-col px-4">
         <NextIntlClientProvider>
           <Header />
-          <main className="md:min-h-[calc(100vh-160px)] h-full flex-1 flex flex-col justify-center">
+          <main className="h-full min-h-[calc(100vh-120px)] flex-1 flex flex-col justify-center">
             {children}
           </main>
           <Footer />

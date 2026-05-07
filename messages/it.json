@@ -1,11 +1,13 @@
 {
   "Global": {
     "title": "Tydedev | Graphic designer e web developer",
-    "description": "Portfolio di Maria Basso: design grafico, identità aziendali e sviluppo web incentrati su layout strutturati, design pulito e UX."
+    "description": "Portfolio di Maria Basso: design grafico, identità aziendali, impaginazione libri e ebook, e sviluppo web incentrati su layout strutturati, design pulito e UX."
   },
   "Header": {
     "work": "Progetti",
     "profile": "Profilo",
+    "services": "Servizi",
+    "eBook": "eBook",
     "country": "Italia"
   },
   "LocaleSwitcher": {
@@ -25,7 +27,7 @@
     "link": "Torna alla home"
   },
   "Home": {
-    "about": "<p>Creazione di identità aziendali da zero con un approccio orientato al dettaglio, assicurando coerenza, usabilità e allineamento in tutti i canali digitali, traducendo la visione del cliente in materiali visivi e assicurando che ogni richiesta sia soddisfatta.</p>",
+    "about": "<p>Identità visive per aziende e professionisti, e sistemi grafici coerenti per uso digitale e cartaceo.</p><p>Conversione e impaginazione di ebook in formato EPUB per case editrici e autori indipendenti, ottimizzando i file per la distribuzione su Kindle, Kobo e altre piattaforme digitali.</p><p>Design e sviluppo web in un unico servizio per trasformare idee in soluzioni visive chiare, funzionali e orientate alla comunicazione.</p>",
     "CTA": "Se hai un progetto in mente o vuoi semplicemente dire ciao, non esitare a contattarmi!"
   },
   "Profile": {
@@ -54,10 +56,21 @@
   "Works": {
     "title": "Identità aziendali, loghi, siti web e grafica social — Tydedev ",
     "description": "Una selezione di progetti che mostrano le mie competenze in graphic design e web development. I progetti includono loghi, identità aziendali, immagine coordinata, siti web e asset digitali e per la stampa.",
-    "intro": "I progetti includono loghi, identità aziendali, immagine coordinata, siti web e asset digitali e per la stampa.",
+    "intro": "Loghi, identità aziendali, immagine coordinata, siti web e asset digitali e per la stampa.",
     "Bascorp": {
       "subtitle": "Logo, identità visiva, sito web",
       "description": " Identità visiva e sito web per Bascorp, una nuova azienda di costruzione che si distingue per un approccio innovativo e sostenibile. Il progetto ha incluso la creazione di un logo moderno e versatile, e un sito web responsive che mette in evidenza i servizi offerti con un design pulito e funzionale."
+    }
+  },
+  "Services": {
+    "EpubConversion": {
+      "title": "Digitalizzazione editoriale e conversione in formato EPUB compatibile con tutti i dispositivi eReader",
+      "description": "Creazione e conversione di contenuti editoriali in formato EPUB, garantendo compatibilità con tutti i dispositivi eReader: Kindle, Kobo e Apple Books. Servizio ideale per case editrici, autori indipendenti e chiunque desideri digitalizzare i propri contenuti per la distribuzione su piattaforme digitali. Contattami per discutere del tuo progetto e ricevere un preventivo personalizzato.",
+      "intro": "Conversione eBook e Digitalizzazione Editoriale per Case Editrici e Autori",
+      "info1": "Creazione e conversione di contenuti editoriali in formato EPUB, garantendo compatibilità con tutti i dispositivi eReader: Kindle, Kobo e Apple Books.",
+      "info2": "EBOOK sviluppati secondo gli standard internazionali definiti dal World Wide Web Consortium (W3C), per garantire compatibilità, accessibilità e prestazioni ottimali su tutte le piattaforme digitali.",
+      "ideal_for": "Servizio ideale per case editrici, autori indipendenti e chiunque desideri digitalizzare i propri contenuti per la distribuzione su piattaforme digitali.",
+      "contact": "Contattami per discutere del tuo progetto e ricevere un preventivo personalizzato."
     }
   }
 }

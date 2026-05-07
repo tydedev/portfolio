@@ -10,6 +10,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import { DropdownMenuSeparator } from "./ui/dropdown-menu";
 
 const MobileMenu = () => {
   const t = useTranslations("Header");
@@ -32,6 +33,11 @@ const MobileMenu = () => {
           </Link>
           <Link href="/profile" onClick={() => setOpen(false)}>
             {t("profile")}
+          </Link>
+          <DropdownMenuSeparator className="my-4" />
+          <p className="text-2xl font-normal uppercase">{t("services")}</p>
+          <Link href="/services/epub-conversion" onClick={() => setOpen(false)}>
+            {t("eBook")}
           </Link>
         </nav>
       </SheetContent>
