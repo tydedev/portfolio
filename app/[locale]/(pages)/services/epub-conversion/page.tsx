@@ -1,20 +1,25 @@
 import { Locale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Script from "next/script";
-import { Product, WithContext } from "schema-dts";
+import { Service, WithContext } from "schema-dts";
 import Image from "next/image";
 
 export default function EpubPage() {
   const t = useTranslations("Services.EpubConversion");
 
-  const jsonLd: WithContext<Product> = {
+  const jsonLd: WithContext<Service> = {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "Service",
     name: t("intro"),
     description: t("description"),
     brand: {
       "@type": "Brand",
-      name: "Tydedev",
+      name: "Tydedev di Maria Basso",
+    },
+    provider: {
+      "@type": "Organization",
+      name: "Tydedev di Maria Basso",
+      url: "https://tydedev.it",
     },
     image: "https://tydedev.it/images/kindle.jpg",
     category: "Digital Publishing Services",
