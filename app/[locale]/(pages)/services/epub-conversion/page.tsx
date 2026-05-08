@@ -1,21 +1,26 @@
-import { Locale, useTranslations } from "next-intl";
+import { Locale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Script from "next/script";
 import { Service, WithContext } from "schema-dts";
 import Image from "next/image";
 
-export default function EpubPage() {
-  const t = useTranslations("Services.EpubConversion");
+export default async function EpubPage({
+  params,
+}: {
+  params: { locale: Locale };
+}) {
+  const { locale } = params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "Services.EpubConversion",
+  });
 
   const jsonLd: WithContext<Service> = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: t("intro"),
     description: t("description"),
-    brand: {
-      "@type": "Brand",
-      name: "Tydedev di Maria Basso",
-    },
     provider: {
       "@type": "Organization",
       name: "Tydedev di Maria Basso",
@@ -26,14 +31,14 @@ export default function EpubPage() {
     offers: {
       "@type": "Offer",
       availability: "https://schema.org/InStock",
-      url: "https://tydedev.it/services/epub-conversion",
+      url: `https://tydedev.it/${locale}/services/epub-conversion`,
     },
   };
 
   return (
     <>
       <Script
-        id="jsonld-epub-product"
+        id="jsonld-epub-service"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonLd),
@@ -41,7 +46,6 @@ export default function EpubPage() {
       />
 
       <section className="grid grid-cols-1 md:grid-cols-12 gap-6 max-w-300 mx-auto w-full my-20 md:my-40 px-4 md:px-0">
-        {/* INTRO */}
         <div className="col-span-full mb-10 md:mb-20">
           <h1 className="font-semibold text-base leading-relaxed">
             {t("intro")}
