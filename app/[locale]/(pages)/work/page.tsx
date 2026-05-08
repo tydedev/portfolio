@@ -29,18 +29,21 @@ export async function generateMetadata(
   return {
     title: t("title"),
     description: t("description"),
-    canonical: `https://tydedev.it/${locale}/works`,
+
+    alternates: {
+      canonical: `https://tydedev.it/${locale}/works`,
+      languages: {
+        it: "https://tydedev.it/it/works",
+        en: "https://tydedev.it/en/works",
+        "x-default": "https://tydedev.it",
+      },
+    },
+
     keywords: [
       "graphic design",
       "web development",
-      "siti web torre del greco",
-      "design torre del greco",
-      "logo torre del greco",
       "portfolio",
       "brand identity",
-      "logo design",
-      "responsive web design",
-      "torre del greco",
     ],
   };
 }

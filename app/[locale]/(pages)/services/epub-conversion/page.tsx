@@ -100,23 +100,20 @@ export async function generateMetadata(
 
     alternates: {
       canonical: `https://tydedev.it/${locale}/services/epub-conversion`,
+      languages: {
+        it: "https://tydedev.it/it/services/epub-conversion",
+        en: "https://tydedev.it/en/services/epub-conversion",
+        "x-default": "https://tydedev.it",
+      },
     },
 
     keywords: [
-      "graphic design",
-      "web development",
-      "siti web torre del greco",
-      "design torre del greco",
-      "logo torre del greco",
-      "portfolio",
-      "brand identity",
-      "branding",
-      "ebook conversion",
       "epub conversion",
+      "ebook conversion",
       "digital publishing",
-      "logo design",
-      "responsive web design",
-      "torre del greco",
+      "epub formatting",
+      "kindle formatting",
+      "ebook designer",
     ],
   };
 }

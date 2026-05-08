@@ -64,14 +64,14 @@
   },
   "Services": {
     "EpubConversion": {
-      "title": "Digitalizzazione editoriale e creazione di eBook in formato EPUB compatibile con tutti i dispositivi eReader",
-      "type": "Servizio di conversione, creazione eBook e digitalizzazione editoriale",
-      "description": "Creazione e conversione di contenuti editoriali in formato EPUB, garantendo compatibilità con tutti i dispositivi eReader: Kindle, Kobo e Apple Books. Servizio ideale per case editrici, autori indipendenti e chiunque desideri digitalizzare i propri contenuti per la distribuzione su piattaforme digitali. Contattami per discutere del tuo progetto e ricevere un preventivo personalizzato.",
-      "intro": "Conversione eBook e Digitalizzazione Editoriale per Case Editrici e Autori",
-      "info1": "Creazione e conversione di contenuti editoriali in formato EPUB, garantendo compatibilità con tutti i dispositivi eReader: Kindle, Kobo e Apple Books.",
-      "info2": "EBOOK sviluppati secondo gli standard internazionali definiti dal World Wide Web Consortium (W3C), per garantire compatibilità, accessibilità e prestazioni ottimali su tutte le piattaforme digitali.",
-      "ideal_for": "Servizio ideale per case editrici, autori indipendenti e chiunque desideri digitalizzare i propri contenuti per la distribuzione su piattaforme digitali.",
-      "contact": "Contattami per discutere del tuo progetto e ricevere un preventivo personalizzato."
+      "title": "EPUB e Ebook Design per editoria digitale e dispositivi eReader",
+      "type": "Servizio di creazione e impaginazione EPUB per editoria digitale",
+      "description": "Servizio di creazione e impaginazione EPUB per editoria digitale, ottimizzato per dispositivi eReader come Kindle, Kobo e Apple Books. Ideale per case editrici, autori indipendenti e professionisti che vogliono pubblicare contenuti editoriali in formato digitale accessibile e conforme agli standard internazionali W3C.",
+      "intro": "EPUB design e impaginazione per editoria digitale e autori",
+      "info1": "Progettazione e impaginazione di file EPUB ottimizzati per la lettura su Kindle, Kobo e Apple Books, con struttura semantica e accessibilità garantita.",
+      "info2": "File EPUB realizzati secondo gli standard W3C per garantire compatibilità, performance e accessibilità su tutte le piattaforme di lettura digitale.",
+      "ideal_for": "Ideale per case editrici, autori indipendenti e professionisti che vogliono pubblicare contenuti editoriali in formato digitale.",
+      "contact": "Contattami per discutere il tuo progetto e ricevere una proposta su misura."
     }
   }
 }

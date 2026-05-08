@@ -64,14 +64,14 @@
   },
   "Services": {
     "EpubConversion": {
-      "title": "Ebook Conversion, Creation and Digital Publishing for Publishers and Authors",
-      "type": "EPUB Conversion, Creation and Digital Publishing Service",
-      "description": "Creation and conversion of editorial content into EPUB format, ensuring compatibility with all eReader devices: Kindle, Kobo, and Apple Books. Ideal service for publishers, independent authors, and anyone looking to digitize their content for distribution on digital platforms. Contact me to discuss your project and a personalized quote.",
-      "intro": "Ebook Conversion and Digital Publishing for Publishers and Authors",
-      "info1": "Creation and conversion of editorial content into EPUB format, ensuring compatibility with all eReader devices: Kindle, Kobo, and Apple Books.",
-      "info2": "EBOOKS developed according to international standards defined by the World Wide Web Consortium (W3C), to ensure compatibility, accessibility, and optimal performance across all digital platforms.",
-      "ideal_for": "Ideal service for publishers, independent authors, and anyone looking to digitize their content for distribution on digital platforms.",
-      "contact": "Contact me to discuss your project and a personalized quote."
+      "title": "EPUB Design & Ebook Publishing for Digital Editorial Content",
+      "type": "EPUB design and digital publishing service",
+      "description": "EPUB design and ebook publishing service optimized for digital reading platforms such as Kindle, Kobo, and Apple Books. Ideal for publishers, independent authors, and professionals who need structured, accessible, and standards-compliant digital publications based on W3C guidelines.",
+      "intro": "EPUB design and ebook publishing for digital authors and publishers",
+      "info1": "Design and structuring of EPUB files optimized for Kindle, Kobo, and Apple Books, with a focus on semantic structure and accessibility.",
+      "info2": "EPUB files built according to W3C standards to ensure compatibility, performance, and accessibility across all major digital reading platforms.",
+      "ideal_for": "Ideal for publishers, independent authors, and professionals looking to publish structured digital content in EPUB format.",
+      "contact": "Get in touch to discuss your project and receive a tailored quote."
     }
   }
 }

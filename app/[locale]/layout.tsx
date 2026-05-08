@@ -31,8 +31,20 @@ export async function generateMetadata(
   return {
     title: t("title"),
     description: t("description"),
+    metadataBase: new URL("https://tydedev.it"),
     alternates: {
       canonical: `https://tydedev.it/${locale}`,
+      languages: {
+        ...routing.locales.reduce(
+          (acc, loc) => {
+            acc[loc] = `https://tydedev.it/${loc}`;
+            return acc;
+          },
+          {} as Record<string, string>,
+        ),
+
+        "x-default": "https://tydedev.it",
+      },
     },
     keywords: [
       "graphic design",
