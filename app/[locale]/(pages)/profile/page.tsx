@@ -1,14 +1,53 @@
 import { Locale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
+import Script from "next/script";
+import { Organization, Person, WithContext } from "schema-dts";
 
 export default function ProfilePage() {
   const t = useTranslations("Profile");
 
+  const personJsonLd: WithContext<Person> = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Maria Basso",
+    alternateName: "Tydedev",
+    url: "https://tydedev.it/profile",
+    image: "https://tydedev.it/logo.svg",
+    jobTitle: "Graphic Designer, Web Developer & eBook Specialist",
+    sameAs: [
+      "https://www.instagram.com/tydedev",
+      "https://www.behance.net/tydedev",
+      "https://www.linkedin.com/in/maria-basso-b46a12370/",
+      "https://tydedev.it",
+    ],
+    knowsAbout: [
+      "Graphic Design",
+      "Brand Identity",
+      "Web Design",
+      "Frontend Development",
+      "Next.js",
+      "UI/UX Design",
+      "Typography",
+      "Digital Publishing",
+      "EPUB Design",
+      "Accessibility",
+      "SEO",
+    ],
+  };
+
   return (
     <section className="grid grid-cols-1 md:grid-cols-12 gap-6 max-w-300 mx-auto w-full mt-40">
+      <Script
+        id="person-jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(personJsonLd),
+        }}
+      />
       {/* INTRO */}
       <div className="md:col-span-7 mb-20">
+        <h1>{t("title")}</h1>
         <p className="font-semibold text-base leading-relaxed">{t("intro")}</p>
       </div>
 
