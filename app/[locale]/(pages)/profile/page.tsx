@@ -63,10 +63,15 @@ export default function ProfilePage() {
         </div>
 
         <div className="md:col-span-2 md:col-start-7 flex flex-col">
-          <Link href="https://www.linkedin.com/in/maria-basso-b46a12370/">
+          <Link
+            href="https://www.linkedin.com/in/maria-basso-b46a12370/"
+            target="_blank"
+          >
             LinkedIn
           </Link>
-          <Link href="https://www.instagram.com/tydedev/">Instagram</Link>
+          <Link href="https://www.instagram.com/tydedev/" target="_blank">
+            Instagram
+          </Link>
         </div>
 
         <div className="md:col-span-3 md:col-start-10">
