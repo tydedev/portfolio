@@ -1,6 +1,6 @@
 {
   "Global": {
-    "title": "Tydedev | Graphic designer and web developer",
+    "title": "Tydedev | Brand Identity & Graphic Design",
     "description": "Maria Basso's portfolio: graphic design, brand identity, book and ebook design, and web development focused on structured layouts, clean design and UX."
   },
   "Header": {
@@ -27,7 +27,7 @@
     "link": "Return to the homepage"
   },
   "Home": {
-    "about": "<p>Visual identities for companies and professionals, with cohesive graphic systems for both digital and print use.</p><p>EPUB ebook conversion and formatting for publishing houses and independent authors, optimizing files for distribution on Kindle, Kobo, and other digital platforms.</p><p>Web design and development combined into a single service to transform ideas into clear, functional, and communication-driven visual solutions.</p>",
+    "about": "<p>Visual identities for companies and professionals, with cohesive graphic systems for both digital and print use.</p><p>Web design and development combined into a single service to transform ideas into clear, functional, and communication-driven visual solutions.</p>",
     "CTA": "If you have a project in mind or just want to say hi, feel free to reach out!"
   },
   "Profile": {
@@ -58,8 +58,16 @@
     "description": "A selection of projects showcasing my skills in graphic design and web development. Projects include logos, brand identities, stationery, websites, and digital and print assets.",
     "intro": "Projects include logos, brand identities, stationery, websites, and digital and print assets.",
     "Bascorp": {
-      "subtitle": "Logo, visual identity, website",
-      "description": "Visual identity and website for Bascorp, a new construction company that stands out for an innovative and sustainable approach. The project included the creation of a modern and versatile logo, and a responsive website that highlights the services offered with a clean and functional design."
+      "title": "Project: Bascorp",
+      "description": "Bascorp is a new company in the construction and renovation field. Their purpose is to be a reliable partner for their clients’ projects, and to have a strong and recognizable identity across all touchpoints.",
+      "intro": "Bascorp is a new company in the construction and renovation field. Their purpose is to be a reliable partner for their clients’ projects, and to have a strong and recognizable identity across all touchpoints.",
+      "detail": "I designed the website and developed it with Next.js, obtaining a fully responsive and scalable product."
+    },
+    "Stasi": {
+      "title": "Project Concept: Stasifood",
+      "description": "Stasifood is an Italian bakery brand specializing in premium products positioned as elegant holiday gift options.",
+      "intro": "Stasifood is an Italian bakery brand specializing in premium products positioned as elegant holiday gift options.",
+      "detail": "The redesigned packaging improves product recognition while creating a clearer and more premium shelf presence. The guarantee seal graphic evokes craftsmanship and authenticity, reinforcing trust in the brand’s quality."
     }
   },
   "Services": {

@@ -32,7 +32,7 @@ const LocaleSwitcher = ({ ghost }: Props) => {
   }
 
   return (
-    <div>
+    <>
       <Button
         onClick={() => onSelectChange("it")}
         variant={"link"}
@@ -56,7 +56,7 @@ const LocaleSwitcher = ({ ghost }: Props) => {
       >
         EN
       </Button>
-    </div>
+    </>
   );
 };
 

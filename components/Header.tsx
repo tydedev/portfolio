@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { CurrentTime } from "./CurrentTime";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { cn } from "@/lib/utils";
@@ -16,6 +15,7 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
+import { Locale } from "./Locale";
 
 const Header = () => {
   const pathname = usePathname();
@@ -32,9 +32,9 @@ const Header = () => {
   };
 
   return (
-    <header className="relative z-50 grid grid-cols-12 gap-6 max-w-300 mx-auto h-25 items-start pt-10 w-full">
+    <header className="sticky top-0 left-0 bg-white z-50 grid grid-cols-12 gap-6 max-w-300 mx-auto md:h-25 items-start pt-10 w-full h-auto pb-3 md:pb-0">
       {/* LOGO */}
-      <div className="md:col-span-3 col-span-6">
+      <div className="md:col-span-7 col-span-6">
         <Link href="/">
           <div className="md:flex space-y-2 md:space-y-0">
             <Image
@@ -59,13 +59,12 @@ const Header = () => {
       </div>
 
       {/* NAV */}
-      <div className="col-span-4 hidden md:flex items-center gap-8 text-sm">
+      <div className="col-span-3 hidden md:flex items-center gap-8 text-sm">
         <Link
           href="/work"
           className={cn(
             "hover:underline tracking-wide underline-offset-4",
-            cleanPathname.startsWith("/work") &&
-              "font-semibold pointer-events-none",
+            cleanPathname.startsWith("/work") && "font-semibold",
           )}
         >
           {t("work")}
@@ -106,8 +105,8 @@ const Header = () => {
       </div>
 
       {/* TIME */}
-      <div className="md:col-span-5 col-span-4">
-        <CurrentTime />
+      <div className="md:col-span-2 col-span-4 items-center">
+        <Locale />
       </div>
 
       {/* MOBILE */}
