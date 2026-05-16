@@ -2,7 +2,9 @@ import { Locale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import Script from "next/script";
-import { Organization, Person, WithContext } from "schema-dts";
+import { Person, WithContext } from "schema-dts";
+import { BiLogoAdobe } from "react-icons/bi";
+import { SiCodecademy, SiGrammarly } from "react-icons/si";
 
 export default function ProfilePage() {
   const t = useTranslations("Profile");
@@ -58,7 +60,9 @@ export default function ProfilePage() {
         </div>
 
         <div className="md:col-span-2 md:col-start-4">
-          <p>maria.basso.td@gmail.com</p>
+          <Link href="mailto:maria.basso.td@gmail.com" target="_blank">
+            maria.basso.td@gmail.com
+          </Link>
           <p>+39 320 533 2994</p>
         </div>
 
@@ -121,9 +125,18 @@ export default function ProfilePage() {
 
         <div className="md:col-span-2 md:col-start-4">
           <p className="font-semibold">{t("certifications")}</p>
-          <p>InDesign (Adobe Professional Certificate)</p>
-          <p>React.js</p>
-          <p>Color Design</p>
+          <p>
+            Business Writing <SiGrammarly className="inline text-[#027E6F]" />
+          </p>
+          <p>
+            InDesign <BiLogoAdobe className="inline text-red-600" />
+          </p>
+          <p>
+            Graphic Design <BiLogoAdobe className="inline  text-red-600" />
+          </p>
+          <p>
+            React.js <SiCodecademy className="inline" />
+          </p>
         </div>
 
         <div className="md:col-span-2 md:col-start-7">
