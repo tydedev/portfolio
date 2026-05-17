@@ -58,16 +58,22 @@
     "description": "Una selezione di progetti che mostrano le mie competenze in graphic design e web development. I progetti includono loghi, identità aziendali, immagine coordinata, siti web e asset digitali e per la stampa.",
     "intro": "Loghi, identità aziendali, immagine coordinata, siti web e asset digitali e per la stampa.",
     "Bascorp": {
-      "title": "Project: Bascorp",
+      "title": "Progetto su commissione: Bascorp",
       "description": "Bascorp è una nuova azienda di costruzione e ristrutturazione. La loro missione è quella di diventare il partner ideale per i progetti dei suoi clienti, e avere un'identità forte e riconoscibile in tutti i touchpoint.",
       "intro": "Bascorp è una nuova azienda di costruzione e ristrutturazione. La loro missione è quella di diventare il partner ideale per i progetti dei suoi clienti, e avere un'identità forte e riconoscibile in tutti i touchpoint.",
       "detail": "Ho progettato la grafica del sito web per poi svilupparlo con Next.js, ottendendo un prodotto responsive e scalabile"
     },
     "Stasi": {
-      "title": "Project Concept: Stasifood",
+      "title": "Concept di rebranding: Stasifood",
       "description": "Stasifood è una bakery italiana, specializzata in prodotti premium e tradizionali. L'opzione perfetta per un regalo durante le festività.",
       "intro": "Stasifood è una bakery italiana, specializzata in prodotti premium e tradizionali. L'opzione perfetta per un regalo durante le festività.",
       "detail": "Il redesign del packaging rende il prodotto più riconoscibile e crea una presenza più chiara e premium. Il dettaglio che ricorda un sigillo di garanzia evoca l'autenticità e la produzione handmade, così da rafforzarne la qualità e la fiducia nel brand."
+    },
+    "Boeing": {
+      "title": "Commissione indipendente: Poster editabile",
+      "description": "Progetto per un cliente che aveva bisogno di file Figma editabili per la sua attività su Etsy.",
+      "intro": "Il cliente è un seller di Etsy che aveva bisogno di un file Figma editabile per la sua attività. Il progetto richiedeva che venisse progettato il template di un poster in cui venivano elencate le caratteristiche del velivolo. ",
+      "detail": "Il cliente ha esplicitamente richiesto che mi ispirassi all'International Typographic Style (noto come Swiss Style). Il risultato è un file Figma completamente editabile, che ha potuto essere utilizzato per la progettazione di altri poster."
     }
   },
   "Services": {

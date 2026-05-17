@@ -34,7 +34,7 @@ export default function BascorpPage() {
         {/* LEFT COLUMN */}
         <div className="md:col-span-5 md:grid grid-rows-2 gap-6 flex flex-col">
           <Image
-            src="/images/bascorp/stationery.png"
+            src="/images/bascorp/stationery.jpg"
             width={1200}
             height={800}
             className="object-cover w-full h-full"
@@ -43,7 +43,7 @@ export default function BascorpPage() {
           />
 
           <Image
-            src="/images/bascorp/poster.png"
+            src="/images/bascorp/poster.jpg"
             width={1200}
             height={800}
             className="object-cover w-full h-full"
@@ -55,7 +55,7 @@ export default function BascorpPage() {
         {/* RIGHT COLUMN */}
         <div className="md:col-span-7 relative md:min-h-[900px] min-h-[300px]">
           <Image
-            src="/images/bascorp/shirt.png"
+            src="/images/bascorp/shirt.jpg"
             fill
             className="object-cover"
             alt="Bascorp shirt mockup"
@@ -66,7 +66,7 @@ export default function BascorpPage() {
         {/* LEFT COLUMN */}
         <div className="md:col-span-8 relative md:min-h-[900px] min-h-[300px]">
           <Image
-            src="/images/bascorp/site.png"
+            src="/images/bascorp/site.jpg"
             fill
             className="object-cover"
             alt="Bascorp shirt mockup"
@@ -77,7 +77,7 @@ export default function BascorpPage() {
         {/* RIGHT COLUMN */}
         <div className="md:col-span-4 md:grid grid-rows-2 gap-6 grid-cols-4">
           <Image
-            src="/images/bascorp/mobile.png"
+            src="/images/bascorp/mobile.jpg"
             width={1200}
             height={800}
             className="object-cover w-full h-full col-span-full"
@@ -89,7 +89,7 @@ export default function BascorpPage() {
         </div>
         <div className="md:col-span-12 md:grid grid-cols-3 gap-6 flex flex-col">
           <Image
-            src="/images/bascorp/flyer.png"
+            src="/images/bascorp/flyer.jpg"
             width={1200}
             height={800}
             className="object-cover max-w-full h-full border border-muted-foreground/5"
@@ -98,7 +98,7 @@ export default function BascorpPage() {
           />
 
           <Image
-            src="/images/bascorp/flyer_2.png"
+            src="/images/bascorp/flyer_2.jpg"
             width={1200}
             height={800}
             className="object-cover max-w-full h-full"
@@ -106,7 +106,7 @@ export default function BascorpPage() {
             priority
           />
           <Image
-            src="/images/bascorp/flyer_1.png"
+            src="/images/bascorp/flyer_1.jpg"
             width={1200}
             height={800}
             className="object-cover max-w-full h-full"

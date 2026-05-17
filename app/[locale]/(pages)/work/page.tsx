@@ -19,7 +19,7 @@ export default function WorksPage() {
         <article className="md:col-span-5 space-y-4">
           <Link href="/work/bascorp" className="block group">
             <Image
-              src="/images/bascorp/poster.png"
+              src="/images/bascorp/poster.jpg"
               width={1200}
               height={1600}
               alt="Bascorp visual identity"
@@ -29,7 +29,7 @@ export default function WorksPage() {
 
           <div className="space-y-1">
             <h2 className="text-sm font-medium uppercase tracking-wide">
-              Bascorp
+              {t("Bascorp.title")}
             </h2>
 
             <p className="text-sm text-neutral-500 leading-tight">
@@ -53,7 +53,7 @@ export default function WorksPage() {
 
           <div className="space-y-1">
             <h2 className="text-sm font-medium uppercase tracking-wide">
-              Stasifood
+              {t("Stasi.title")}
             </h2>
 
             <p className="text-sm text-neutral-500 leading-tight">
@@ -69,7 +69,7 @@ export default function WorksPage() {
             width={1200}
             height={1200}
             alt="Editorial design"
-            className="w-full h-auto transition-all duration-700 group-hover:opacity-90 border border-muted-foreground/5"
+            className="w-full h-auto transition-all duration-700 group-hover:opacity-90 border border-muted-foreground/7"
           />
 
           <div className="space-y-1">
@@ -79,6 +79,29 @@ export default function WorksPage() {
 
             <p className="text-sm text-neutral-500 leading-tight">
               Poster Design · Art Direction · Personal Project
+            </p>
+          </div>
+        </article>
+
+        {/* PROJECT 04 */}
+        <article className="md:col-span-4 md:col-start-8 space-y-4">
+          <Link href="/work/boeing-poster" className="block group">
+            <Image
+              src="/images/misc/boeing-poster.jpg"
+              width={1200}
+              height={1200}
+              alt="Editorial design"
+              className="w-full h-auto transition-all duration-700 group-hover:opacity-90 border border-muted-foreground/7"
+            />
+          </Link>
+
+          <div className="space-y-1">
+            <h2 className="text-sm font-medium uppercase tracking-wide">
+              {t("Boeing.title")}
+            </h2>
+
+            <p className="text-sm text-neutral-500 leading-tight">
+              Poster Design · Editable Figma Template
             </p>
           </div>
         </article>
