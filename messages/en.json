@@ -1,0 +1,132 @@
+{
+  "Global": {
+    "title": "Tydedev — Graphic Design, Brand Identity and Web Development",
+    "description": "Multidisciplinary graphic designer specializing in brand identity, editorial design, and digital experiences. Experienced in developing cohesive visual identities across print and digital, from visual system design to responsive web implementation."
+  },
+  "Header": {
+    "work": "Work",
+    "profile": "Profile",
+    "services": "Services",
+    "eBook": "eBook",
+    "country": "Italy"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, it {Italian} en {English} other {Unknown}}"
+  },
+  "Locales": {
+    "description": "Select language"
+  },
+  "VAT": {
+    "label": "VAT",
+    "value": "IT10986031218"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "It seems you're looking for something that doesn't exist.",
+    "link": "Return to the homepage"
+  },
+  "Home": {
+    "hello": "<red>Hello,</red><br></br> I'm Maria",
+    "about": "<p>Multidisciplinary Graphic designer specialized in <b>brand identity</b>, <b>editorial design</b> and <b>digital experiences</b>. Experienced in developing cohesive visual identities across print and digital, from visual system design to responsive web implementation. </p><p>Structured and systemic approach, with strong attention to <b>typography</b>, <b>grid systems</b> and <b>cross-platform consistency</b>. I work on end-to-end projects, ensuring visual continuity between brand identity and digital applications.</p>",
+    "CTA": "If you have a project in mind or just want to say hi, feel free to reach out!"
+  },
+  "Profile": {
+    "title": "About Maria Basso",
+    "description": "Multi-disciplinary graphic designer available for remote work in US, Canada and Worldwide.",
+    "tools": "Tools & Tech",
+    "skills": "Core Skills",
+    "education": "Education",
+    "certifications": "Certifications",
+    "languages": "Languages",
+    "italian": "Italian (Native)",
+    "english": "English (Fluent)",
+    "activities": "Activities",
+    "academy": "Ilas Academy of Naples",
+    "school": "Art School of Naples",
+    "academy_text": "Graphic Design",
+    "school_text": "Visual Languages and Design",
+    "availability": "Available for remote work for US, Canada and Worldwide."
+  },
+  "Works": {
+    "aircraft": {
+      "title": "Customizable Aircraft Poster",
+      "description": "The client needed a fully customizable poster for their e-commerce of aviation posters. I designed a modular template in Figma inspired by the International Typographic Style, maintaining a minimalist and highly readable aesthetic. The file was structured with variables and modifiable components, allowing for quick updates of names, statistics, and technical specifications of different aircraft without compromising the layout.",
+      "worktype": "Commissioned project"
+    },
+    "bascorp": {
+      "title": "Brand Identity for Bascorp",
+      "description": "Bascorp is a startup focused on developing innovative solutions for the construction industry. The client needed a comprehensive brand identity that could effectively communicate their values of innovation, sustainability, and reliability. I developed a visual identity system that included logo design, typography, color palette, and digital applications. The design was inspired by the principles of modernism and minimalism, with a focus on clarity and functionality to ensure consistency across all touchpoints.",
+      "worktype": "Commissioned project"
+    },
+    "magazine": {
+      "title": "Editorial Design for a Cultural Magazine: \"Il Raccoglitore\"",
+      "description": "A project for a cultural magazine I founded with a group of friends. I handled the editorial design (print and digital), typography, and social and promotional content. The design was developed to work in both digital and printed format, with particular attention to readability and contemporary aesthetics.",
+      "worktype": "Non-profit project"
+    },
+    "petrha-aquadro": {
+      "title": "Brand Identity for Petrha Srl and Aquadro Holding",
+      "description": "Petrha Srl is a construction company aiming to establish itself among the leading design & build firms. The client needed a comprehensive brand identity to effectively communicate their values of innovation, sustainability, and reliability. Aquadro Holding is the group Petrha Srl belongs to — I extended the visual identity developed for Petrha to cover the holding as well, creating a coherent system applicable across all digital and print touchpoints.",
+      "worktype": "Commissioned project"
+    },
+    "petrha": {
+      "title": "Petrha Group Visual Identity",
+      "description": "Visual identity and digital experience design for Petrha Group, a design & build construction company. The project focused on establishing a strong brand presence across digital platforms.",
+      "worktype": "Commissioned project"
+    },
+    "torrechannel": {
+      "title": "TC.it Brand Identity",
+      "description": "Brand identity design for TC.it, including logo design and visual system development.",
+      "worktype": "Spec Work"
+    },
+    "loud": {
+      "title": "Loud: Against Bullying",
+      "description": "Concept for a campaign against bullying, developed as a personal project. The focus is on text and visual communication, with a direct and impactful approach to raise awareness on this social issue.",
+      "worktype": "Campaign Concept"
+    },
+    "stasifood": {
+      "title": "Stasifood Packaging & rebranding",
+      "description": "Concept for packaging and branding of Stasifood, including logo design, packaging concepts, and digital applications with a focus on creating a coherent visual identity and premium brand presence.",
+      "worktype": "Spec Work"
+    },
+    "shineshield": {
+      "title": "Shine & Shield Brand Identity",
+      "description": "Spec work for designing the visual identity of Shine & Shield, including logo design and visual system development.",
+      "worktype": "Spec Work"
+    },
+    "fantasybook": {
+      "title": "Editorial Design for Fantasy Book",
+      "description": "Editorial design project for a fantasy book, with particular attention to typography, visual hierarchy, and stylistic consistency between cover and internal layout.",
+      "worktype": "Personal project"
+    }
+  },
+  "Services": {
+    "EpubConversion": {
+      "title": "EPUB Design & Ebook Publishing for Digital Editorial Content",
+      "type": "EPUB design and digital publishing service",
+      "description": "EPUB design and ebook publishing service optimized for digital reading platforms such as Kindle, Kobo, and Apple Books. Ideal for publishers, independent authors, and professionals who need structured, accessible, and standards-compliant digital publications based on W3C guidelines.",
+      "intro": "EPUB design and ebook publishing for digital authors and publishers",
+      "info1": "Design and structuring of EPUB files optimized for Kindle, Kobo, and Apple Books, with a focus on semantic structure and accessibility.",
+      "info2": "EPUB files built according to W3C standards to ensure compatibility, performance, and accessibility across all major digital reading platforms.",
+      "ideal_for": "Ideal for publishers, independent authors, and professionals looking to publish structured digital content in EPUB format.",
+      "contact": "Get in touch to discuss your project and receive a tailored quote."
+    }
+  },
+  "ContactForm": {
+    "title": "Get in Touch",
+    "description": "Whether you have a project in mind, want to collaborate, or just want to say hi, feel free to reach out! I'm always open to new opportunities and connections.",
+    "mailTo": "Use the form or email me directly at <a>maria.basso.td@gmail.com</a>",
+    "name": "Jane",
+    "lastname": "Doe",
+    "email": "example@doe.com",
+    "message": "Message",
+    "submit": "Send Message",
+    "nameRequired": "First name is required",
+    "lastnameRequired": "Last name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Email is invalid",
+    "messageRequired": "Message must be at least 30 characters long",
+    "success": "Your message has been sent successfully!",
+    "error": "An error occurred while sending your message. Please try again later."
+  }
+}

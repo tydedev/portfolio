@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+ 
+Sitemap: https://tydedev.it/sitemap.xml
