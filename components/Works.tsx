@@ -10,7 +10,7 @@ const Works = () => {
     >
       {projects.map((project) => (
         <Link
-          href={`/work/${project.slug}`}
+          href={`/work/${project.slug}` as never}
           key={project.slug}
           className={`group relative overflow-hidden ${project.gridClass} cursor-pointer`}
         >
