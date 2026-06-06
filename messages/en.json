@@ -101,15 +101,71 @@
     }
   },
   "Services": {
-    "EpubConversion": {
-      "title": "EPUB Design & Ebook Publishing for Digital Editorial Content",
-      "type": "EPUB design and digital publishing service",
-      "description": "EPUB design and ebook publishing service optimized for digital reading platforms such as Kindle, Kobo, and Apple Books. Ideal for publishers, independent authors, and professionals who need structured, accessible, and standards-compliant digital publications based on W3C guidelines.",
-      "intro": "EPUB design and ebook publishing for digital authors and publishers",
-      "info1": "Design and structuring of EPUB files optimized for Kindle, Kobo, and Apple Books, with a focus on semantic structure and accessibility.",
-      "info2": "EPUB files built according to W3C standards to ensure compatibility, performance, and accessibility across all major digital reading platforms.",
-      "ideal_for": "Ideal for publishers, independent authors, and professionals looking to publish structured digital content in EPUB format.",
-      "contact": "Get in touch to discuss your project and receive a tailored quote."
+    "bookLayout": {
+      "title": "Book Layout Design for Print and Digital",
+      "description": "<up>Every well written book</up> deserves a layout that enhances the reading experience. I specialize in designing layouts for both print and digital formats, ensuring that your content is presented in the most engaging and readable way possible. Whether you're publishing a novel, a non-fiction book, or a photo book, I can create a layout that reflects your vision and meets the technical requirements of your chosen publishing platform.",
+      "faq": {
+        "title": "Frequently asked questions",
+        "items": [
+          {
+            "question": "What formats do you deliver?",
+            "answer": "I deliver print-ready PDFs and EPUBs for digital distribution. If you only need one format, we'll decide together based on your platform and needs."
+          },
+          {
+            "question": "Do you work with KDP?",
+            "answer": "Yes, I set up layouts following Amazon KDP's technical specs — margins, bleed, image resolution, and file format are all configured to upload without issues."
+          },
+          {
+            "question": "What do I need to get started?",
+            "answer": "Your manuscript in Word or a similar format, any images or illustrations in high resolution, and a rough idea of the style you have in mind. I'll take care of the rest."
+          },
+          {
+            "question": "Do you work with illustrated books or books with images?",
+            "answer": "Yes, I handle layouts with text, images, and illustrations — novels, non-fiction, photography books, manuals."
+          },
+          {
+            "question": "Can I choose the fonts?",
+            "answer": "Yes. If you already have something in mind I'll help you evaluate it; if you're starting from scratch I'll suggest the best options for your book's genre and audience."
+          },
+          {
+            "question": "How long does it take?",
+            "answer": "Turnaround depends on the length and complexity of the book. We'll agree on a timeline before starting, so you have a clear delivery date from the beginning."
+          },
+          {
+            "question": "How many revisions are included?",
+            "answer": "Two revisions are included in the price, allowing you to request adjustments after reviewing the layout at no extra cost."
+          },
+          {
+            "question": "Do you work with international clients?",
+            "answer": "Yes, I work with both Italian and international clients. I communicate fluently in Italian and English."
+          }
+        ]
+      },
+      "process": {
+        "title": "How it works",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Get in touch",
+            "description": "Reach out by email or through the contact form. Tell me about your project — genre, length, publishing platform, and timeline. I'll get back to you within 24 hours with a tailored quote."
+          },
+          {
+            "number": "02",
+            "title": "Briefing and kickoff",
+            "description": "For more complex projects, we'll align on style, fonts, and visual references. Once we're on the same page, I will start working."
+          },
+          {
+            "number": "03",
+            "title": "Draft and revisions",
+            "description": "You'll receive a complete first draft of the layout. Two rounds of revisions are included — nothing is considered final until you're happy with the result."
+          },
+          {
+            "number": "04",
+            "title": "Final delivery",
+            "description": "Once the draft is approved, you receive the final files — print-ready PDF and/or EPUB, ready to upload to KDP."
+          }
+        ]
+      }
     }
   },
   "ContactForm": {

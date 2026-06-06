@@ -6,17 +6,18 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
-import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { useLocale, useTranslations } from "next-intl";
 import { Button } from "./ui/button";
 import { useState } from "react";
-import { DropdownMenuSeparator } from "./ui/dropdown-menu";
-import { navigation } from "@/lib/nav";
 import { cn } from "@/lib/utils";
+import { getNavigation } from "@/lib/nav";
 
 const MobileMenu = () => {
   const t = useTranslations("Header");
   const [open, setOpen] = useState(false);
+  const locale = useLocale();
+  const navigation = getNavigation(locale);
   return (
     <Sheet modal={false} open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
@@ -33,7 +34,7 @@ const MobileMenu = () => {
           {navigation.map((link) => (
             <Link
               key={link.label}
-              href={link.href}
+              href={link.href as never}
               onClick={() => setOpen(false)}
               className={cn(
                 "text-foreground/60 hover:text-foreground transition-all duration-200",

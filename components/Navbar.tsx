@@ -1,16 +1,17 @@
-import { navigation } from "@/lib/nav";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
+import { getNavigation } from "@/lib/nav";
+import { useLocale } from "next-intl";
 
 const Navbar = () => {
   const pathname = usePathname();
-
-  // normalizza eventuale locale (/it, /en)
-  const normalizedPath = pathname.replace(/^\/(it|en)/, "") || "/";
-
-  const isActive = (href: string) => {
-    return normalizedPath === href;
+  const locale = useLocale();
+  const navigation = getNavigation(locale);
+  const isActive = (
+    href: string | { pathname: string; params?: Record<string, string> },
+  ) => {
+    const path = typeof href === "string" ? href : href.pathname;
+    return pathname === path;
   };
 
   return (
@@ -18,7 +19,7 @@ const Navbar = () => {
       {navigation.map((link) => (
         <Link
           key={link.label}
-          href={link.href}
+          href={link.href as never}
           className={cn(
             "text-foreground/60 hover:text-foreground transition-all duration-200",
             isActive(link.href) && "text-white",

@@ -1,6 +1,12 @@
-import Link from "next/link";
+"use client";
+
+import { Link } from "@/i18n/navigation";
+import { getNavigation } from "@/lib/nav";
+import { useLocale } from "use-intl";
 
 const MainSection = () => {
+  const locale = useLocale();
+  const navigation = getNavigation(locale);
   return (
     <section className="w-full h-screen md:h-[calc(100vh-100px)] bg-red-500 text-white px-4 md:px-0">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 max-w-300 mx-auto">
@@ -20,9 +26,11 @@ const MainSection = () => {
 
         {/* ABOUT */}
         <div className="col-span-1 md:col-span-5 md:text-7xl text-6xl mt-10 md:mt-0 leading-tighter w-full h-full flex flex-col items-end justify-center font-bold text-black">
-          <Link href="/">Work</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
+          {navigation.map((link) => (
+            <Link key={link.label} href={link.href as never}>
+              {link.label}
+            </Link>
+          ))}
         </div>
       </div>
     </section>

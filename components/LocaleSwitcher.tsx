@@ -3,9 +3,11 @@
 import { Button } from "@/components/ui/button";
 
 import { usePathname, useRouter } from "@/i18n/navigation";
+import { getService, getLocalizedSlug } from "@/lib/services";
 import { Locales } from "@/lib/locales";
 import { cn } from "@/lib/utils";
 import { useLocale, useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 import { useState, startTransition } from "react";
 
 type LocaleCode = keyof typeof Locales;
@@ -19,6 +21,7 @@ const LocaleSwitcher = ({ ghost }: Props) => {
 
   const router = useRouter();
   const pathname = usePathname();
+  const params = useParams();
   const [isLoading, setIsLoading] = useState(false);
 
   function onSelectChange(nextLocale: LocaleCode) {
@@ -27,7 +30,16 @@ const LocaleSwitcher = ({ ghost }: Props) => {
     setIsLoading(true);
 
     startTransition(() => {
-      router.replace(pathname, { locale: nextLocale });
+      const currentSlug = params?.slug as string | undefined;
+      const service = currentSlug ? getService(currentSlug) : undefined;
+
+      const localizedParams = service
+        ? { ...params, slug: getLocalizedSlug(service, nextLocale) }
+        : params;
+
+      router.replace({ pathname, params: localizedParams } as never, {
+        locale: nextLocale,
+      });
     });
   }
 

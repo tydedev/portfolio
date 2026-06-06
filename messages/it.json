@@ -79,7 +79,7 @@
     },
     "torrechannel": {
       "title": "Brand Identity TC.it",
-      "description": "Progettazione dell'identità visiva per TC.it, inclusi logo design e sviluppo del sistema visivo.",
+      "description": "Proposta di rebranding per TC.it, canale di informazione locale.",
       "worktype": "Spec Work"
     },
     "loud": {
@@ -104,15 +104,71 @@
     }
   },
   "Services": {
-    "EpubConversion": {
-      "title": "EPUB e Ebook Design per editoria digitale e dispositivi eReader",
-      "type": "Servizio di creazione e impaginazione EPUB per editoria digitale",
-      "description": "Servizio di creazione e impaginazione EPUB per editoria digitale, ottimizzato per dispositivi eReader come Kindle, Kobo e Apple Books. Ideale per case editrici, autori indipendenti e professionisti che vogliono pubblicare contenuti editoriali in formato digitale accessibile e conforme agli standard internazionali W3C.",
-      "intro": "EPUB design e impaginazione per editoria digitale e autori",
-      "info1": "Progettazione e impaginazione di file EPUB ottimizzati per la lettura su Kindle, Kobo e Apple Books, con struttura semantica e accessibilità garantita.",
-      "info2": "File EPUB realizzati secondo gli standard W3C per garantire compatibilità, performance e accessibilità su tutte le piattaforme di lettura digitale.",
-      "ideal_for": "Ideale per case editrici, autori indipendenti e professionisti che vogliono pubblicare contenuti editoriali in formato digitale.",
-      "contact": "Contattami per discutere il tuo progetto e ricevere una proposta su misura."
+    "bookLayout": {
+      "title": "Impaginazione professionale per libri a Torre del Greco e tutta Italia",
+      "description": "<up>Ogni libro ben scritto</up> merita una veste grafica all'altezza. L'impaginazione non è solo estetica: è la struttura invisibile che guida il lettore, rende la lettura fluida e comunica professionalità fin dalla prima pagina. Che tu stia pubblicando il tuo primo romanzo in self-publishing o gestendo una collana editoriale, realizzo layout pronti per KDP, IngramSpark e Lulu — nei formati richiesti dalle principali piattaforme di stampa on demand.",
+      "faq": {
+        "title": "Domande frequenti",
+        "items": [
+          {
+            "question": "Quali formati mi consegni?",
+            "answer": "Consegno PDF print-ready per la stampa e EPUB per la distribuzione digitale. Se hai bisogno di uno solo dei due formati, lo decidiamo insieme in base alla piattaforma e alle tue esigenze."
+          },
+          {
+            "question": "Lavori con KDP?",
+            "answer": "Sì, impagino seguendo le specifiche tecniche di Amazon KDP — margini, area al vivo, risoluzione delle immagini e formato del file finale sono impostati per essere accettati senza problemi in fase di caricamento."
+          },
+          {
+            "question": "Cosa mi serve per iniziare?",
+            "answer": "Il tuo manoscritto in formato Word o simile, eventuali immagini o illustrazioni in alta risoluzione, e qualche indicazione sullo stile che hai in mente. Al resto penso io."
+          },
+          {
+            "question": "Lavori anche con libri illustrati o con immagini?",
+            "answer": "Sì, gestisco layout con testo, immagini e illustrazioni — romanzi, saggi, libri fotografici, manuali."
+          },
+          {
+            "question": "Posso scegliere i font?",
+            "answer": "Sì. Se hai già un'idea ti aiuto a valutarla; se parti da zero ti propongo le opzioni più adatte al genere e al pubblico del tuo libro."
+          },
+          {
+            "question": "Quanto tempo ci vuole?",
+            "answer": "I tempi dipendono dalla lunghezza e dalla complessità del libro. Lo stabiliamo insieme prima di iniziare, così hai una data di consegna chiara fin dall'inizio."
+          },
+          {
+            "question": "Quante revisioni sono incluse?",
+            "answer": "Due revisioni sono incluse nel prezzo. Ti permettono di richiedere aggiustamenti dopo aver visto il layout, senza costi aggiuntivi."
+          },
+          {
+            "question": "Lavori anche con clienti stranieri?",
+            "answer": "Sì, lavoro con clienti italiani e internazionali. Comunico correntemente in italiano e in inglese."
+          }
+        ]
+      },
+      "process": {
+        "title": "Come funziona",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Contatto e preventivo",
+            "description": "Scrivimi via email o dal form di contatto. Raccontami il tuo progetto — genere, lunghezza, piattaforma di pubblicazione e tempistiche. Ti rispondo entro 24 ore con un preventivo su misura."
+          },
+          {
+            "number": "02",
+            "title": "Briefing e avvio",
+            "description": "Per i progetti più articolati, ci confrontiamo per definire stile, font e riferimenti visivi. Una volta allineati, il lavoro inizia."
+          },
+          {
+            "number": "03",
+            "title": "Bozza e revisioni",
+            "description": "Ricevi una prima bozza completa del layout. Hai due revisioni incluse per richiedere aggiustamenti — nulla viene considerato definitivo finché non sei soddisfatto."
+          },
+          {
+            "number": "04",
+            "title": "Consegna finale",
+            "description": "Approvata la bozza, ricevi i file finali in PDF print-ready e/o EPUB pronti per il caricamento su KDP."
+          }
+        ]
+      }
     }
   },
   "ContactForm": {
