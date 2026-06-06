@@ -37,6 +37,24 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `${t("title")} — Tydedev`,
     description: t("description"),
+    openGraph: {
+      title: `${t("title")} — Tydedev`,
+      description: t("description"),
+      images: [
+        {
+          url: `https://tydedev.it/images/og/${service.i18nKey}-${locale}.jpg`,
+          width: 1200,
+          height: 630,
+          alt: t("title"),
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${t("title")} — Tydedev`,
+      description: t("description"),
+      images: [`https://tydedev.it/images/og/${service.i18nKey}-${locale}.jpg`],
+    },
   };
 }
 export default async function ServicePage({ params }: Props) {
