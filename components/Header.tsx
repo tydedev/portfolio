@@ -63,7 +63,7 @@ const Header = () => {
           </div>
           <div
             className={`hidden md:block transition-all duration-200 ease-out ${
-              pathname !== "/" || isScrolled
+              (pathname as string) !== "/" || isScrolled
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 -translate-y-2 pointer-events-none"
             }`}
