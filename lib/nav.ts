@@ -13,7 +13,7 @@ export function getNavigation(locale: string): NavLink[] {
     : "book-layout";
 
   return [
-    { href: "#work", label: "Works" },
+    { href: "#work", label: "Work" },
     {
       href: `/services/${servicesSlug}`,
       label: "Services",

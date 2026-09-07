@@ -26,10 +26,13 @@
     "description": "Sembra che tu stia cercando qualcosa che non esiste.",
     "link": "Torna alla home"
   },
-  "Home": {
-    "hello": "<red>Ciao,</red><br></br> sono Maria",
-    "about": "<p>Graphic designer multidisciplinare specializzata in <b>brand identity</b>, <b>editorial design</b> e <b>digital experiences</b>. Esperienza nello sviluppo di identità visive coerenti su stampa e digitale, dalla progettazione del sistema visivo fino all'implementazione web responsive. </p><p>Il mio è un approccio strutturato e sistemico, con forte attenzione a <b>tipografia</b>, <b>grid systems</b> e <b>coerenza cross-platform</b>. Lavoro su progetti end-to-end, garantendo continuità visiva tra brand identity e applicazioni digitali.</p>"
+
+  "home": {
+    "first_text": "Graphic designer indipendente che lavora in ambito editoriale e digitale.",
+    "second_text": "Creo sistemi visivi, identità ed esperienze digitali con un focus su tipografia e strutture complesse.",
+    "availability": "Disponibile per lavoro freelance."
   },
+
   "Profile": {
     "title": "About Maria Basso",
     "description": "Graphic designer multidisciplinare disponibile per lavoro remoto in tutta Italia con possibilità di trasferimento.",
@@ -47,62 +50,7 @@
     "school_text": "Linguaggi Visivi e Design",
     "availability": "Disponibile per lavori freelance da remoto, con possibilità di trasferimento."
   },
-  "GraphicDesign": {
-    "title": "Graphic Design — Maria Basso",
-    "description": "Materiali visivi realizzati per clienti, compresi loghi, identità aziendali, siti web e grafica social."
-  },
-  "Works": {
-    "aircraft": {
-      "title": "Poster di aeromobili personalizzabile",
-      "description": "Progettazione di un template modulare in Figma per un e-commerce specializzato in poster aeronautici. Il sistema è stato sviluppato per consentire la personalizzazione rapida di contenuti e specifiche tecniche, mantenendo una struttura editoriale rigorosa ispirata all’International Typographic Style.",
-      "worktype": "Progetto commissionato"
-    },
-    "bascorp": {
-      "title": "Brand Identity per Bascorp",
-      "description": "Sviluppo di un’identità visiva contemporanea per una startup nel settore costruzioni e design & build. Il progetto include logo design, sistema tipografico, materiali corporate e presenza digitale, costruiti attraverso un linguaggio visivo essenziale, modulare e coerente tra stampa e web.",
-      "worktype": "Progetto commissionato"
-    },
-    "magazine": {
-      "title": "Design editoriale per rivista culturale: \"Il Raccoglitore\"",
-      "description": "Progetto editoriale indipendente sviluppato per una rivista culturale. Ho curato art direction, impaginazione, tipografia e comunicazione digitale, progettando un sistema visivo pensato per adattarsi sia alla lettura digitale che alla stampa.",
-      "worktype": "Progetto indipendente"
-    },
-    "petrha-aquadro": {
-      "title": "Brand Identity per Petrha Srl e Aquadro Holding",
-      "description": "Sviluppo di un sistema di identità visiva per Petrha Srl e Aquadro Holding, progettato per mantenere coerenza tra corporate communication, materiali editoriali e touchpoint digitali. Il progetto comprende logo design, materiali istituzionali, brochure e applicazioni print..",
-      "worktype": "Progetto commissionato"
-    },
-    "petrha": {
-      "title": "Identità visiva Petrha Group",
-      "description": "Progetto di identità visiva e presenza digitale per Petrha Group, azienda attiva nel settore design & build. Il lavoro si concentra sulla costruzione di un linguaggio visivo contemporaneo e coerente applicato a comunicazione digitale e brand assets.",
-      "worktype": "Progetto commissionato"
-    },
-    "torrechannel": {
-      "title": "Brand Identity TC.it",
-      "description": "Proposta di rebranding per TC.it, canale di informazione locale.",
-      "worktype": "Spec Work"
-    },
-    "loud": {
-      "title": "Loud: Contro il bullismo",
-      "description": "Concept per una campagna contro il bullismo, sviluppato come progetto personale. Il focus è sul testo e sulla comunicazione visiva, con un approccio diretto e impattante per sensibilizzare il pubblico su questo tema sociale.",
-      "worktype": "Campaign Concept"
-    },
-    "stasifood": {
-      "title": "Packaging e rebranding Stasifood",
-      "description": "Concept per il rebranding e il design del packaging di Stasifood. Il progetto include logo design, concetti di packaging e applicazioni digitali, con un focus sulla creazione di un'identità visiva coerente e premium.",
-      "worktype": "Spec Work"
-    },
-    "shineshield": {
-      "title": "Brand Identity Shine & Shield",
-      "description": "Spec work per la progettazione dell'identità visiva di Shine & Shield, con sviluppo del logo e del sistema visivo.",
-      "worktype": "Spec Work"
-    },
-    "fantasybook": {
-      "title": "Design editoriale per libro fantasy",
-      "description": "Progetto di design editoriale per un libro fantasy, con particolare attenzione alla tipografia, alla gerarchia visiva e alla coerenza stilistica tra copertina e impaginazione interna.",
-      "worktype": "Progetto personale"
-    }
-  },
+
   "Services": {
     "bookLayout": {
       "title": "Impaginazione professionale per libri a Torre del Greco e tutta Italia",
