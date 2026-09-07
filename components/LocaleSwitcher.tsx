@@ -49,8 +49,9 @@ const LocaleSwitcher = ({ ghost }: Props) => {
         onClick={() => onSelectChange("it")}
         variant={"link"}
         className={cn(
-          locale === "it" && "underline text-black pointer-events-none",
-          "p-0 m-0 h-0 cursor-pointer",
+          locale === "it" &&
+            "underline text-black pointer-events-none font-semibold",
+          "p-0 m-0 h-0 cursor-pointer font-semibold",
         )}
         disabled={isLoading}
       >
@@ -61,8 +62,9 @@ const LocaleSwitcher = ({ ghost }: Props) => {
         onClick={() => onSelectChange("en")}
         variant={"link"}
         className={cn(
-          locale === "en" && "underline text-black pointer-events-none",
-          "p-0 m-0 h-0 cursor-pointer",
+          locale === "en" &&
+            "underline text-black pointer-events-none font-semibold",
+          "p-0 m-0 h-0 cursor-pointer font-semibold",
         )}
         disabled={isLoading}
       >

@@ -76,9 +76,9 @@ export default async function ServicePage({ params }: Props) {
   }[];
 
   return (
-    <section className="md:grid md:grid-cols-10 gap-6 max-w-300 mx-auto w-full py-20 px-4">
+    <section className="md:grid md:grid-cols-10 gap-6 max-w-360 mx-auto w-full py-20 px-4 font-semibold">
       <div className="md:col-span-4 mb-20">
-        <h1 className="text-5xl font-bold">{t("title")}</h1>
+        <h1 className="text-5xl font-bold font-heading">{t("title")}</h1>
       </div>
       <div className="md:col-span-5 md:row-start-2 md:pr-12">
         <p className="text-base">
@@ -96,26 +96,30 @@ export default async function ServicePage({ params }: Props) {
           unoptimized
         />
       </div>
-      <div className="col-span-full mt-20">
-        <h2 className="text-3xl font-bold mb-12">{t("process.title")}</h2>
+      <div className="col-span-full mt-20 mb-20">
+        <h2 className="text-3xl font-bold mb-12 font-heading">
+          {t("process.title")}
+        </h2>
         <div className="md:grid md:grid-cols-2 gap-12 space-y-12 md:space-y-0">
           {steps.map((step) => (
             <div
               key={step.number}
               className="flex flex-col md:flex-row gap-8 items-start"
             >
-              <span className="text-7xl font-bold leading-none shrink-0 text-red-500 w-28 tabular-nums">
+              <span className="text-7xl font-bold leading-none shrink-0 font-heading text-red-500 w-28 tabular-nums">
                 {step.number}
               </span>
               <div className="pt-2">
-                <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                <h3 className="text-xl font-black mb-2 font-heading ">
+                  {step.title}
+                </h3>
                 <p>{step.description}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="md:col-span-5">
+      <div className="md:col-span-5 mt-20 md:mt-0 p-30 pt-0">
         <Image
           src="/images/editorial/book/kindle.jpg"
           alt="Illustration representing the service"
@@ -126,7 +130,9 @@ export default async function ServicePage({ params }: Props) {
         />
       </div>
       <div className="col-span-4 mt-20">
-        <h2 className="text-3xl font-bold mb-4">{t("faq.title")}</h2>
+        <h2 className="text-3xl font-bold mb-4 font-heading">
+          {t("faq.title")}
+        </h2>
         <Accordion type="single" collapsible>
           {items.map((item, i) => (
             <AccordionItem key={i} value={`item-${i}`}>

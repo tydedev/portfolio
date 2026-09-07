@@ -6,8 +6,8 @@ export default function ContactPage() {
   const t = useTranslations("ContactForm");
   return (
     <section className="w-full max-w-300 mx-auto px-4 h-auto flex items-start py-20 justify-center flex-col gap-8">
-      <h1 className="text-6xl font-bold">{t("title")}</h1>
-      <div className="md:grid md:grid-cols-4 gap-8 w-full">
+      <h1 className="text-6xl font-bold font-heading">{t("title")}</h1>
+      <div className="md:grid md:grid-cols-4 gap-8 w-full font-semibold">
         <div className="md:col-span-2 flex flex-col gap-4 mb-8 md:mb-0">
           <p className="text-lg">
             {t.rich("description", {

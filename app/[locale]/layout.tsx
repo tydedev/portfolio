@@ -1,4 +1,4 @@
-import { Work_Sans } from "next/font/google";
+import { Instrument_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -9,13 +9,17 @@ import { hasLocale, NextIntlClientProvider, Locale } from "next-intl";
 import Script from "next/script";
 import { Organization, Person, WithContext } from "schema-dts";
 
-const workSans = Work_Sans({
-  variable: "--font-sans",
+const workSans = Space_Grotesk({
+  variable: "--font-heading",
   subsets: ["latin"],
 });
 
+const instrumentSans = Instrument_Sans({
+  variable: "--font-sans",
+  subsets: ["latin"],
+});
 export function generateStaticParams() {
-  return routing.locales.map(locale => ({ locale }));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata(
@@ -128,7 +132,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${workSans.variable} h-full antialiased scroll-smooth`}
+      className={`${workSans.variable} ${instrumentSans.variable} font-sans h-full antialiased scroll-smooth`}
       suppressHydrationWarning
     >
       <body className="min-h-auto flex flex-col">
@@ -149,7 +153,7 @@ export default async function LocaleLayout({
         />
         <NextIntlClientProvider>
           <Header />
-          <main className="min-h-[calc(100vh-160px)] h-full flex-1 flex flex-col">
+          <main className="min-h-[calc(100vh-120px)] h-full flex-1 flex flex-col">
             {children}
           </main>
           <Footer />

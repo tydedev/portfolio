@@ -1,40 +1,59 @@
 "use client";
-
-import { Link } from "@/i18n/navigation";
-import { getNavigation } from "@/lib/nav";
-import { useLocale } from "use-intl";
-
+const services = [
+  "Brand Identity",
+  "Editorial Design",
+  "Typography Systems",
+  "Grid Systems",
+  "Desktop Publishing",
+  "Print & Digital Design",
+  "Social Media",
+  "Visual Systems",
+  "UI/UX Design",
+  "Web Design",
+];
 const MainSection = () => {
-  const locale = useLocale();
-  const navigation = getNavigation(locale);
   return (
-    <section className="w-full h-screen md:h-[calc(100vh-100px)] bg-red-500 text-white px-4 md:px-0">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 max-w-300 mx-auto">
-        <div className="col-span-1 md:col-span-7">
-          <div className="uppercase font-bold tracking-tight leading-[0.8] text-6xl lg:text-8xl">
-            <div className="flex flex-col gap-2">
-              <h1>Graphic Designer</h1>
-              <span className="text-black mt-10">
-                — <br /> Branding,
-                <br /> Editorial
-                <br />& Digital{" "}
-                <span className="text-stroke-black text-red-500">Design</span>
+    <section className="relative min-h-screen h-full w-full px-4 md:min-h-[calc(100vh-120px)] md:px-0">
+      {" "}
+      <div className="mx-auto grid w-full max-w-360 grid-cols-1 gap-6 md:grid-cols-12">
+        {" "}
+        {/* HERO */}{" "}
+        <h1 className="pt-[25vh] text-5xl font-heading font-bold uppercase md:leading-[0.8] md:col-span-12 md:text-8xl">
+          {" "}
+          Editorial <br /> And Digital Design{" "}
+        </h1>{" "}
+        {/* SERVICES MARQUEE */}{" "}
+        <div className="overflow-hidden md:col-span-12">
+          {" "}
+          <div className="flex w-max animate-marquee">
+            {" "}
+            {[...services, ...services].map((service, index) => (
+              <span
+                key={`${service}-${index}`}
+                className="flex shrink-0 items-center whitespace-nowrap text-xl font-semibold leading-tight md:text-2xl"
+              >
+                {" "}
+                {service} <span className="mx-4">—</span>{" "}
               </span>
-            </div>
-          </div>
-        </div>
-
-        {/* ABOUT */}
-        <div className="col-span-1 md:col-span-5 md:text-7xl text-6xl mt-10 md:mt-0 leading-tighter w-full h-full flex flex-col items-end justify-center font-bold text-black">
-          {navigation.map((link) => (
-            <Link key={link.label} href={link.href as never}>
-              {link.label}
-            </Link>
-          ))}
-        </div>
-      </div>
+            ))}{" "}
+          </div>{" "}
+        </div>{" "}
+        {/* INTRO */}{" "}
+        <div className="mt-12 grid grid-cols-1 gap-8 font-semibold md:col-span-12 md:mt-20 md:grid-cols-12 md:gap-6">
+          {" "}
+          <p className="leading-tight md:col-span-3">
+            {" "}
+            Independent designer working across editorial, brand and digital
+            design.{" "}
+          </p>{" "}
+          <p className="leading-tight md:col-span-4">
+            {" "}
+            I build visual systems, identities and digital experiences with a
+            focus on typography and structure.{" "}
+          </p>{" "}
+        </div>{" "}
+      </div>{" "}
     </section>
   );
 };
-
 export default MainSection;
