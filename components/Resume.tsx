@@ -83,7 +83,7 @@ const Resume = () => {
             <div className="mt-10 flex flex-col font-heading text-3xl leading-[1.05] tracking-tight md:col-span-7 md:col-start-6 md:mt-0 md:text-4xl">
               <span>Brand Identity</span>
               <span>Editorial Design</span>
-              <span>DTP</span>
+              <span>Desktop Publishing</span>
               <span>Web Design</span>
             </div>
           </div>

@@ -23,61 +23,51 @@ export const WorkSection = ({
       ref={sectionRef}
       className={`relative px-6 md:px-20 ${background}`}
     >
-      {" "}
-      {/* Category — MOBILE */}{" "}
+      {/* Category — MOBILE */}
       <h2
         className={`py-16 font-heading text-[clamp(3.5rem,10vw,11rem)] font-medium uppercase leading-[0.8] tracking-[-0.065em] md:hidden ${textColor} ${position === "left" ? "text-left" : "text-right"}`}
       >
-        {" "}
-        {title}{" "}
-      </h2>{" "}
-      {/* Category — DESKTOP */}{" "}
+        {title}
+      </h2>
+      {/* Category — DESKTOP */}
       <div className="pointer-events-none absolute inset-0 hidden md:block">
-        {" "}
         <div className="sticky top-0 z-10">
-          {" "}
           <div
             className={`flex h-screen items-start justify-center ${textColor}`}
           >
-            {" "}
             <MovingText sectionRef={sectionRef} position={position}>
-              {" "}
-              {title}{" "}
-            </MovingText>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
-      {/* Projects */}{" "}
+              {title}
+            </MovingText>
+          </div>
+        </div>
+      </div>
+      {/* Projects */}
       <div className="relative z-10 pb-20 md:pb-40">
-        {" "}
-        <div className="h-[35vh] md:block hidden" />{" "}
+        <div className="h-[35vh] md:block hidden" />
         {works.map((project, index) => {
           const isLeft = index % 2 === 0;
           return (
             <article
-              key={project.slug}
+              key={index}
               className={`relative flex items-center pb-24 md:pb-40 ${isLeft ? "justify-start" : "justify-end"}`}
             >
-              {" "}
               <div
                 className={`w-full md:w-[46%] ${isLeft ? "md:mr-0" : "md:ml-0"}`}
               >
-                {" "}
                 <div className="overflow-hidden">
-                  {" "}
                   <Image
                     src={project.image}
                     alt={project.name}
                     width={900}
                     height={1200}
                     className="h-auto w-full object-cover"
-                  />{" "}
-                </div>{" "}
-              </div>{" "}
+                  />
+                </div>
+              </div>
             </article>
           );
-        })}{" "}
-      </div>{" "}
+        })}
+      </div>
     </section>
   );
 };

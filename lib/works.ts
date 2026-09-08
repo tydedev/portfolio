@@ -1,5 +1,6 @@
 export const works = [
   {
+    id: "bascorp-brand",
     name: "Bascorp",
     slug: "bascorp",
     type: "product",
@@ -11,7 +12,9 @@ export const works = [
     height: 1600,
     position: "left",
   },
+
   {
+    id: "petrha-group-brand",
     name: "Petrha Group",
     slug: "petrha-group",
     type: "product",
@@ -25,6 +28,7 @@ export const works = [
   },
 
   {
+    id: "shine-and-shield-brand",
     name: "Shine & Shield",
     slug: "shine-and-shield",
     type: "product",
@@ -38,6 +42,7 @@ export const works = [
   },
 
   {
+    id: "aquadro-holding-editorial",
     name: "Aquadro Holding",
     slug: "aquadro-holding",
     type: "editorial",
@@ -49,7 +54,9 @@ export const works = [
     width: 100,
     height: 500,
   },
+
   {
+    id: "a-christmas-carol-editorial",
     name: "A Christmas Carol",
     slug: "a-christmas-carol",
     type: "editorial",
@@ -61,7 +68,9 @@ export const works = [
     width: 100,
     height: 500,
   },
+
   {
+    id: "cultural-magazine-editorial",
     name: "Cultural Magazine",
     slug: "cultural-magazine",
     type: "editorial",
@@ -73,7 +82,9 @@ export const works = [
     width: 100,
     height: 500,
   },
+
   {
+    id: "bird-watching-logbook-editorial",
     name: "Bird Watching Logbook",
     slug: "bird_watching_logbook",
     type: "editorial",
@@ -85,7 +96,9 @@ export const works = [
     width: 100,
     height: 500,
   },
+
   {
+    id: "social-media-campaign",
     name: "Social Media Campaign",
     slug: "social-media-campaign",
     type: "social-media",
@@ -97,7 +110,9 @@ export const works = [
     width: 100,
     height: 500,
   },
+
   {
+    id: "bascorp-social-media",
     name: "Bascorp",
     slug: "bascorp",
     type: "social-media",
@@ -109,7 +124,9 @@ export const works = [
     width: 100,
     height: 500,
   },
+
   {
+    id: "aquadro-holding-social-media",
     name: "Aquadro Holding",
     slug: "aquadro-holding",
     type: "social-media",
@@ -123,6 +140,7 @@ export const works = [
   },
 
   {
+    id: "bascorp-graphic-design",
     name: "Bascorp",
     slug: "bascorp",
     type: "graphic-design",
@@ -134,7 +152,9 @@ export const works = [
     width: 100,
     height: 500,
   },
+
   {
+    id: "petrha-group-graphic-design",
     name: "Petrha Group",
     slug: "petrha-group",
     type: "graphic-design",
@@ -146,7 +166,9 @@ export const works = [
     width: 100,
     height: 500,
   },
+
   {
+    id: "boeing-poster",
     name: "Boeing Poster",
     slug: "boeing-poster",
     type: "graphic-design",
@@ -158,7 +180,9 @@ export const works = [
     width: 100,
     height: 500,
   },
+
   {
+    id: "campaign-poster",
     name: "Campaign Poster",
     slug: "campaign-poster",
     type: "graphic-design",
@@ -170,7 +194,9 @@ export const works = [
     width: 100,
     height: 500,
   },
+
   {
+    id: "bascorp-web-design",
     name: "Bascorp Web Design Project",
     slug: "bascorp",
     type: "web-design",
@@ -182,7 +208,9 @@ export const works = [
     width: 100,
     height: 500,
   },
+
   {
+    id: "tydedev-web-design",
     name: "Tydedev Web Design Project",
     slug: "web-design-project",
     type: "web-design",
@@ -194,7 +222,9 @@ export const works = [
     width: 100,
     height: 500,
   },
+
   {
+    id: "typelier-web-design",
     name: "Typelier Web Design Project",
     slug: "web-design-project",
     type: "web-design",
