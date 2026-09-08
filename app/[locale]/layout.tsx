@@ -50,18 +50,6 @@ export async function generateMetadata(
         "x-default": "https://tydedev.it",
       },
     },
-    keywords: [
-      "graphic design",
-      "web development",
-      "siti web torre del greco",
-      "design torre del greco",
-      "logo torre del greco",
-      "portfolio",
-      "brand identity",
-      "logo design",
-      "responsive web design",
-      "torre del greco",
-    ],
   };
 }
 
@@ -90,25 +78,6 @@ export default async function LocaleLayout({
       "https://www.instagram.com/tydedev",
       "https://www.behance.net/tydedev",
       "https://www.linkedin.com/in/maria-basso-b46a12370/",
-    ],
-    knowsAbout: [
-      "Graphic Design",
-      "Web Design",
-      "Frontend Development",
-      "Next.js",
-      "Brand Identity",
-      "ebook conversion",
-      "impaginazione ebook",
-      "epub creation",
-      "layout design",
-      "digital publishing",
-      "responsive design",
-      "user experience",
-      "typography",
-      "color theory",
-      "layout design",
-      "SEO",
-      "accessibility",
     ],
   };
 

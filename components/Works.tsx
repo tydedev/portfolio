@@ -20,6 +20,8 @@ const Works = () => {
     (work) => work.category === "Graphic Design",
   );
 
+  const webDesignWorks = works.filter((work) => work.category === "Web Design");
+
   return (
     <section id="work" className="md:px-0">
       <div className="mx-auto w-full">
@@ -51,6 +53,14 @@ const Works = () => {
           title="Social Media"
           works={socialMediaWorks}
           background="bg-[#263B36]"
+          textColor="text-[#F3F0E8]"
+          position="left"
+        />
+
+        <WorkSection
+          title="Web Design"
+          works={webDesignWorks}
+          background="bg-[#753C36]"
           textColor="text-[#F3F0E8]"
           position="left"
         />

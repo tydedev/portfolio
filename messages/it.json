@@ -1,6 +1,6 @@
 {
   "Global": {
-    "title": "Tydedev — Design editoriale e Product Design",
+    "title": "Tydedev — Design editoriale e Digital Design",
     "description": "Graphic designer multidisciplinare specializzata in brand identity, editorial design e digital experiences. Esperienza nello sviluppo di identità visive coerenti su stampa e digitale, dalla progettazione del sistema visivo fino all'implementazione web responsive."
   },
   "Header": {
@@ -53,7 +53,7 @@
 
   "Services": {
     "bookLayout": {
-      "title": "Impaginazione professionale per libri a Torre del Greco e tutta Italia",
+      "title": "Impaginazione professionale autori indipendenti e self-publishing",
       "description": "<up>Ogni libro ben scritto</up> merita una veste grafica all'altezza. L'impaginazione non è solo estetica: è la struttura invisibile che guida il lettore, rende la lettura fluida e comunica professionalità fin dalla prima pagina. Che tu stia pubblicando il tuo primo romanzo in self-publishing o gestendo una collana editoriale, realizzo layout pronti per KDP, IngramSpark e Lulu — nei formati richiesti dalle principali piattaforme di stampa on demand.",
       "faq": {
         "title": "Domande frequenti",
