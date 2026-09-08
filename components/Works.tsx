@@ -30,7 +30,7 @@ const Works = () => {
           works={brandingWorks}
           background="bg-[#F1EFE8]"
           textColor="text-[#1C1C1A]"
-          position="left"
+          position="right"
         />
 
         <WorkSection

@@ -33,7 +33,7 @@ export const WorkSection = ({
       <div className="pointer-events-none absolute inset-0 hidden md:block">
         <div className="sticky top-0 z-10">
           <div
-            className={`flex h-screen items-start justify-center ${textColor}`}
+            className={`max-w-360 mx-auto flex h-screen items-start justify-center ${textColor}`}
           >
             <MovingText sectionRef={sectionRef} position={position}>
               {title}
