@@ -45,7 +45,7 @@ export const WorkSection = ({
         </div>{" "}
       </div>{" "}
       {/* Projects */}{" "}
-      <div className="relative z-10">
+      <div className="relative z-10 pb-20 md:pb-40">
         {" "}
         <div className="h-[35vh] md:block hidden" />{" "}
         {works.map((project, index) => {
@@ -53,7 +53,7 @@ export const WorkSection = ({
           return (
             <article
               key={project.slug}
-              className={`relative flex items-center pb-24 md:min-h-[100vh] md:pb-40 ${isLeft ? "justify-start" : "justify-end"}`}
+              className={`relative flex items-center pb-24 md:pb-40 ${isLeft ? "justify-start" : "justify-end"}`}
             >
               {" "}
               <div
