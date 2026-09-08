@@ -48,7 +48,9 @@
     "school": "Art School of Naples",
     "academy_text": "Graphic Design",
     "school_text": "Visual Languages and Design",
-    "availability": "Available for remote work for US, Canada and Worldwide."
+    "availability": "Available for remote work for US, Canada and Worldwide.",
+    "activity": "Activities",
+    "activity_text": "Activities range from typesetting and editorial design for independent authors and publishers to visual identity, website and communication materials design for companies and professionals."
   },
   "Services": {
     "bookLayout": {

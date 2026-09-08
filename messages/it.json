@@ -48,7 +48,9 @@
     "school": "Liceo Artistico di Napoli",
     "academy_text": "Graphic Design",
     "school_text": "Linguaggi Visivi e Design",
-    "availability": "Disponibile per lavori freelance da remoto, con possibilità di trasferimento."
+    "availability": "Disponibile per lavori freelance da remoto, con possibilità di trasferimento.",
+    "activity": "Attività",
+    "activity_text": "Le attività spaziano dall’impaginazione editoriale per autori e case editrici indipendenti alla progettazione di identità visive, siti web e materiali di comunicazione per aziende e professionisti."
   },
 
   "Services": {
