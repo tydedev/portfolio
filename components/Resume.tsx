@@ -6,9 +6,9 @@ const Resume = () => {
   return (
     <section
       id="profile"
-      className="mx-auto w-full bg-stone-900 px-6 py-24 text-stone-100 md:px-16 md:py-40"
+      className="mx-auto w-full bg-stone-900 px-4 py-24 text-stone-100 md:px-0 md:py-40"
     >
-      <div className="mx-auto max-w-320">
+      <div className="mx-auto max-w-360">
         {/* HEADER */}
         <header className="border-t border-stone-700 pt-4">
           <div className="flex items-start justify-between">
