@@ -74,6 +74,18 @@ export const works = [
     height: 500,
   },
   {
+    name: "Bird Watching Logbook",
+    slug: "bird_watching_logbook",
+    type: "editorial",
+    description: "Editorial design and typography.",
+    categories: ["Editorial Design", "Typography"],
+    category: "Editorial & DTP",
+    image: "/images/editorial/bird_logbook.jpg",
+    position: "left",
+    width: 100,
+    height: 500,
+  },
+  {
     name: "Social Media Campaign",
     slug: "social-media-campaign",
     type: "social-media",
