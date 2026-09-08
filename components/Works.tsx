@@ -21,8 +21,8 @@ const Works = () => {
   );
 
   return (
-    <section id="work" className="px-4 md:px-0">
-      <div className="mx-auto max-w-360">
+    <section id="work" className="md:px-0">
+      <div className="mx-auto w-full">
         <WorkSection
           title="Brand Identity"
           works={brandingWorks}

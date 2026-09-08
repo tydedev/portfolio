@@ -6,26 +6,28 @@ const Footer = () => {
   const t = useTranslations("VAT");
   const i = useTranslations("home");
   return (
-    <footer className="grid grid-cols-1 font-heading py-3 md:grid-cols-12 gap-6 max-w-360 mx-auto text-base items-baseline w-full shrink-0 font-semibold text-foreground px-4 lg:px-0">
-      <div className="col-span-1 md:col-span-3 leading-none">
-        <p>Maria Basso</p>
-        <p>{i("availability")}</p>
-      </div>
-      <div className="col-span-1 md:col-span-7 leading-none">
-        <p>
-          {t("label")} {t("value")}
-        </p>
-        <Link
-          href="mailto:maria.basso.td@gmail.com"
-          className="hover:bg-red-500"
-        >
-          maria.basso.td@gmail.com
-        </Link>
-      </div>
-      <div className="col-span-1 md:col-span-2 md:text-right ">
-        <p>&copy; {new Date().getFullYear()}</p>
-      </div>
-    </footer>
+    <div className="bg-stone-900">
+      <footer className="grid grid-cols-1 bg-stone-900  font-heading py-3 md:grid-cols-12 gap-6 max-w-360 mx-auto text-base items-baseline w-full shrink-0 font-semibold text-stone-100 px-4 lg:px-0">
+        <div className="col-span-1 md:col-span-3 leading-none">
+          <p>Maria Basso</p>
+          <p>{i("availability")}</p>
+        </div>
+        <div className="col-span-1 md:col-span-7 leading-none">
+          <p>
+            {t("label")} {t("value")}
+          </p>
+          <Link
+            href="mailto:maria.basso.td@gmail.com"
+            className="hover:bg-red-500"
+          >
+            maria.basso.td@gmail.com
+          </Link>
+        </div>
+        <div className="col-span-1 md:col-span-2 md:text-right ">
+          <p>&copy; {new Date().getFullYear()}</p>
+        </div>
+      </footer>
+    </div>
   );
 };
 
