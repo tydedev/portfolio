@@ -62,7 +62,7 @@ const Works = () => {
           works={webDesignWorks}
           background="bg-[#753C36]"
           textColor="text-[#F3F0E8]"
-          position="left"
+          position="right"
         />
       </div>
     </section>
