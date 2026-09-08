@@ -19,7 +19,10 @@ export const WorkSection = ({
 }: WorkSectionProps) => {
   const sectionRef = useRef<HTMLElement>(null);
   return (
-    <section ref={sectionRef} className={`relative px-20 ${background}`}>
+    <section
+      ref={sectionRef}
+      className={`relative px-6 md:px-20 ${background}`}
+    >
       {" "}
       {/* Category — MOBILE */}{" "}
       <h2
@@ -57,7 +60,7 @@ export const WorkSection = ({
             >
               {" "}
               <div
-                className={`w-[88%] md:w-[46%] ${isLeft ? "mr-auto md:mr-0" : "ml-auto md:ml-0"}`}
+                className={`w-full md:w-[46%] ${isLeft ? "md:mr-0" : "md:ml-0"}`}
               >
                 {" "}
                 <div className="overflow-hidden">
