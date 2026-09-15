@@ -1,7 +1,7 @@
 {
   "Global": {
     "title": "Tydedev — Editorial Design and Digital Design",
-    "description": "Multidisciplinary graphic designer specializing in brand identity, editorial design, and digital experiences. Experienced in developing cohesive visual identities across print and digital, from visual system design to responsive web implementation."
+    "description": "Maria Basso is a multidisciplinary graphic designer specializing in brand identity, editorial design, and digital experiences. Experienced in developing cohesive visual identities across print and digital, from visual system design to responsive web implementation."
   },
   "Header": {
     "work": "Work",
@@ -54,7 +54,7 @@
   },
   "Services": {
     "bookLayout": {
-      "title": "Professional book layout for self-publishing and independent authors",
+      "title": "Book formatting and typesetting services for independent authors and publishers",
       "description": "<up>Every well written book</up> deserves a layout that enhances the reading experience. I specialize in designing layouts for both print and digital formats, ensuring that your content is presented in the most engaging and readable way possible. Whether you're publishing a novel, a non-fiction book, or a photo book, I can create a layout that reflects your vision and meets the technical requirements of your chosen publishing platform.",
       "faq": {
         "title": "Frequently asked questions",
