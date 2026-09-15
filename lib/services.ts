@@ -10,7 +10,7 @@ export const services: Service[] = [
     i18nKey: "bookLayout",
     localizedSlugs: {
       en: "book-layout-formatting-typesetting",
-      it: "impaginazione-libri-torre-del-greco",
+      it: "impaginazione-libri-autori-case-editrici",
     },
   },
 ];
