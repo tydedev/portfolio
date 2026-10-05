@@ -7,7 +7,7 @@ const Footer = () => {
   const i = useTranslations("home");
   return (
     <div className="bg-stone-900">
-      <footer className="grid grid-cols-1 bg-stone-900  font-heading py-3 md:grid-cols-12 gap-6 max-w-360 mx-auto text-base items-baseline w-full shrink-0 font-semibold text-stone-100 px-4 lg:px-0">
+      <footer className="grid grid-cols-1 bg-stone-900  font-heading py-3 md:grid-cols-12 gap-6 max-w-360 mx-auto text-base items-baseline w-full shrink-0 font-semibold text-stone-100 px-4 lg:md-4">
         <div className="col-span-1 md:col-span-3 leading-none">
           <p>Maria Basso</p>
           <p>{i("availability")}</p>

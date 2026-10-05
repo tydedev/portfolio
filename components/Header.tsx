@@ -29,7 +29,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 left-0 z-50 h-30 w-full bg-white px-4 font-heading md:px-0">
+    <header className="sticky top-0 left-0 z-50 h-30 w-full bg-white px-4 font-heading md:px-4">
       <div className="mx-auto flex w-full max-w-360 items-start pt-3 pb-3 md:grid md:grid-cols-12 md:gap-6 md:pb-0">
         {/* LOGO */}
         <div className="flex-1 md:col-span-3">

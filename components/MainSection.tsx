@@ -17,7 +17,7 @@ const services = [
 const MainSection = () => {
   const t = useTranslations("home");
   return (
-    <section className="relative min-h-screen h-full w-full px-4 md:min-h-[calc(100vh-120px)] md:px-0">
+    <section className="relative min-h-screen h-full w-full px-4 md:min-h-[calc(100vh-120px)] md:px-4">
       <div className="mx-auto grid w-full max-w-360 grid-cols-1 gap-6 md:grid-cols-12">
         {/* HERO */}
         <h1 className="pt-[25vh] text-5xl font-heading font-bold uppercase md:leading-[0.8] md:col-span-12 md:text-8xl">
