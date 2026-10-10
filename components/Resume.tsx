@@ -41,8 +41,8 @@ const Resume = () => {
             </div>
 
             <ul className="mt-10 grid grid-cols-2 gap-x-8 gap-y-3 text-lg md:col-span-7 md:col-start-6 md:mt-0 md:text-xl">
-              <li>Adobe Illustrator</li>
               <li>Adobe InDesign</li>
+              <li>Adobe Illustrator</li>
               <li>Adobe Photoshop</li>
               <li>Figma</li>
               <li>React / Next.js</li>
@@ -81,9 +81,9 @@ const Resume = () => {
             </div>
 
             <div className="mt-10 flex flex-col font-heading text-3xl leading-[1.05] tracking-tight md:col-span-7 md:col-start-6 md:mt-0 md:text-4xl">
-              <span>Brand Identity</span>
               <span>Editorial Design</span>
               <span>Desktop Publishing</span>
+              <span>Brand Identity</span>
               <span>Web Design</span>
             </div>
           </div>

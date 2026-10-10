@@ -1,0 +1,61 @@
+
+import Image from "next/image";
+
+const BrandIdentity = () => {
+  return (
+    <section className="grid grid-cols-1 items-start gap-x-4 gap-y-15 bg-[#B7B7A5] px-10 py-10 font-sans text-base font-semibold text-[#302820] md:grid-cols-12 md:px-4">
+
+      {/* Progetto principale */}
+      <div className="py-10 font-heading text-3xl uppercase md:col-start-2 md:col-span-3 md:row-start-2 md:py-0 md:text-5xl">
+        Visual Identity
+      </div>
+
+      <div className="md:col-start-4 md:col-span-4 md:row-start-2">
+        <Image
+          src="/images/bascorp/header.jpg"
+          alt="Progetto di identità visiva"
+          width={400}
+          height={400}
+          className="block h-auto w-full"
+        />
+      </div>
+      <div className="md:col-start-8 md:col-span-4 md:row-start-2">
+        <Image
+          src="/images/petrha/man.jpg"
+          alt="Progetto di identità visiva"
+          width={400}
+          height={400}
+          className="block h-auto w-full"
+        />
+      </div>
+
+      {/* Applicazioni del brand */}
+       <div className="py-10 font-heading text-3xl uppercase md:col-start-10 md:col-span-4 md:row-start-3 md:py-0 md:text-5xl">
+        Brand Applications
+      </div>
+      <div className="md:col-start-2 md:col-span-4 md:row-start-3">
+        <Image
+          src="/images/bascorp/poster.png"
+          alt="Applicazioni dell'identità visiva"
+          width={400}
+          height={400}
+          className="block h-auto w-full"
+        />
+      </div>
+
+      <div className="md:col-start-6 md:col-span-4 md:row-start-3">
+        <Image
+          src="/images/petrha/businesscard.jpg"
+          alt="Materiali coordinati del brand"
+          width={400}
+          height={400}
+          className="block h-auto w-full"
+        />
+      </div>
+
+     
+    </section>
+  );
+};
+
+export default BrandIdentity;

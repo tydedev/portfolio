@@ -1,7 +1,7 @@
 {
   "Global": {
-    "title": "Tydedev — Design editoriale e Digital Design",
-    "description": "Maria Basso è una graphic designer multidisciplinare specializzata in brand identity, editorial design e digital experiences. Esperienza nello sviluppo di identità visive coerenti su stampa e digitale, dalla progettazione del sistema visivo fino all'implementazione web responsive."
+    "title": "Tydedev — Impaginazione libri e Grafica editoriale",
+    "description": "Editorial design, impaginazione libri e servizi DTP per case editrici, aziende e professionisti. Scopri i progetti e richiedi una collaborazione."
   },
   "Header": {
     "work": "Progetti",
@@ -26,16 +26,17 @@
     "description": "Sembra che tu stia cercando qualcosa che non esiste.",
     "link": "Torna alla home"
   },
-
   "home": {
-    "first_text": "Graphic designer indipendente che lavora in ambito editoriale e digitale.",
-    "second_text": "Creo sistemi visivi, identità ed esperienze digitali con un focus su tipografia e strutture complesse.",
-    "availability": "Disponibile per lavoro freelance."
+    "first_field": "Impaginazione Editoriale",
+    "second_field": "e Desktop Publishing",
+    "first_text": "Progetto e impagino libri, manuali e pubblicazioni, occupandomi anche di documenti multipagina e materiali aziendali.",
+    "second_text": "Affianco case editrici, aziende e professionisti nella progettazione editoriale, dalla struttura tipografica alla realizzazione esecutiva dei documenti.",
+    "availability": "Disponibile per lavoro freelance.",
+    "formatting": "Impaginazione"
   },
-
   "Profile": {
     "title": "CV",
-    "description": "Graphic designer multidisciplinare.",
+    "description": "Graphic designer multidisciplinare, specializzata in progettazione editoriale e desktop publishing.",
     "tools": "Tools & Tech",
     "languages": "Lingue",
     "italian": "Italiano (Madrelingua)",
@@ -52,7 +53,6 @@
     "activity": "Attività",
     "activity_text": "Le attività spaziano dall’impaginazione editoriale per autori e case editrici indipendenti alla progettazione di identità visive, siti web e materiali di comunicazione per aziende e professionisti."
   },
-
   "Services": {
     "bookLayout": {
       "title": "Servizi di impaginazione per autori indipendenti e case editrici",

@@ -1,7 +1,7 @@
 {
   "Global": {
-    "title": "Tydedev — Editorial Design and Digital Design",
-    "description": "Maria Basso is a multidisciplinary graphic designer specializing in brand identity, editorial design, and digital experiences. Experienced in developing cohesive visual identities across print and digital, from visual system design to responsive web implementation."
+    "title": "Tydedev — Book formatting and editorial design",
+    "description": "Editorial design, book formatting and DTP services for publishers, companies and professionals. Discover projects and request a quote."
   },
   "Header": {
     "work": "Work",
@@ -26,16 +26,17 @@
     "description": "It seems you're looking for something that doesn't exist.",
     "link": "Return to the homepage"
   },
-
   "home": {
-    "first_text": "Independent designer working across editorial, brand and digital design.",
-    "second_text": "I build visual systems, identities and digital experiences with a focus on typography and structure.",
-    "availability": "Available for freelance work."
+    "first_field": "Book Formatting",
+    "second_field": "& Desktop Publishing",
+    "first_text": "I design and format books, manuals and publications, also taking care of multipage documents and corporate materials.",
+    "second_text": "I assist publishers, companies and professionals in editorial design, from typographic structure to the final production of documents.",
+    "availability": "Available for freelance work.",
+    "formatting": "Book Formatting"
   },
-
   "Profile": {
     "title": "Resume",
-    "description": "Multi-disciplinary graphic designer.",
+    "description": "Multi-disciplinary graphic designer specializing in editorial design and desktop publishing.",
     "tools": "Tools & Tech",
     "skills": "Core Skills",
     "education": "Education",
@@ -47,7 +48,7 @@
     "academy": "Ilas Academy of Naples",
     "school": "Art School of Naples",
     "academy_text": "Graphic Design",
-    "school_text": "Visual Languages and Design",
+    "school_text": "Visual Arts and Design",
     "availability": "Available for remote work for US, Canada and Worldwide.",
     "activity": "Activities",
     "activity_text": "Activities range from typesetting and editorial design for independent authors and publishers to visual identity, website and communication materials design for companies and professionals."

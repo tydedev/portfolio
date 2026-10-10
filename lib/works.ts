@@ -1,239 +1,101 @@
-export const works = [
-  {
-    id: "bascorp-brand",
-    name: "Bascorp",
-    slug: "bascorp",
-    type: "product",
-    description: "Brand identity and digital product design.",
-    categories: ["Brand Identity", "Web Design", "UI/UX Design"],
-    category: "Brand Identity",
-    image: "/images/bascorp/header.jpg",
-    width: 2400,
-    height: 1600,
-    position: "left",
-  },
+type LayoutItem = {
+  type: "image" | "text";
+  src?: string;
+  col: number;
+  start: number;
+};
 
-  {
-    id: "petrha-group-brand",
-    name: "Petrha Group",
-    slug: "petrha-group",
-    type: "product",
-    description: "Brand identity and digital product design.",
-    categories: ["Brand Identity", "Web Design", "UI/UX Design"],
-    category: "Brand Identity",
-    image: "/images/petrha/man.jpg",
-    width: 2400,
-    height: 1600,
-    position: "left",
-  },
+type FormattingWork = {
+  slug: string;
+  name: Record<"it" | "en", string>;
+  translations: Record<
+    "it" | "en",
+    {
+      bold_text: string;
+      text: string;
+    }
+  >;
+  layout: LayoutItem[];
+};
 
-  {
-    id: "shine-and-shield-brand",
-    name: "Shine & Shield",
-    slug: "shine-and-shield",
-    type: "product",
-    description: "Brand identity",
-    categories: ["Brand Identity"],
-    category: "Brand Identity",
-    image: "/images/shineshield/image-group.jpg",
-    width: 2400,
-    height: 1600,
-    position: "left",
-  },
 
+export const formattingWorks: FormattingWork[] = [
   {
-    id: "aquadro-holding-editorial",
-    name: "Aquadro Holding",
-    slug: "aquadro-holding",
-    type: "editorial",
-    description: "Desktop Publishing.",
-    categories: ["Editorial Design", "Typography"],
-    category: "Editorial & DTP",
-    image: "/images/editorial/aquadro-brochure.jpg",
-    position: "left",
-    width: 100,
-    height: 500,
+    slug: "alice-in-wonderland",
+    name: {
+      it: "Alice nel Paese delle Meraviglie",
+      en: "Alice in Wonderland",
+    },
+    translations: {
+      it: {
+        bold_text: "Progetto editoriale personale.",
+        text: "Studio di impaginazione per un'edizione illustrata di Alice nel Paese delle Meraviglie di Lewis Carroll.",
+      },
+      en: {
+        bold_text: "Personal editorial design project.",
+        text: "Layout study for an illustrated edition of Lewis Carroll's Alice's Adventures in Wonderland.",
+      },
+    },
+    layout: [
+      {
+        type: "image",
+        src: "/images/editorial/experimentation/Alice-in-wonderland-chapter-opener.webp",
+        col: 1,
+        start: 1,
+      },
+      {
+        type: "image",
+        src: "/images/editorial/experimentation/Alice-in-wonderland-page.webp",
+        col: 1,
+        start: 2,
+      },
+      {
+        type: "text",
+        col: 2,
+        start: 3,
+      },
+    ],
   },
-
   {
-    id: "a-christmas-carol-editorial",
-    name: "A Christmas Carol",
-    slug: "a-christmas-carol",
-    type: "editorial",
-    description: "Editorial design and typography.",
-    categories: ["Editorial Design", "Typography"],
-    category: "Editorial & DTP",
-    image: "/images/editorial/book/capitolo.jpg",
-    position: "right",
-    width: 100,
-    height: 500,
-  },
-
-  {
-    id: "cultural-magazine-editorial",
-    name: "Cultural Magazine",
-    slug: "cultural-magazine",
-    type: "editorial",
-    description: "Editorial design and typography.",
-    categories: ["Editorial Design", "Typography"],
-    category: "Editorial & DTP",
-    image: "/images/editorial/magazine/magazine_1.jpg",
-    position: "left",
-    width: 100,
-    height: 500,
-  },
-
-  {
-    id: "bird-watching-logbook-editorial",
-    name: "Bird Watching Logbook",
-    slug: "bird_watching_logbook",
-    type: "editorial",
-    description: "Editorial design and typography.",
-    categories: ["Editorial Design", "Typography"],
-    category: "Editorial & DTP",
-    image: "/images/editorial/bird_logbook.jpg",
-    position: "left",
-    width: 100,
-    height: 500,
-  },
-
-  {
-    id: "social-media-campaign",
-    name: "Social Media Campaign",
-    slug: "social-media-campaign",
-    type: "social-media",
-    description: "Social media content creation and management.",
-    categories: ["Social Media", "Content Creation"],
-    category: "Social Media",
-    image: "/images/editorial/magazine/IG_feed.jpg",
-    position: "right",
-    width: 100,
-    height: 500,
-  },
-
-  {
-    id: "bascorp-social-media",
-    name: "Bascorp",
-    slug: "bascorp",
-    type: "social-media",
-    description: "Social media content creation and management.",
-    categories: ["Social Media", "Content Creation"],
-    category: "Social Media",
-    image: "/images/bascorp/ig.jpg",
-    position: "right",
-    width: 100,
-    height: 500,
-  },
-
-  {
-    id: "aquadro-holding-social-media",
-    name: "Aquadro Holding",
-    slug: "aquadro-holding",
-    type: "social-media",
-    description: "Social media content creation and management.",
-    categories: ["Social Media", "Content Creation"],
-    category: "Social Media",
-    image: "/images/aquadro/ig_feed.jpg",
-    position: "right",
-    width: 100,
-    height: 500,
-  },
-
-  {
-    id: "bascorp-graphic-design",
-    name: "Bascorp",
-    slug: "bascorp",
-    type: "graphic-design",
-    description: "Graphic design work.",
-    categories: ["Graphic Design"],
-    category: "Graphic Design",
-    image: "/images/bascorp/poster.png",
-    position: "right",
-    width: 100,
-    height: 500,
-  },
-
-  {
-    id: "petrha-group-graphic-design",
-    name: "Petrha Group",
-    slug: "petrha-group",
-    type: "graphic-design",
-    description: "Graphic design work.",
-    categories: ["Graphic Design"],
-    category: "Graphic Design",
-    image: "/images/petrha/businesscard.jpg",
-    position: "right",
-    width: 100,
-    height: 500,
-  },
-
-  {
-    id: "boeing-poster",
-    name: "Boeing Poster",
-    slug: "boeing-poster",
-    type: "graphic-design",
-    description: "Graphic design work.",
-    categories: ["Graphic Design"],
-    category: "Graphic Design",
-    image: "/images/misc/boeing.jpg",
-    position: "right",
-    width: 100,
-    height: 500,
-  },
-
-  {
-    id: "campaign-poster",
-    name: "Campaign Poster",
-    slug: "campaign-poster",
-    type: "graphic-design",
-    description: "Graphic design work.",
-    categories: ["Graphic Design"],
-    category: "Graphic Design",
-    image: "/images/loud/group.jpg",
-    position: "right",
-    width: 100,
-    height: 500,
-  },
-
-  {
-    id: "bascorp-web-design",
-    name: "Bascorp Web Design Project",
-    slug: "bascorp",
-    type: "web-design",
-    description: "Web design work.",
-    categories: ["Web Design"],
-    category: "Web Design",
-    image: "/images/bascorp/site.jpg",
-    position: "right",
-    width: 100,
-    height: 500,
-  },
-
-  {
-    id: "tydedev-web-design",
-    name: "Tydedev Web Design Project",
-    slug: "web-design-project",
-    type: "web-design",
-    description: "Web design work.",
-    categories: ["Web Design"],
-    category: "Web Design",
-    image: "/images/web-design/tydedev.png",
-    position: "right",
-    width: 100,
-    height: 500,
-  },
-
-  {
-    id: "typelier-web-design",
-    name: "Typelier Web Design Project",
-    slug: "web-design-project",
-    type: "web-design",
-    description: "Web design work.",
-    categories: ["Web Design"],
-    category: "Web Design",
-    image: "/images/web-design/typelier.png",
-    position: "right",
-    width: 100,
-    height: 500,
+    slug: "dracula",
+    name: {
+      it: "Dracula",
+      en: "Dracula",
+    },
+    translations: {
+      it: {
+        bold_text: "Progetto editoriale personale.",
+        text: "Studio di impaginazione per un'edizione speciale a colori di Dracula di Bram Stoker, pensata per una possibile pubblicazione hardcover.",
+      },
+      en: {
+        bold_text: "Personal editorial design project.",
+        text: "Layout study for a full-color special edition of Bram Stoker's Dracula, conceived as a potential hardcover publication.",
+      },
+    },
+    layout: [
+      {
+        type: "text",
+        col: 1,
+        start: 2,
+      },
+      {
+        type: "image",
+        src: "/images/editorial/experimentation/dracula-chapter-opener.jpg",
+        col: 1,
+        start: 1,
+      },
+      {
+        type: "image",
+        src: "/images/editorial/experimentation/dracula-spread.jpg",
+        col: 1,
+        start: 3,
+      },
+      {
+        type: "image",
+        src: "/images/editorial/experimentation/dracula-spread2.jpg",
+        col: 1,
+        start: 4,
+      },
+    ],
   },
 ];
