@@ -31,7 +31,10 @@ const Formatting = () => {
           className="block h-auto w-full"
         />
       </div>
-
+      <div className="py-10 font-heading text-3xl uppercase md:col-start-9 md:col-span-4 md:row-start-3 md:py-0 md:text-5xl">
+        Non-fiction <br />
+        & Manuals
+      </div>
       <div className="md:col-start-6 md:col-span-3 md:row-start-3">
         <Image
           src="/images/editorial/experimentation/saggio2.jpg"
@@ -40,11 +43,6 @@ const Formatting = () => {
           height={400}
           className="block h-auto w-full"
         />
-      </div>
-
-      <div className="py-10 font-heading text-3xl uppercase md:col-start-9 md:col-span-4 md:row-start-3 md:py-0 md:text-5xl">
-        Non-fiction <br />
-        & Manuals
       </div>
     </section>
   );
