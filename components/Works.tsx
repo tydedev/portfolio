@@ -12,7 +12,7 @@ const Works = () => {
 
   return (
     <section id="work" className="md:px-0">
-      <div className="mx-auto w-full max-w-360">
+      <div className="mx-auto w-full">
         <Formatting />
         <GraphicDesign />
         <BrandIdentity />
