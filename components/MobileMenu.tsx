@@ -26,7 +26,7 @@ const MobileMenu = () => {
           <span className="sr-only">Menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent className="md:hidden flex flex-col space-y-6 p-6 pt-15 w-full! sm:max-w-full">
+      <SheetContent className="md:hidden flex flex-col space-y-6 p-6 pt-15 w-full! sm:max-w-full font-heading">
         <SheetHeader>
           <SheetTitle className="sr-only">Menu</SheetTitle>
         </SheetHeader>

@@ -6,13 +6,14 @@ const Footer = () => {
   const t = useTranslations("VAT");
   const i = useTranslations("home");
   return (
-    <div className="bg-stone-900">
-      <footer className="grid grid-cols-1 bg-stone-900  font-heading py-3 md:grid-cols-12 gap-6 max-w-360 mx-auto text-base items-baseline w-full shrink-0 font-semibold text-stone-100 px-4 lg:md-4">
-        <div className="col-span-1 md:col-span-3 leading-none">
+    <div className="bg-stone-900 px-4">
+      <footer className="mx-auto grid w-full max-w-360 grid-cols-1 items-baseline gap-6 py-3 font-heading text-base font-semibold text-stone-100 md:grid-cols-12 md:gap-6">
+        <div className="leading-none md:col-span-3">
           <p>Maria Basso</p>
-          <p>{i("availability")}</p>
+          <p className="text-sm">{i("availability")}</p>
         </div>
-        <div className="col-span-1 md:col-span-7 leading-none">
+
+        <div className="flex-1 font-semibold leading-none md:col-span-7">
           <p>
             {t("label")} {t("value")}
           </p>
@@ -23,7 +24,8 @@ const Footer = () => {
             maria.basso.td@gmail.com
           </Link>
         </div>
-        <div className="col-span-1 md:col-span-2 md:text-right ">
+
+        <div className="md:col-span-2 md:text-right">
           <p>&copy; {new Date().getFullYear()}</p>
         </div>
       </footer>

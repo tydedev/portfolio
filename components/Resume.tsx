@@ -134,7 +134,7 @@ const Resume = () => {
           <div className="mt-32 grid grid-cols-1 border-t border-stone-700 pt-4 md:grid-cols-12 md:gap-8">
             <div className="md:col-span-4">
               <h3 className="font-heading text-3xl font-medium uppercase tracking-tight">
-                Availability
+                {t("availability_title")}
               </h3>
             </div>
 

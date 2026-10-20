@@ -14,6 +14,7 @@ export function getNavigation(locale: string): NavLink[] {
 
   return [
     { href: "#work", label: "Work" },
+    { href: "/blog", label: "Blog" },
     {
       href: `/services/${servicesSlug}`,
       label: "Services",

@@ -29,8 +29,8 @@
   "home": {
     "first_field": "Book Formatting",
     "second_field": "& Desktop Publishing",
-    "first_text": "I design and format books, manuals and publications, also taking care of multipage documents and corporate materials.",
-    "second_text": "I assist publishers, companies and professionals in editorial design, from typographic structure to the final production of documents.",
+    "first_text": "I design and format books, manuals, and publications, as well as multi-page documents and corporate materials.",
+    "second_text": "I help publishers, businesses, and professionals with editorial design, from typographic layout to print-ready document production.",
     "availability": "Available for freelance work.",
     "formatting": "Book Formatting"
   },
@@ -49,6 +49,7 @@
     "school": "Art School of Naples",
     "academy_text": "Graphic Design",
     "school_text": "Visual Arts and Design",
+    "availability_title": "Availability",
     "availability": "Available for remote work for US, Canada and Worldwide.",
     "activity": "Activities",
     "activity_text": "Activities range from typesetting and editorial design for independent authors and publishers to visual identity, website and communication materials design for companies and professionals."
@@ -56,7 +57,7 @@
   "Services": {
     "bookLayout": {
       "title": "Book formatting and typesetting services for independent authors and publishers",
-      "description": "<up>Every well written book</up> deserves a layout that enhances the reading experience. I specialize in designing layouts for both print and digital formats, ensuring that your content is presented in the most engaging and readable way possible. Whether you're publishing a novel, a non-fiction book, or a photo book, I can create a layout that reflects your vision and meets the technical requirements of your chosen publishing platform.",
+      "description": "Every well written book deserves a layout that enhances the reading experience. I specialize in designing layouts for both print and digital formats, ensuring that your content is presented in the most engaging and readable way possible. Whether you're publishing a novel, a non-fiction book, or a photo book, I can create a layout that reflects your vision and meets the technical requirements of your chosen publishing platform.",
       "faq": {
         "title": "Frequently asked questions",
         "items": [

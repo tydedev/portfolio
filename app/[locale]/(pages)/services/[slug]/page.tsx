@@ -4,8 +4,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { SyncTranslatedPathnames } from "@/components/SyncTranslatedPathnames";
 import { routing } from "@/i18n/routing";
-import { getService, services } from "@/lib/services";
+import { getService, getLocalizedSlug, services } from "@/lib/services";
 import { Locale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
@@ -19,7 +20,7 @@ export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
     services.map((service) => ({
       locale,
-      slug: service.localizedSlugs[locale] ?? service.slug,
+      slug: getLocalizedSlug(service, locale),
     })),
   );
 }
@@ -27,6 +28,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props) {
   const { locale, slug } = await params;
   const service = getService(slug);
+
   if (!service) return {};
 
   const t = await getTranslations({
@@ -37,6 +39,15 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `${t("title")} — Tydedev`,
     description: t("description"),
+    alternates: {
+      canonical: `https://tydedev.it/${locale}/services/${getLocalizedSlug(service, locale)}`,
+      languages: Object.fromEntries(
+        routing.locales.map((loc) => [
+          loc,
+          `https://tydedev.it/${loc}/services/${getLocalizedSlug(service, loc)}`,
+        ]),
+      ),
+    },
     openGraph: {
       title: `${t("title")} — Tydedev`,
       description: t("description"),
@@ -57,18 +68,29 @@ export async function generateMetadata({ params }: Props) {
     },
   };
 }
+
 export default async function ServicePage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
   const project = getService(slug);
+
   if (!project) notFound();
 
+  const translatedPathnames: Partial<Record<string, string>> = {};
+
+  for (const translatedLocale of routing.locales) {
+    translatedPathnames[translatedLocale] =
+      `/services/${getLocalizedSlug(project, translatedLocale)}`;
+  }
+
   const t = await getTranslations(`Services.${project.i18nKey}`);
+
   const items = t.raw("faq.items") as {
     question: string;
     answer: string;
   }[];
+
   const steps = t.raw("process.steps") as {
     number: string;
     title: string;
@@ -77,6 +99,8 @@ export default async function ServicePage({ params }: Props) {
 
   return (
     <section className="md:grid md:grid-cols-10 gap-6 max-w-360 mx-auto w-full py-20 px-4 font-semibold">
+      {" "}
+      <SyncTranslatedPathnames pathnames={translatedPathnames} />
       <div className="md:col-span-4 mb-20">
         <h1 className="text-5xl font-bold font-heading">{t("title")}</h1>
       </div>
@@ -100,6 +124,7 @@ export default async function ServicePage({ params }: Props) {
         <h2 className="text-3xl font-bold mb-12 font-heading">
           {t("process.title")}
         </h2>
+
         <div className="md:grid md:grid-cols-2 gap-12 space-y-12 md:space-y-0">
           {steps.map((step) => (
             <div
@@ -109,10 +134,12 @@ export default async function ServicePage({ params }: Props) {
               <span className="text-7xl font-bold leading-none shrink-0 font-heading text-red-500 w-28 tabular-nums">
                 {step.number}
               </span>
+
               <div className="pt-2">
-                <h3 className="text-xl font-black mb-2 font-heading ">
+                <h3 className="text-xl font-black mb-2 font-heading">
                   {step.title}
                 </h3>
+
                 <p>{step.description}</p>
               </div>
             </div>
@@ -133,12 +160,14 @@ export default async function ServicePage({ params }: Props) {
         <h2 className="text-3xl font-bold mb-4 font-heading">
           {t("faq.title")}
         </h2>
+
         <Accordion type="single" collapsible>
           {items.map((item, i) => (
             <AccordionItem key={i} value={`item-${i}`}>
               <AccordionTrigger>
                 {i + 1}. {item.question}
               </AccordionTrigger>
+
               <AccordionContent>{item.answer}</AccordionContent>
             </AccordionItem>
           ))}
