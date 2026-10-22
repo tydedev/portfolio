@@ -13,6 +13,7 @@ import { routing } from "@/i18n/routing";
 import { SITE_URL } from "@/lib/constants";
 import { SyncTranslatedPathnames } from "@/components/SyncTranslatedPathnames";
 import { getFormatter } from "next-intl/server";
+import FormattingCTA from "@/components/FormattingCTA";
 
 type Props = {
   params: Promise<{
@@ -349,6 +350,9 @@ export default async function BlogPostPage({ params }: Props) {
 
             {/* RITORNO AL BLOG */}
             <footer className="mx-auto mt-20 max-w-[720px] border-t border-neutral-200 pt-8">
+              <div className="mb-10">
+                {post.tags?.includes("self-publishing") && <FormattingCTA />}
+              </div>
               <Link
                 href={`/${locale}/blog`}
                 className="inline-flex items-center gap-3 text-sm font-medium transition-colors hover:text-red-600"
